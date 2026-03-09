@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1440, initial-scale=1">
+  <title>Smart'Immo · Concept 01</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.concept-01-tuned{padding-top:78px;}
+    .concept-01-tuned .topbar{position:fixed;left:0;right:0;top:0;background:rgba(237,232,208,.94);backdrop-filter:blur(12px);}
+    .concept-01-tuned .nav-shell{padding:10px 28px;gap:18px;min-height:78px;}
+    .concept-01-tuned .brand{min-width:240px;gap:4px;}
+    .concept-01-tuned .brand .name{font-size:26px;}
+    .concept-01-tuned .brand .tag{font-size:9px;letter-spacing:.20em;line-height:1.45;max-width:190px;}
+    .concept-01-tuned .nav-links{gap:2px;flex-wrap:nowrap;}
+    .concept-01-tuned .nav-links a{padding:8px 10px;font-size:10px;letter-spacing:.18em;white-space:nowrap;}
+    .concept-01-tuned .nav-cta{padding:11px 18px;background:#f6f0e5;border-color:rgba(124,98,78,.18);font-size:10px;letter-spacing:.18em;color:var(--brown-deep);box-shadow:0 8px 22px rgba(72,54,41,.06);}
+    .concept-01-tuned .hero-10{min-height:calc(100vh - 78px);}
+    .concept-01-tuned .hero-10 .media{background:linear-gradient(90deg, rgba(30,23,19,.76) 0%, rgba(30,23,19,.48) 38%, rgba(30,23,19,.16) 66%, rgba(30,23,19,.24) 100%), url('https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000') center/cover no-repeat !important;}
+    .concept-01-tuned .hero-10 .content{min-height:calc(100vh - 78px);padding:92px 28px 48px;align-items:end;gap:40px;}
+    .concept-01-tuned .h1{font-size:clamp(42px,4.8vw,62px);line-height:1.02;}
+    .concept-01-tuned .hero-10 .lead{font-size:17px;line-height:1.6;max-width:31ch;}
+    .concept-01-tuned .hero-10 .actions{margin-top:22px;}
+    .concept-01-tuned .hero-10 .meta{margin-top:24px;gap:14px;}
+    .concept-01-tuned .hero-10 .meta span{min-width:150px;font-size:10px;}
+    .concept-01-tuned .blur-note{padding:24px 24px 22px;max-width:390px;}
+    .concept-01-tuned .blur-note h3{font-size:24px;}
+    .concept-01-tuned .blur-note p{font-size:14px;line-height:1.55;}
+    .concept-01-tuned #methode{padding:84px 0 88px;min-height:auto;}
+    .concept-01-tuned #methode .section-head{margin-bottom:28px;}
+    .concept-01-tuned .triptych{gap:18px;}
+    .concept-01-tuned .phase{grid-template-rows:220px auto;border-radius:26px;}
+    .concept-01-tuned .phase .body{padding:18px 18px 20px;}
+    .concept-01-tuned .phase h3{font-size:24px;margin:14px 0 10px;}
+    .concept-01-tuned .phase ul{gap:10px;}
+    .concept-01-tuned .phase li{grid-template-columns:12px 1fr;gap:10px;}
+    .concept-01-tuned .phase li span{width:12px;height:12px;margin-top:5px;}
+    .concept-01-tuned .phase li div{font-size:14px;line-height:1.45;}
+    .concept-01-tuned .timeline-horizontal .rail{gap:22px;}
+    .concept-01-tuned .timeline-horizontal .rail::before{display:none;}
+    .concept-01-tuned .timeline-horizontal .step{position:relative;}
+    .concept-01-tuned .timeline-horizontal .step:not(:last-child)::after{content:"";position:absolute;left:9px;top:9px;width:calc(100% + 22px);height:1px;background:rgba(124,98,78,.22);z-index:1;}
+    .concept-01-tuned .timeline-horizontal .dot{position:relative;z-index:2;margin-bottom:16px;}
+  </style>
+
+</head>
+<body class="dark-hero concept-01-tuned">
+  <div class="page" id="top">
+    
+<header class="topbar">
+  <div class="nav-shell">
+    <a class="brand" href="#top">
+      <span class="name serif">SMART'IMMO</span>
+      <span class="tag">Vendez librement, mais intelligemment</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#methode">Méthode</a>
+      <a href="#offres">Offres</a>
+      <a href="#annonces">Annonces</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Nous contacter</a>
+  </div>
+</header>
+
+    
+<main>
+  <section id="accueil" class="hero-10">
+    <div class="media" aria-hidden="true"></div>
+    <div class="content">
+      <div class="intro">
+        <p class="eyebrow" style="color:rgba(246,240,229,.72)">Accompagnement immobilier</p>
+        <h1 class="h1 serif">Vendez librement, avec méthode.</h1>
+        <p class="lead" style="color:rgba(246,240,229,.82);margin-top:18px;max-width:30ch">Un accompagnement indépendant pour vendre plus sereinement, sans mandat et sans pression commerciale.</p>
+        <div class="actions">
+          <a class="btn primary" href="#offres">Voir les offres</a>
+          <a class="btn ghost" href="#contact">Prendre contact</a>
+        </div>
+        <div class="meta">
+          <span>Conseil indépendant</span>
+          <span>Cadre clair</span>
+          <span>Positionnement premium</span>
+        </div>
+      </div>
+      <aside class="blur-note">
+        <h3 class="serif">Un cadre net dès le premier échange.</h3>
+        <p>Une promesse simple, lisible et rassurante, posée directement sur un visuel immobilier plus statutaire.</p>
+        <div class="line"></div>
+        <div class="foot"><span>Sans mandat</span><span>Conseil indépendant</span></div>
+      </aside>
+    </div>
+  </section>
+  
+<section id="apropos" class="about-10">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">À propos de nous</p>
+        <h2 class="h2 serif">Un accompagnement indépendant, sans pression commerciale.</h2>
+      </div>
+      <p class="lead">Smart'Immo agit comme un coach immobilier. L'objectif n'est pas de pousser vers une transaction, mais de sécuriser une décision, clarifier une stratégie de vente et donner un cadre lisible à chaque étape.</p>
+    </div>
+    <div class="layout">
+      <div class="big">
+        <p class="serif">Tu gardes la main sur la vente. Le rôle du coach est d'apporter la méthode, la lecture du marché et le recul qui évite les erreurs coûteuses.</p>
+      </div>
+      <div class="lines">
+        <div class="line"><div class="num">01</div><div><strong>Positionnement clair</strong><br><span class="muted">Un discours rassurant, haut de gamme, mais jamais froid.</span></div></div>
+        <div class="line"><div class="num">02</div><div><strong>Conseil utile</strong><br><span class="muted">Mise en vente, lecture des annonces, posture, négociation et suivi.</span></div></div>
+        <div class="line"><div class="num">03</div><div><strong>Approche souple</strong><br><span class="muted">Présentiel ou visio, Bordeaux et Île-de-France selon le projet.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section id="methode" class="method-full">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Méthode</p>
+        <h2 class="h2 serif">Une méthode lisible, en trois temps.</h2>
+      </div>
+      <p class="lead">Chaque étape aide à préparer la vente, piloter les ajustements et garder un cap clair jusqu'à la conclusion.</p>
+    </div>
+    <div class="triptych">
+      <article class="phase">
+        <img src="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Visuel de préparation">
+        <div class="body">
+          <div class="tag"><i></i><span>Avant</span></div>
+          <h3 class="serif">Préparer la vente proprement</h3>
+          <ul>
+            <li><span></span><div>Objectifs, délai, budget cible et angle de positionnement.</div></li>
+            <li><span></span><div>Analyse du bien et mise en ordre des éléments sensibles.</div></li>
+            <li><span></span><div>Supports, discours et priorités de mise sur le marché.</div></li>
+          </ul>
+        </div>
+      </article>
+      <article class="phase">
+        <img src="https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Visuel de suivi">
+        <div class="body">
+          <div class="tag"><i></i><span>Pendant</span></div>
+          <h3 class="serif">Piloter avec des repères</h3>
+          <ul>
+            <li><span></span><div>Lecture des retours, ajustements, qualification des contacts.</div></li>
+            <li><span></span><div>Préparation des échanges et tri des propositions sérieuses.</div></li>
+            <li><span></span><div>Décisions appuyées sur des faits et non sur le stress du moment.</div></li>
+          </ul>
+        </div>
+      </article>
+      <article class="phase">
+        <img src="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Visuel de sécurisation">
+        <div class="body">
+          <div class="tag"><i></i><span>Après</span></div>
+          <h3 class="serif">Sécuriser la dernière ligne droite</h3>
+          <ul>
+            <li><span></span><div>Négociation argumentée et préparation de la suite.</div></li>
+            <li><span></span><div>Lecture des points sensibles avant engagement.</div></li>
+            <li><span></span><div>Accompagnement jusqu'à une décision claire et maîtrisée.</div></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  
+<section id="marche" class="timeline-horizontal">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Comment ça marche</p>
+        <h2 class="h2 serif">Les 5 étapes d'une vente mieux cadrée.</h2>
+      </div>
+      <p class="lead">De la préparation à la finalisation, chaque étape donne un repère concret pour avancer avec plus de méthode.</p>
+    </div>
+    <div class="rail">
+      <div class="step"><div class="dot"></div><div class="n">01</div><h3 class="serif">Cadrage</h3><p>Premier échange, objectifs, attentes et niveau d'accompagnement.</p></div>
+      <div class="step"><div class="dot"></div><div class="n">02</div><h3 class="serif">Positionnement</h3><p>Lecture du bien, du marché, des arguments à mettre en avant.</p></div>
+      <div class="step"><div class="dot"></div><div class="n">03</div><h3 class="serif">Mise en marché</h3><p>Discours, supports, sélection des actions et premiers ajustements.</p></div>
+      <div class="step"><div class="dot"></div><div class="n">04</div><h3 class="serif">Négociation</h3><p>Analyse des offres, posture, arbitrages et sécurisation des échanges.</p></div>
+      <div class="step"><div class="dot"></div><div class="n">05</div><h3 class="serif">Finalisation</h3><p>Suivi du dossier jusqu'à une vente plus propre et plus sereine.</p></div>
+    </div>
+  </div>
+</section>
+
+  
+<section id="offres" class="offers-8">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Offres + comparatif</p>
+        <h2 class="h2 serif">Trois formules pour le bon niveau d'accompagnement.</h2>
+      </div>
+      <p class="lead">Chaque offre répond à un besoin précis, avec une formule recommandée pour les vendeurs qui veulent un cadre complet sans déléguer leur vente.</p>
+    </div>
+    <div class="pricing-matrix">
+      <div class="pricing-head">
+        <div class="cell"><div><p class="micro">Prestations</p><p class="muted">Les lignes ci-dessous détaillent ce que comprend chaque formule.</p></div></div>
+        <div class="cell">
+          <div><div class="plan-name serif">Essentiel</div><div class="plan-note">cadrer la vente</div></div>
+          <div class="plan-price">290€</div>
+        </div>
+        <div class="cell reco">
+          <div><div class="plan-name serif">Signature</div><div class="reco-flag">Recommandée</div></div>
+          <div class="plan-price">690€</div>
+        </div>
+        <div class="cell">
+          <div><div class="plan-name serif">Prestige</div><div class="plan-note">accompagnement avancé</div></div>
+          <div class="plan-price">1 190€</div>
+        </div>
+      </div>
+      <div class="pricing-rows">
+        <div class="row">
+          <div class="cell feature-label">Audit du bien et positionnement</div>
+          <div class="cell"><span class="tick">✓</span></div>
+          <div class="cell reco"><span class="tick">✓</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+        <div class="row">
+          <div class="cell feature-label">Conseils de mise en valeur et annonce</div>
+          <div class="cell"><span class="partial">≈</span></div>
+          <div class="cell reco"><span class="tick">✓</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+        <div class="row">
+          <div class="cell feature-label">Lecture des retours et ajustements</div>
+          <div class="cell"><span class="partial">·</span></div>
+          <div class="cell reco"><span class="tick">✓</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+        <div class="row">
+          <div class="cell feature-label">Préparation des échanges et négociation</div>
+          <div class="cell"><span class="partial">·</span></div>
+          <div class="cell reco"><span class="tick">✓</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+        <div class="row">
+          <div class="cell feature-label">Support sur la sécurisation du dossier</div>
+          <div class="cell"><span class="partial">·</span></div>
+          <div class="cell reco"><span class="partial">≈</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+        <div class="row">
+          <div class="cell feature-label">Coordination et suivi jusqu'à la vente</div>
+          <div class="cell"><span class="partial">·</span></div>
+          <div class="cell reco"><span class="partial">≈</span></div>
+          <div class="cell"><span class="tick">✓</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="offers-note">
+      <div>Chaque formule clarifie le niveau d'accompagnement attendu, du cadrage initial au suivi de la vente.</div>
+      <a class="btn primary" href="#contact">Demander un échange</a>
+    </div>
+  </div>
+</section>
+
+  
+<section id="benefices" class="assurance-merge">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Bénéfices + réassurance</p>
+        <h2 class="h2 serif">Ce que l'accompagnement change concrètement.</h2>
+      </div>
+      <p class="lead">Plus de recul, moins d'erreurs et un projet mieux tenu du premier échange jusqu'à la négociation.</p>
+    </div>
+    <div class="top">
+      <article class="benefit">
+        <div class="n">01</div>
+        <h3 class="serif">Plus de recul</h3>
+        <p>Le coach remet les décisions en perspective quand le projet devient émotionnel.</p>
+      </article>
+      <article class="benefit">
+        <div class="n">02</div>
+        <h3 class="serif">Moins d'erreurs</h3>
+        <p>Le discours, le prix et la posture s'ajustent avant que le marché ne sanctionne.</p>
+      </article>
+      <article class="benefit">
+        <div class="n">03</div>
+        <h3 class="serif">Plus de clarté</h3>
+        <p>Chaque étape débouche sur une action simple, pas sur une liste de conseils abstraits.</p>
+      </article>
+      <article class="benefit">
+        <div class="n">04</div>
+        <h3 class="serif">Plus de sérénité</h3>
+        <p>Le projet reste lisible de la préparation jusqu'à la négociation.</p>
+      </article>
+    </div>
+    <div class="manifesto">
+      <div class="row">
+        <div><h4 class="serif">Sans mandat</h4><p class="muted">Le service accompagne la vente. Il ne cherche pas à capter la transaction.</p></div>
+        <div class="sign">engagement 01</div>
+      </div>
+      <div class="row">
+        <div><h4 class="serif">Transparent</h4><p class="muted">Chaque recommandation repose sur un intérêt concret pour le vendeur et son bien.</p></div>
+        <div class="sign">engagement 02</div>
+      </div>
+      <div class="row">
+        <div><h4 class="serif">Rassurant</h4><p class="muted">Le ton reste calme, l'accompagnement précis, et les décisions plus simples à tenir.</p></div>
+        <div class="sign">engagement 03</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section id="annonces" class="annonces">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Nos annonces</p>
+        <h2 class="h2 serif">Des biens mis en valeur avec une lecture claire.</h2>
+      </div>
+      <p class="lead">Une sélection de biens présentés avec plus de lisibilité, pour donner envie et renforcer le positionnement du service.</p>
+    </div>
+    <div class="grid">
+      <article class="item">
+        <div class="thumb large"><img src="https://images.unsplash.com/photo-1757361652977-218a1173e8d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Annonce principale"></div>
+        <div class="meta">
+          <div class="line"><span>Bordeaux Chartrons</span><span>Maison familiale</span></div>
+          <div class="title serif">Échoppe rénovée avec jardin, lumière traversante et distribution repensée.</div>
+          <p>Un exemple d'annonce mise en avant avec une présence plus forte dans la grille.</p>
+        </div>
+      </article>
+      <div class="aside">
+        <article class="item">
+          <div class="thumb small"><img src="https://images.unsplash.com/photo-1747336754870-ca7b10cc75f5?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Annonce secondaire"></div>
+          <div class="meta">
+            <div class="line"><span>Bordeaux centre</span><span>Appartement</span></div>
+            <div class="title serif">T3 repensé pour une vente rapide et lisible.</div>
+          </div>
+        </article>
+        <article class="item">
+          <div class="thumb small"><img src="https://images.unsplash.com/photo-1759355787286-f1c5fd456a0d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Annonce secondaire"></div>
+          <div class="meta">
+            <div class="line"><span>Caudéran</span><span>Maison de ville</span></div>
+            <div class="title serif">Volume calme, extérieur soigné, positionnement premium.</div>
+          </div>
+        </article>
+      </div>
+      <div class="aside">
+        <article class="item">
+          <div class="thumb small"><img src="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Annonce secondaire"></div>
+          <div class="meta">
+            <div class="line"><span>Le Bouscat</span><span>Bien signature</span></div>
+            <div class="title serif">Maison repensée, argumentaire haut de gamme, vente cadrée.</div>
+          </div>
+        </article>
+        <article class="item">
+          <div class="thumb small"><img src="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000" alt="Annonce secondaire"></div>
+          <div class="meta">
+            <div class="line"><span>Mérignac</span><span>Appartement</span></div>
+            <div class="title serif">Produit plus accessible, lecture claire des atouts.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="muted">Une présentation pensée pour mettre les biens en avant sans alourdir la lecture.</div>
+      <a class="btn primary" href="#contact">Parler du projet</a>
+    </div>
+  </div>
+</section>
+
+  
+<section id="contact" class="contact-band">
+  <div class="wrap">
+    <div class="section-head compact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 class="h2 serif">Un premier échange simple pour cadrer le projet.</h2>
+      </div>
+      <p class="lead">Un contact direct, sans friction, avec les coordonnées utiles et une porte d'entrée claire pour lancer l'accompagnement.</p>
+    </div>
+    <div class="contact-shell">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Premier échange</p>
+          <h3 class="serif" style="font-size:34px;line-height:1.15;margin-bottom:14px;color:var(--brown-deep)">Un rendez-vous court pour cadrer le besoin et la bonne formule.</h3>
+          <p class="muted">Le contact doit rester rassurant. Pas de formulaire, pas de friction, juste les bonnes portes d'entrée.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:contact@smartimmo.fr">Envoyer un email</a>
+            <a class="btn ghost" style="border-color:rgba(124,98,78,.24);color:var(--brown)" href="tel:+33600000000">Appeler</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="row"><div class="k">Email</div><div class="v"><a href="mailto:contact@smartimmo.fr">contact@smartimmo.fr</a></div></div>
+          <div class="row"><div class="k">Téléphone</div><div class="v"><a href="tel:+33600000000">+33 6 00 00 00 00</a></div></div>
+          <div class="row"><div class="k">Zone</div><div class="v">Bordeaux, Île-de-France, visio</div></div>
+          <div class="row"><div class="k">Disponibilité</div><div class="v">Réponse sous 24h ouvrées</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+    
+<div class="footer-note">Smart'Immo · Maquette desktop 1440</div>
+
+  </div>
+</body>
+</html>
