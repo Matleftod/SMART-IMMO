@@ -1005,8 +1005,8 @@ body.site{
 .reveal-ready [data-reveal]{
   opacity:0;
   transition:
-    opacity .68s cubic-bezier(.22,.61,.36,1),
-    transform .68s cubic-bezier(.22,.61,.36,1);
+    opacity 1.08s cubic-bezier(.22,.61,.36,1),
+    transform 1.08s cubic-bezier(.22,.61,.36,1);
   transition-delay:var(--reveal-delay, 0ms);
   will-change:opacity, transform;
 }
@@ -1023,6 +1023,16 @@ body.site{
   transform:translate3d(56px, 0, 0);
 }
 
+.reveal-ready .hero-10 [data-reveal]{
+  transition-duration:1.42s;
+  transition-delay:180ms;
+}
+
+.reveal-ready .hero-10 .blur-note[data-reveal]{
+  transition-duration:1.55s;
+  transition-delay:320ms;
+}
+
 .reveal-ready [data-reveal].is-visible{
   opacity:1;
   transform:none;
@@ -1036,14 +1046,14 @@ body.site{
   opacity:0;
   transform:translate3d(0, 18px, 0);
   transition:
-    opacity .58s cubic-bezier(.22,.61,.36,1),
-    transform .58s cubic-bezier(.22,.61,.36,1);
+    opacity .92s cubic-bezier(.22,.61,.36,1),
+    transform .92s cubic-bezier(.22,.61,.36,1);
 }
 
 .reveal-ready [data-reveal="timeline"] .step:not(:last-child)::after{
   transform:scaleX(0);
   transform-origin:left center;
-  transition:transform .68s cubic-bezier(.22,.61,.36,1);
+  transition:transform 1.02s cubic-bezier(.22,.61,.36,1);
 }
 
 .reveal-ready [data-reveal="timeline"].is-visible .step{
