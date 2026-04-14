@@ -162,16 +162,6 @@
       box-shadow:0 22px 46px rgba(16,10,6,.18);
       backdrop-filter:blur(12px);
     }
-    .concept-01-tuned .blur-note::before{
-      content:"";
-      position:absolute;
-      left:26px;
-      right:26px;
-      top:0;
-      height:2px;
-      border-radius:999px;
-      background:linear-gradient(90deg, rgba(255,244,226,.72), rgba(255,244,226,0));
-    }
     .concept-01-tuned .blur-note h3{font-size:25px;line-height:1.08;letter-spacing:-.01em;}
     .concept-01-tuned .blur-note p{font-size:14.5px;line-height:1.58;}
 
@@ -183,11 +173,11 @@
     }
     .concept-01-tuned .section-head.no-meta{
       grid-template-columns:minmax(0, 1fr);
-      max-width:880px;
+      max-width:1080px;
       margin-bottom:28px;
     }
     .concept-01-tuned .section-head .h2{
-      max-width:15ch;
+      max-width:25ch;
       letter-spacing:-.03em;
     }
 
@@ -210,7 +200,7 @@
       margin-bottom:0;
     }
     .concept-01-tuned .about-10 .section-head .h2{
-      max-width:14ch;
+      max-width:20ch;
     }
     .concept-01-tuned .about-10 .big{
       position:relative;
@@ -227,10 +217,10 @@
       background:rgba(124,98,78,.18);
     }
     .concept-01-tuned .about-10 .big p{
-      font-size:clamp(38px, 3.2vw, 47px);
-      line-height:1.04;
+      font-size:clamp(32px, 2.7vw, 40px);
+      line-height:1.1;
       color:var(--brown-deep);
-      max-width:21.5ch;
+      max-width:25ch;
       letter-spacing:-.03em;
       text-wrap:balance;
     }
@@ -245,16 +235,6 @@
       padding:18px 24px 14px;
       background:rgba(255,250,241,.88);
       box-shadow:0 24px 48px rgba(62,47,37,.08);
-    }
-    .concept-01-tuned .about-10 .lines::before{
-      content:"";
-      position:absolute;
-      left:24px;
-      right:24px;
-      top:0;
-      height:3px;
-      border-radius:999px;
-      background:linear-gradient(90deg, rgba(184,138,97,.7), rgba(184,138,97,0));
     }
     .concept-01-tuned .about-10 .line{
       grid-template-columns:42px 1fr;
@@ -291,17 +271,17 @@
     .concept-01-tuned .timeline-horizontal .rail::before{display:none;}
     .concept-01-tuned .timeline-horizontal .step{
       position:relative;
-      padding:18px 18px 16px;
-      border:1px solid rgba(124,98,78,.12);
-      border-radius:24px;
-      background:rgba(255,250,241,.74);
-      box-shadow:var(--c01-shadow-soft);
+      padding:4px 10px 0 0;
+      border:0;
+      border-radius:0;
+      background:transparent;
+      box-shadow:none;
     }
     .concept-01-tuned .timeline-horizontal .step:not(:last-child)::after{
       content:"";
       position:absolute;
-      left:18px;
-      top:26px;
+      left:9px;
+      top:13px;
       width:calc(100% + 20px);
       height:1px;
       background:rgba(124,98,78,.18);
@@ -320,17 +300,6 @@
     .concept-01-tuned .pricing-head .cell.reco,
     .concept-01-tuned .pricing-rows .cell.reco{
       background:linear-gradient(180deg, rgba(224,204,176,.28), rgba(212,188,156,.18));
-    }
-    .concept-01-tuned .pricing-head .cell.reco{position:relative;}
-    .concept-01-tuned .pricing-head .cell.reco::before{
-      content:"";
-      position:absolute;
-      left:24px;
-      right:24px;
-      top:0;
-      height:3px;
-      border-radius:999px;
-      background:linear-gradient(90deg, var(--c01-accent), rgba(184,138,97,0));
     }
     .concept-01-tuned .pricing-rows .row:nth-child(even) .cell:not(.reco){
       background:rgba(255,250,241,.48);
@@ -433,7 +402,7 @@
         gap:20px;
       }
       .concept-01-tuned .about-10 .big p{
-        max-width:20.5ch;
+        max-width:24ch;
       }
       .concept-01-tuned .about-10 .lines{
         width:min(100%, 344px);
@@ -478,8 +447,8 @@
         padding-right:10px;
       }
       .concept-01-tuned .about-10 .big p{
-        font-size:clamp(34px, 4vw, 40px);
-        max-width:18.8ch;
+        font-size:clamp(30px, 3.6vw, 36px);
+        max-width:23ch;
       }
       .concept-01-tuned .about-10 .lines{
         width:min(100%, 320px);
@@ -554,8 +523,8 @@
         padding:6px 0 0;
       }
       .concept-01-tuned .about-10 .big p{
-        font-size:30px;
-        max-width:17ch;
+        font-size:27px;
+        max-width:22ch;
       }
       .concept-01-tuned .about-10 .layout{
         grid-template-columns:1fr !important;
@@ -572,7 +541,7 @@
         gap:14px;
       }
       .concept-01-tuned .phase{grid-template-rows:220px auto;}
-      .concept-01-tuned .timeline-horizontal .step{padding:16px 16px 14px;}
+      .concept-01-tuned .timeline-horizontal .step{padding:6px 0 0;}
       .concept-01-tuned .contact-copy,
       .concept-01-tuned .contact-info{padding:22px 20px;}
       .concept-01-tuned .annonces .thumb.large,
@@ -646,7 +615,7 @@
           </div>
         </div>
         <div class="big">
-          <p class="serif">Tu gardes la main sur la vente. Le rôle du coach est d'apporter la méthode, la lecture du marché et le recul qui évite les erreurs coûteuses.</p>
+          <p class="serif">Tu gardes la main sur la vente, avec la méthode, la lecture du marché et le recul pour éviter les erreurs coûteuses.</p>
         </div>
       </div>
       <div class="lines">
