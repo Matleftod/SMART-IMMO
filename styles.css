@@ -387,34 +387,6 @@ section{
   font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(45,36,30,.48);align-self:start;justify-self:end
 }
 
-/* Listings */
-.annonces .grid{
-  display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:24px
-}
-.annonces .item{
-  display:grid;gap:16px
-}
-.annonces .thumb{
-  overflow:hidden;border-radius:28px;border:1px solid rgba(124,98,78,.12);background:#d9cbb7
-}
-.annonces .thumb.large{height:470px}
-.annonces .thumb.small{height:225px}
-.annonces .thumb img{width:100%;height:100%;object-fit:cover}
-.annonces .meta{
-  display:grid;gap:8px
-}
-.annonces .meta .title{font-size:24px;color:var(--brown-deep);line-height:1.18}
-.annonces .meta .line{
-  display:flex;justify-content:space-between;gap:18px;
-  font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(45,36,30,.52)
-}
-.annonces .meta p{color:rgba(45,36,30,.7)}
-.annonces .aside{display:grid;gap:24px}
-.annonces .bar{
-  margin-top:22px;padding-top:18px;border-top:1px solid rgba(124,98,78,.14);
-  display:flex;justify-content:space-between;gap:16px;align-items:center
-}
-
 /* Contact */
 .contact-band{
   background:#fffaf1;
@@ -1296,26 +1268,6 @@ body.site{
   line-height:1.48;
 }
 
-.site .annonces .grid{gap:20px;}
-.site .annonces .thumb{box-shadow:var(--c01-shadow-soft);}
-.site .annonces .thumb.large{height:450px;}
-.site .annonces .thumb.small{height:214px;}
-.site .annonces .thumb img{
-  filter:saturate(.92) contrast(1.03);
-  transition:transform .7s ease, filter .7s ease;
-}
-.site .annonces .item:hover .thumb img{
-  transform:scale(1.035);
-  filter:saturate(1) contrast(1.05);
-}
-.site .annonces .meta .title{
-  letter-spacing:-.02em;
-}
-.site .annonces .bar{
-  justify-content:flex-end;
-  padding-top:20px;
-}
-
 .site .contact-band{
   background:linear-gradient(180deg, rgba(255,250,243,.82) 0%, rgba(246,239,228,.94) 100%);
 }
@@ -1489,9 +1441,6 @@ body.site{
     gap:18px;
   }
   .site #marche .step:not(:last-child)::after{display:none;}
-  .site .annonces .grid{grid-template-columns:1fr !important;}
-  .site .annonces .thumb.large,
-  .site .annonces .thumb.small{height:320px;}
   .site .contact-grid{grid-template-columns:1fr !important;}
   .site .contact-copy{
     border-right:0;
@@ -1750,10 +1699,7 @@ body.site{
   }
   .site .contact-copy,
   .site .contact-info{padding:22px 20px;}
-  .site .annonces .thumb.large,
-  .site .annonces .thumb.small{height:250px;}
-  .site .offers-note,
-  .site .annonces .bar{
+  .site .offers-note{
     flex-direction:column;
     align-items:flex-start;
   }
