@@ -3718,8 +3718,8 @@ body.site{
   display:block;
 }
 .site .about-redesign__header{
-  max-width:900px;
-  margin-bottom:44px;
+  max-width:1120px;
+  margin-bottom:50px;
 }
 .site .about-redesign__eyebrow{
   display:inline-flex;
@@ -3739,53 +3739,58 @@ body.site{
 }
 .site .about-redesign__title{
   margin:0;
-  max-width:20ch;
+  max-width:29ch;
   color:var(--brown-deep);
   font-family:var(--c01-font-serif);
-  font-size:clamp(34px, 4vw, 52px);
-  line-height:1.08;
+  font-size:clamp(36px, 3.8vw, 50px);
+  line-height:1.06;
   letter-spacing:-.03em;
 }
 .site .about-redesign__body{
   display:grid;
-  grid-template-columns:minmax(420px, .92fr) minmax(520px, 1.08fr);
-  gap:88px;
+  grid-template-columns:minmax(320px, .82fr) minmax(0, 1.18fr);
+  gap:clamp(44px, 5.6vw, 86px);
   align-items:start;
-  padding:36px 0 48px;
+  padding:40px 0 52px;
   border-top:1px solid var(--c01-line-strong);
 }
 .site .about-redesign__promise{
   display:grid;
-  gap:24px;
+  gap:18px;
   min-width:0;
+  padding-top:2px;
 }
 .site .about-redesign__promise p{
   margin:0;
-  max-width:18ch;
+  max-width:24ch;
   color:var(--brown-deep);
   font-family:var(--c01-font-serif);
-  font-size:clamp(30px, 2.7vw, 38px);
-  line-height:1.14;
-  letter-spacing:-.03em;
+  font-size:clamp(24px, 2.05vw, 30px);
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+.site .about-redesign__promise p + p{
+  padding-top:18px;
+  border-top:1px solid rgba(124,98,78,.16);
 }
 .site .about-redesign__explanation{
   display:grid;
-  gap:18px;
+  gap:16px;
   min-width:0;
 }
 .site .about-redesign__explanation p{
   margin:0;
-  max-width:70ch;
+  max-width:68ch;
   color:rgba(45,36,30,.74);
   font-size:16px;
-  line-height:1.8;
+  line-height:1.72;
 }
 .site .about-redesign__summary{
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:40px;
+  gap:clamp(32px, 4vw, 48px);
   align-items:start;
-  padding-top:40px;
+  padding-top:42px;
   border-top:1px solid var(--c01-line-strong);
 }
 .site .about-redesign__summary-item{
@@ -3991,6 +3996,16 @@ body.site{
 }
 
 @media (max-width: 1024px){
+  .site .about-redesign__header{
+    max-width:900px;
+  }
+  .site .about-redesign__body{
+    grid-template-columns:minmax(300px, .76fr) minmax(0, 1.24fr);
+    gap:clamp(36px, 4.8vw, 52px);
+  }
+  .site .about-redesign__promise p{
+    max-width:22ch;
+  }
   .site #accueil .content{
     gap:26px;
     padding:74px 24px 24px;
@@ -4024,6 +4039,41 @@ body.site{
 }
 
 @media (max-width: 640px){
+  .site .about-redesign__header{
+    margin-bottom:34px;
+  }
+  .site .about-redesign__title{
+    max-width:13ch;
+    font-size:clamp(33px, 9vw, 42px);
+    line-height:1.08;
+  }
+  .site .about-redesign__body,
+  .site .about-redesign__summary{
+    grid-template-columns:1fr;
+  }
+  .site .about-redesign__body{
+    gap:34px;
+    padding:30px 0 38px;
+  }
+  .site .about-redesign__promise{
+    gap:14px;
+  }
+  .site .about-redesign__promise p{
+    max-width:24ch;
+    font-size:clamp(23px, 7vw, 28px);
+  }
+  .site .about-redesign__promise p + p{
+    padding-top:14px;
+  }
+  .site .about-redesign__explanation p{
+    max-width:none;
+    font-size:15px;
+    line-height:1.66;
+  }
+  .site .about-redesign__summary{
+    gap:26px;
+    padding-top:34px;
+  }
   .site #accueil .content{
     gap:20px;
     padding:74px 20px 22px;
