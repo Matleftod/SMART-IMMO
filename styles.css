@@ -1084,33 +1084,6 @@ body.site{
 .site .mark.yes{
   color:var(--brown-deep);
 }
-.site .offer-details{
-  grid-template-columns:minmax(0, .86fr) minmax(0, 1.14fr);
-  gap:34px;
-  margin-top:32px;
-  padding-top:28px;
-  border-top:1px solid rgba(124,98,78,.16);
-}
-.site .sale-cost,
-.site .extra-service{
-  border:0;
-  border-radius:0;
-  background:transparent;
-  box-shadow:none;
-  padding:0;
-}
-.site .sale-cost{
-  padding-right:34px;
-  border-right:1px solid rgba(124,98,78,.12);
-}
-.site .sale-cost h3{
-  color:var(--brown-deep);
-}
-.site .extra-service .service-line{
-  white-space:normal;
-  overflow:visible;
-  overflow-wrap:anywhere;
-}
 .site .pricing-matrix{
   border-radius:32px;
   background:rgba(255,250,241,.92);
@@ -4047,7 +4020,271 @@ body.site{
 }
 
 .site #offres.offers-8{
-  padding-bottom:72px;
+  padding-bottom:82px;
+}
+.site #offres .offers-comparison{
+  gap:26px;
+  margin-top:22px;
+}
+.site #offres .offer-pack-row{
+  position:relative;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  overflow:hidden;
+  border:1px solid rgba(124,98,78,.16);
+  border-radius:8px;
+  background:rgba(255,250,241,.48);
+}
+.site #offres .offer-pack{
+  position:relative;
+  min-height:190px;
+  padding:30px 28px 26px;
+  border-left:1px solid rgba(124,98,78,.13);
+  background:transparent;
+}
+.site #offres .offer-pack:first-child{
+  border-left:0;
+}
+.site #offres .offer-pack:nth-child(2){
+  background:transparent;
+}
+.site #offres .offer-pack--recommended{
+  z-index:1;
+  margin:-1px -1px -1px 0;
+  min-height:192px;
+  border:1px solid rgba(96,76,60,.42);
+  background:rgba(255,250,241,.72);
+  box-shadow:0 16px 32px rgba(72,54,41,.08);
+}
+.site #offres .offer-pack__flag{
+  position:absolute;
+  top:16px;
+  right:18px;
+  margin:0;
+  padding:6px 10px 7px;
+  border:1px solid rgba(96,76,60,.24);
+  border-radius:999px;
+  background:rgba(237,232,208,.5);
+  color:var(--brown-deep);
+  font-size:11px;
+  line-height:1.35;
+  letter-spacing:.075em;
+}
+.site #offres .offer-pack--recommended::after{
+  content:"";
+  position:absolute;
+  left:28px;
+  right:28px;
+  bottom:19px;
+  height:1px;
+  background:rgba(96,76,60,.2);
+}
+.site #offres .offer-pack--recommended .plan-name{
+  color:var(--brown-deep);
+}
+.site #offres .offer-pack--recommended .plan-price{
+  color:var(--brown-deep);
+}
+.site #offres .offers-compare-toggle{
+  justify-self:end;
+  display:inline-grid;
+  grid-template-columns:auto 34px;
+  align-items:center;
+  gap:16px;
+  min-height:54px;
+  padding:0 10px 0 22px;
+  border:1px solid rgba(124,98,78,.22);
+  border-radius:999px;
+  background:rgba(255,250,241,.56);
+  color:var(--brown-deep);
+  font:inherit;
+  font-size:14px;
+  font-weight:650;
+  cursor:pointer;
+  transition:background-color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.site #offres .offers-compare-toggle:hover,
+.site #offres .offers-compare-toggle:focus-visible{
+  background:rgba(255,250,241,.86);
+  border-color:rgba(96,76,60,.36);
+}
+.site #offres .offers-compare-toggle:focus-visible{
+  outline:1px solid var(--brown-deep);
+  outline-offset:4px;
+}
+.site #offres .offers-compare-toggle__icon{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border:1px solid rgba(124,98,78,.2);
+  border-radius:50%;
+  background:rgba(237,232,208,.48);
+}
+.site #offres .offers-compare-toggle__icon::before,
+.site #offres .offers-compare-toggle__icon::after{
+  content:"";
+  position:absolute;
+  width:12px;
+  height:1px;
+  background:var(--brown-deep);
+  transition:transform .24s ease;
+}
+.site #offres .offers-compare-toggle__icon::after{
+  transform:rotate(90deg);
+}
+.site #offres .offers-compare-toggle[aria-expanded="true"] .offers-compare-toggle__icon::after{
+  transform:rotate(0deg);
+}
+.site #offres .offers-detail{
+  display:grid;
+  gap:0;
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  transform:translateY(-8px);
+  transition:max-height .46s cubic-bezier(.22,.61,.36,1), opacity .24s ease, transform .34s ease;
+}
+.site #offres .offers-detail.is-open{
+  max-height:1500px;
+  opacity:1;
+  transform:none;
+}
+.site #offres .offers-detail[hidden]{
+  display:none;
+}
+.site #offres .offers-detail__head{
+  display:grid;
+  grid-template-columns:minmax(112px, .42fr) minmax(280px, 1.05fr) repeat(3, minmax(106px, .44fr));
+  gap:14px;
+  align-items:center;
+  padding:22px 0 12px;
+  border-top:1px solid rgba(124,98,78,.18);
+  border-bottom:1px solid rgba(124,98,78,.16);
+}
+.site #offres .offers-detail__category-head,
+.site #offres .offers-detail__head .micro{
+  margin:0;
+  color:rgba(45,36,30,.52);
+  font-size:10.5px;
+  line-height:1.35;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.site #offres .offers-detail__category-head{
+  grid-column:1;
+}
+.site #offres .offers-detail__head .micro{
+  grid-column:2;
+}
+.site #offres .offers-detail__plans{
+  display:contents;
+}
+.site #offres .offers-detail__plans span{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:0 10px;
+  border:1px solid rgba(124,98,78,.14);
+  border-radius:999px;
+  background:rgba(255,250,241,.38);
+  color:var(--brown-deep);
+  font-size:11px;
+  font-weight:650;
+  line-height:1.2;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+  text-align:center;
+}
+.site #offres .offers-detail__plans span:nth-child(1){
+  grid-column:3;
+}
+.site #offres .offers-detail__plans span:nth-child(2){
+  grid-column:4;
+}
+.site #offres .offers-detail__plans span:nth-child(3){
+  grid-column:5;
+  border-color:rgba(96,76,60,.3);
+  background:rgba(237,232,208,.5);
+}
+.site #offres .offers-detail__group{
+  display:grid;
+  grid-template-columns:minmax(112px, .42fr) minmax(280px, 1.05fr) repeat(3, minmax(106px, .44fr));
+  column-gap:14px;
+  align-items:stretch;
+  padding:10px 0;
+  border-top:1px solid rgba(124,98,78,.12);
+}
+.site #offres .offers-detail__group h3{
+  grid-column:1;
+  grid-row:1;
+  margin:0;
+  padding:9px 12px 0 0;
+  color:var(--brown-deep);
+  font-size:15px;
+  line-height:1.16;
+  letter-spacing:-.006em;
+}
+.site #offres .offers-detail__group .ledger-row{
+  grid-column:2 / -1;
+}
+.site #offres .ledger-row{
+  display:contents;
+}
+.site #offres .ledger-row .feature-label{
+  grid-column:2;
+  display:flex;
+  align-items:center;
+  min-height:42px;
+  padding:8px 0;
+  border-top:1px solid rgba(124,98,78,.1);
+  color:rgba(45,36,30,.82);
+  font-size:13.5px;
+  font-weight:500;
+  line-height:1.36;
+}
+.site #offres .offers-detail__group .ledger-row:first-of-type{
+  border-top:0;
+}
+.site #offres .availability{
+  display:contents;
+}
+.site #offres .mark{
+  min-height:42px;
+  border-top:1px solid rgba(124,98,78,.1);
+  color:var(--brown-deep);
+  font-size:15px;
+}
+.site #offres .availability .mark:nth-child(1){
+  grid-column:3;
+}
+.site #offres .availability .mark:nth-child(2){
+  grid-column:4;
+}
+.site #offres .availability .mark:nth-child(3){
+  grid-column:5;
+}
+.site #offres .offers-detail__group .ledger-row:first-of-type .mark{
+  border-top:0;
+}
+.site #offres .mark.no{
+  color:rgba(45,36,30,.34);
+}
+.site #offres .mark.price{
+  justify-content:center;
+  color:var(--brown-deep);
+  font-size:14px;
+  font-weight:700;
+}
+.site #offres .offers-detail__group--price{
+  padding-bottom:0;
+}
+.site #offres .offers-detail__group--price .feature-label,
+.site #offres .offers-detail__group--price .mark{
+  min-height:44px;
+  border-top:0;
+  background:rgba(96,76,60,.045);
 }
 .site .sale-calculator-section{
   padding:72px 0 96px;
@@ -4301,6 +4538,29 @@ body.site{
     grid-template-columns:minmax(0, .82fr) minmax(360px, 1.18fr);
     gap:34px;
   }
+  .site #offres .offer-pack{
+    min-height:176px;
+    padding:26px 22px 24px;
+  }
+  .site #offres .offer-pack__flag{
+    top:14px;
+    right:18px;
+  }
+  .site #offres .offers-detail__head,
+  .site #offres .offers-detail__group{
+    grid-template-columns:minmax(160px, .54fr) minmax(220px, 1fr) repeat(3, minmax(72px, .34fr));
+    gap:10px;
+  }
+  .site #offres .offers-detail__group h3{
+    font-size:18px;
+  }
+  .site #offres .offers-detail__plans span{
+    padding:0 8px;
+    font-size:10px;
+  }
+  .site #offres .ledger-row .feature-label{
+    font-size:13px;
+  }
   .site .sale-calculator{
     grid-template-columns:minmax(280px, .72fr) minmax(0, 1.28fr);
     gap:38px;
@@ -4388,6 +4648,92 @@ body.site{
   }
   .site .offer-addon{
     gap:18px;
+  }
+  .site #offres.offers-8{
+    padding-bottom:64px;
+  }
+  .site #offres .offers-comparison{
+    gap:20px;
+  }
+  .site #offres .offer-pack-row{
+    grid-template-columns:1fr;
+  }
+  .site #offres .offer-pack{
+    min-height:132px;
+    padding:22px 20px 20px;
+    border-left:0;
+    border-top:1px solid rgba(124,98,78,.13);
+  }
+  .site #offres .offer-pack:first-child{
+    border-top:0;
+  }
+  .site #offres .offer-pack__flag{
+    position:static;
+    order:-1;
+    margin-bottom:8px;
+  }
+  .site #offres .offers-compare-toggle{
+    justify-self:stretch;
+    grid-template-columns:1fr 34px;
+    width:100%;
+  }
+  .site #offres .offers-detail.is-open{
+    max-height:2600px;
+  }
+  .site #offres .offers-detail__head{
+    display:none;
+  }
+  .site #offres .offers-detail__group{
+    grid-template-columns:1fr;
+    gap:12px;
+    padding:24px 0 10px;
+  }
+  .site #offres .offers-detail__group h3{
+    grid-column:1;
+    grid-row:auto;
+    max-width:none;
+  }
+  .site #offres .ledger-row{
+    grid-column:1;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:14px 0;
+    border-top:1px solid rgba(124,98,78,.1);
+  }
+  .site #offres .offers-detail__group .ledger-row{
+    grid-column:1;
+  }
+  .site #offres .offers-detail__group .ledger-row:first-of-type{
+    border-top:0;
+  }
+  .site #offres .ledger-row .feature-label{
+    grid-column:1;
+    min-height:0;
+    padding:0;
+    border-top:0;
+  }
+  .site #offres .availability{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:8px;
+  }
+  .site #offres .mark{
+    grid-column:auto !important;
+    min-height:34px;
+    border:1px solid rgba(124,98,78,.1);
+    background:rgba(255,250,241,.32);
+  }
+  .site #offres .offers-detail__group .ledger-row:first-of-type .mark{
+    border-top:1px solid rgba(124,98,78,.1);
+  }
+  .site #offres .plan-label{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    white-space:nowrap;
   }
   .site .offer-addon__service{
     grid-template-columns:1fr;

@@ -160,8 +160,8 @@
         <p class="lead">Chaque formule correspond à un niveau de besoin, du cadrage initial jusqu’à l’accompagnement complet.</p>
       </div>
     </div>
-    <div class="offers-comparison" data-reveal="fade">
-      <div class="offer-pack-row">
+    <div class="offers-comparison" data-offers-comparison data-reveal="fade">
+      <div class="offer-pack-row" aria-label="Les trois packs">
         <article class="offer-pack">
           <p class="plan-name serif">PACK COUP DE POUCE</p>
           <p class="plan-price">600.00€ TTC</p>
@@ -170,38 +170,70 @@
           <p class="plan-name serif">PACK COUP DE MAIN</p>
           <p class="plan-price">2400.00€ TTC</p>
         </article>
-        <article class="offer-pack">
+        <article class="offer-pack offer-pack--recommended">
+          <p class="offer-pack__flag">Pack recommandé</p>
           <p class="plan-name serif">PACK COUP DE MAÎTRE</p>
           <p class="plan-price">3000.00€ TTC</p>
         </article>
       </div>
-      <div class="offers-ledger" aria-label="Comparatif des prestations">
-        <div class="ledger-head">
+
+      <button class="offers-compare-toggle" type="button" aria-expanded="false" aria-controls="offers-detail" data-offers-toggle>
+        <span data-offers-toggle-label>Comparer toutes les prestations</span>
+        <span class="offers-compare-toggle__icon" aria-hidden="true"></span>
+      </button>
+
+      <div class="offers-detail" id="offers-detail" aria-label="Comparatif des prestations" data-offers-detail hidden>
+        <div class="offers-detail__head">
+          <span class="offers-detail__category-head">CATÉGORIES</span>
           <p class="micro">PRESTATIONS</p>
-          <div class="ledger-plans" aria-hidden="true">
+          <div class="offers-detail__plans" aria-hidden="true">
             <span>PACK COUP DE POUCE</span>
             <span>PACK COUP DE MAIN</span>
             <span>PACK COUP DE MAÎTRE</span>
           </div>
         </div>
-        <div class="ledger-row"><div class="feature-label">Analyse de valeur de marché</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Reportage photo (vue aérienne comprise)</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Photos home-staging</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Rédaction de l’annonce de vente</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Vidéo de présentation</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Contact prestataire (artisans,notaire etc)</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Constitution du dossier de vente</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Fiche/dossier de présentation du bien</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Accompagnement à la publication de l’annonce</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Coaching “Filtrage contact acquéreur”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Coaching “Visite du bien”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Coaching “Gestion des objections”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Coaching “Offre d’achat et négociation”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Réalisation d’un croquis 2D du bien</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Réalisation d’un panneau “À vendre”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Analyse et compréhension des documents liés à la vente</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row"><div class="feature-label">Accompagnement démarches administratives</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
-        <div class="ledger-row price-row"><div class="feature-label">PRIX</div><div class="availability"><span class="mark price"><span class="plan-label">PACK COUP DE POUCE</span><span>600.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAIN</span><span>2400.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAÎTRE</span><span>3000.00€ TTC</span></span></div></div>
+
+        <div class="offers-detail__group">
+          <h3 class="serif">Analyse et cadrage</h3>
+          <div class="ledger-row"><div class="feature-label">Analyse de valeur de marché</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+        </div>
+
+        <div class="offers-detail__group">
+          <h3 class="serif">Mise en valeur du bien</h3>
+          <div class="ledger-row"><div class="feature-label">Reportage photo (vue aérienne comprise)</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Photos home-staging</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Vidéo de présentation</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Réalisation d’un croquis 2D du bien</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Réalisation d’un panneau “À vendre”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+        </div>
+
+        <div class="offers-detail__group">
+          <h3 class="serif">Publication et dossier</h3>
+          <div class="ledger-row"><div class="feature-label">Rédaction de l’annonce de vente</div><div class="availability"><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Contact prestataire (artisans,notaire etc)</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Constitution du dossier de vente</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Fiche/dossier de présentation du bien</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Accompagnement à la publication de l’annonce</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+        </div>
+
+        <div class="offers-detail__group">
+          <h3 class="serif">Coaching et échanges acquéreurs</h3>
+          <div class="ledger-row"><div class="feature-label">Coaching “Filtrage contact acquéreur”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Coaching “Visite du bien”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Coaching “Gestion des objections”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+        </div>
+
+        <div class="offers-detail__group">
+          <h3 class="serif">Négociation et finalisation</h3>
+          <div class="ledger-row"><div class="feature-label">Coaching “Offre d’achat et négociation”</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Analyse et compréhension des documents liés à la vente</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+          <div class="ledger-row"><div class="feature-label">Accompagnement démarches administratives</div><div class="availability"><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE POUCE</span></span><span class="mark no"><span>×</span><span class="plan-label">PACK COUP DE MAIN</span></span><span class="mark yes"><span>✓</span><span class="plan-label">PACK COUP DE MAÎTRE</span></span></div></div>
+        </div>
+
+        <div class="offers-detail__group offers-detail__group--price">
+          <h3 class="serif">Prix</h3>
+          <div class="ledger-row price-row"><div class="feature-label">PRIX</div><div class="availability"><span class="mark price"><span class="plan-label">PACK COUP DE POUCE</span><span>600.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAIN</span><span>2400.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAÎTRE</span><span>3000.00€ TTC</span></span></div></div>
+        </div>
       </div>
     </div>
     <div class="offer-addon" data-reveal="fade">
