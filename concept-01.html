@@ -204,20 +204,71 @@
         <div class="ledger-row price-row"><div class="feature-label">PRIX</div><div class="availability"><span class="mark price"><span class="plan-label">PACK COUP DE POUCE</span><span>600.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAIN</span><span>2400.00€ TTC</span></span><span class="mark price"><span class="plan-label">PACK COUP DE MAÎTRE</span><span>3000.00€ TTC</span></span></div></div>
       </div>
     </div>
-    <div class="offer-details" data-reveal="fade">
-      <div class="sale-cost">
-        <h3>CHAQUE VENTE À UN COÛT</h3>
-        <p>Simulation indicative basée sur les paramètres renseignés</p>
-        <div class="sale-cost-lines">
-          <span>Prix de vente de votre bien :</span>
-          <span>Coût de la vente :</span>
-          <span>Ce qu’il vous reste après la vente :</span>
+    <div class="offer-addon" data-reveal="fade">
+      <div class="offer-addon__label">
+        <span>Option additionnelle</span>
+        <strong>Prestation disponible à la demande du client</strong>
+      </div>
+      <div class="offer-addon__service">
+        <span>Analyse de valeur de marché</span>
+        <strong>200€ TTC</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="calculateur" class="sale-calculator-section">
+  <div class="wrap">
+    <div class="sale-calculator" data-sale-calculator data-reveal="fade">
+      <div class="sale-calculator__intro">
+        <p class="eyebrow">Simulation</p>
+        <h2 class="sale-calculator__title serif">CHAQUE VENTE À UN COÛT</h2>
+        <p class="sale-calculator__copy">Simulation indicative basée sur les paramètres renseignés</p>
+        <div class="sale-calculator__result" aria-live="polite">
+          <span>Ce qu’il vous reste après la vente</span>
+          <output data-net-result for="sale-price percent-range fixed-cost">332 500 €</output>
         </div>
       </div>
-      <div class="extra-service">
-        <p><strong>Prestation disponible à la demande du client :</strong></p>
-        <p class="service-line">Analyse de valeur de marché : ............................................................................................................................................................... 200€ TTC</p>
-      </div>
+
+      <form class="sale-calculator__panel" aria-label="Calculateur du coût de la vente">
+        <label class="calc-field" for="sale-price">
+          <span>Prix de vente de votre bien</span>
+          <span class="calc-input-shell">
+            <input id="sale-price" type="text" inputmode="numeric" autocomplete="off" value="350 000" data-sale-price>
+            <span>€</span>
+          </span>
+        </label>
+
+        <fieldset class="calc-cost">
+          <legend>Coût de la vente</legend>
+          <div class="calc-mode-switch" role="radiogroup" aria-label="Coût de la vente">
+            <button class="is-active" type="button" aria-pressed="true" data-cost-mode="percent">Pourcentage</button>
+            <button type="button" aria-pressed="false" data-cost-mode="fixed">Forfait</button>
+          </div>
+
+          <div class="calc-mode-panel is-active" data-cost-panel="percent">
+            <div class="calc-percent-head">
+              <label for="percent-range">Pourcentage appliqué</label>
+              <div class="calc-percent-value">
+                <input id="percent-input" type="number" min="4" max="9" step="0.1" value="5" data-percent-input aria-label="Pourcentage du coût de la vente">
+                <span>%</span>
+              </div>
+            </div>
+            <input id="percent-range" type="range" min="4" max="9" step="0.1" value="5" data-percent-range>
+            <p class="calc-cost-preview">Coût calculé : <strong data-cost-preview>17 500 €</strong></p>
+          </div>
+
+          <div class="calc-mode-panel is-disabled" data-cost-panel="fixed" aria-disabled="true">
+            <label class="calc-field" for="fixed-cost">
+              <span>Montant du forfait</span>
+              <span class="calc-input-shell">
+                <input id="fixed-cost" type="text" inputmode="numeric" autocomplete="off" value="18 000" data-fixed-cost disabled>
+                <span>€</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
     </div>
   </div>
 </section>
