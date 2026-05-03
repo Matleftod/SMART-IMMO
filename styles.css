@@ -2895,7 +2895,7 @@ body.site{
 
 .site #benefices{
   background:transparent;
-  padding:86px 0 76px;
+  padding:98px 0 88px;
 }
 .site #benefices .wrap{
   max-width:1240px;
@@ -2903,13 +2903,11 @@ body.site{
 .site #benefices .benefices-showcase{
   position:relative;
   display:grid;
-  grid-template-columns:1fr;
   grid-template-areas:
     "title"
-    "selectors"
-    "active"
+    "split"
     "manifesto";
-  row-gap:24px;
+  row-gap:34px;
   padding:0;
   border-top:0;
   border-bottom:1px solid var(--c01-line);
@@ -2944,140 +2942,161 @@ body.site{
   background:rgba(124,98,78,.22);
 }
 .site #benefices .benefices-title-block .h2{
-  max-width:12ch;
+  max-width:13ch;
   font-size:clamp(40px, 4.2vw, 58px);
   line-height:1.04;
   letter-spacing:-.03em;
 }
+.site #benefices .benefices-split{
+  grid-area:split;
+  display:grid;
+  grid-template-columns:minmax(280px, .82fr) minmax(520px, 1.38fr);
+  gap:clamp(34px, 5vw, 72px);
+  align-items:stretch;
+}
 .site #benefices .benefit-active{
-  grid-area:active;
   position:relative;
   display:grid;
   justify-items:start;
   align-content:center;
-  justify-self:start;
-  width:min(100%, 900px);
-  min-height:auto;
-  padding:28px 0 30px 28px;
+  min-height:326px;
+  padding:44px 52px 46px;
   z-index:1;
   text-align:left;
-  transition:opacity .32s cubic-bezier(.22,.61,.36,1), transform .32s cubic-bezier(.22,.61,.36,1);
+  overflow:hidden;
+  border:1px solid rgba(124,98,78,.14);
+  border-radius:8px;
+  background:linear-gradient(135deg, rgba(255,250,241,.9), rgba(247,240,228,.58));
+  box-shadow:0 20px 42px rgba(72,54,41,.06);
+  transition:opacity .34s ease, transform .48s cubic-bezier(.22,1,.36,1);
 }
 .site #benefices .benefit-active::before{
   content:"";
   position:absolute;
-  inset:0;
-  border-top:1px solid var(--c01-line-strong);
-  border-bottom:1px solid var(--c01-line);
-  border-left:1px solid var(--c01-line-strong);
-  background:transparent;
-  box-shadow:none;
+  top:38px;
+  right:44px;
+  width:76px;
+  height:1px;
+  background:rgba(124,98,78,.2);
 }
 .site #benefices .benefit-active::after{
-  display:none;
+  content:"";
+  position:absolute;
+  right:-120px;
+  bottom:-150px;
+  width:320px;
+  height:320px;
+  border:1px solid rgba(124,98,78,.08);
+  border-radius:50%;
 }
 .site #benefices .benefit-active.is-changing{
-  opacity:.44;
-  transform:translate3d(0, 5px, 0);
+  opacity:.5;
+  transform:translate3d(0, 8px, 0);
 }
 .site #benefices .benefit-active h3{
   position:relative;
   z-index:1;
   margin:0;
   color:var(--brown-deep);
-  font-size:clamp(30px, 3.4vw, 44px);
-  line-height:1.08;
+  font-size:clamp(34px, 3.7vw, 50px);
+  line-height:1.05;
   letter-spacing:-.026em;
-  max-width:14ch;
+  max-width:16ch;
   text-wrap:balance;
+  transition:opacity .34s ease, transform .48s cubic-bezier(.22,1,.36,1);
 }
 .site #benefices .benefit-active p{
   position:relative;
   z-index:1;
-  max-width:45ch;
-  margin-top:14px;
+  max-width:48ch;
+  margin-top:22px;
   color:rgba(45,36,30,.78);
-  font-size:16px;
-  line-height:1.62;
+  font-size:17px;
+  line-height:1.68;
+  transition:opacity .34s ease, transform .48s cubic-bezier(.22,1,.36,1);
 }
 .site #benefices .benefit-active p::before{
-  content:"";
-  display:block;
-  width:42px;
-  height:1px;
-  margin:0 0 13px;
-  background:rgba(124,98,78,.26);
+  display:none;
+}
+.site #benefices .benefit-active.is-changing h3,
+.site #benefices .benefit-active.is-changing p{
+  opacity:.3;
+  transform:translate3d(0, 6px, 0);
 }
 .site #benefices .benefit-selectors{
-  grid-area:selectors;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:flex-start;
-  gap:0 clamp(10px, 2.7vw, 28px);
-  justify-self:start;
-  width:min(100%, 900px);
-  margin-top:6px;
+  display:grid;
+  align-content:start;
+  gap:10px;
+  width:100%;
   padding:0;
   z-index:1;
-  border-top:1px solid var(--c01-line-strong);
-  border-bottom:1px solid var(--c01-line);
   background:transparent;
 }
 .site #benefices .benefit-choice{
   position:relative;
-  display:block;
-  width:auto;
-  min-height:46px;
-  padding:15px 8px 16px;
-  border:0;
-  border-radius:0;
-  background:transparent;
-  color:rgba(45,36,30,.58);
+  display:grid;
+  align-items:center;
+  min-height:70px;
+  padding:18px 22px 18px 24px;
+  border:1px solid rgba(124,98,78,.1);
+  border-radius:8px;
+  background:rgba(255,250,241,.22);
+  color:rgba(45,36,30,.56);
   font-family:var(--c01-font-serif);
-  font-size:17.5px;
-  line-height:1.14;
+  font-size:20px;
+  line-height:1.16;
   letter-spacing:-.012em;
-  text-align:center;
+  text-align:left;
   cursor:pointer;
-  transition:color .22s ease, background-color .22s ease, transform .22s ease;
+  transition:color .28s ease, border-color .34s cubic-bezier(.22,1,.36,1), background-color .34s cubic-bezier(.22,1,.36,1), transform .34s cubic-bezier(.22,1,.36,1), box-shadow .34s cubic-bezier(.22,1,.36,1);
 }
 .site #benefices .benefit-choice::after{
   content:"";
   position:absolute;
-  left:8px;
-  right:8px;
-  bottom:0;
-  width:auto;
-  height:1px;
+  top:16px;
+  bottom:16px;
+  left:0;
+  width:2px;
+  height:auto;
   background:var(--brown);
-  transform:scaleX(0);
-  transform-origin:left center;
-  transition:transform .3s cubic-bezier(.22,.61,.36,1);
+  opacity:0;
+  transform:scaleY(.35);
+  transform-origin:center;
+  transition:opacity .28s ease, transform .34s cubic-bezier(.22,1,.36,1);
 }
 .site #benefices .benefit-choice:hover,
-.site #benefices .benefit-choice:focus-visible,
+.site #benefices .benefit-choice:focus-visible{
+  color:var(--brown-deep);
+  border-color:rgba(124,98,78,.2);
+  background:rgba(255,250,241,.44);
+}
 .site #benefices .benefit-choice.is-active{
   color:var(--brown-deep);
-}
-.site #benefices .benefit-choice.is-active{
-  background:transparent;
+  border-color:rgba(124,98,78,.22);
+  background:rgba(255,250,241,.7);
+  box-shadow:0 14px 30px rgba(72,54,41,.055);
 }
 .site #benefices .benefit-choice.is-active::after{
-  transform:scaleX(1);
+  opacity:1;
+  transform:scaleY(1);
 }
 .site #benefices .benefit-choice:focus-visible{
   outline:1px solid var(--brown-deep);
-  outline-offset:3px;
+  outline-offset:4px;
+}
+.site #benefices .benefit-choice__title{
+  display:block;
+  max-width:18ch;
 }
 .site #benefices .manifesto{
   grid-area:manifesto;
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:0;
-  justify-self:center;
-  width:min(100%, 900px);
-  margin-top:0;
-  border:0;
+  width:100%;
+  margin-top:2px;
+  border-top:1px solid rgba(124,98,78,.14);
+  border-bottom:1px solid rgba(124,98,78,.1);
   z-index:1;
   background:transparent;
 }
@@ -3085,9 +3104,9 @@ body.site{
   display:grid;
   grid-template-columns:1fr;
   align-content:start;
-  gap:6px;
+  gap:7px;
   min-height:auto;
-  padding:12px 22px 10px;
+  padding:20px 28px 22px;
   border:0;
   border-left:1px solid rgba(124,98,78,.1);
   border-radius:0;
@@ -3100,15 +3119,15 @@ body.site{
 .site #benefices .manifesto h4{
   margin:0;
   color:var(--brown-deep);
-  font-size:17px;
-  line-height:1.15;
+  font-size:18px;
+  line-height:1.18;
   letter-spacing:-.01em;
 }
 .site #benefices .manifesto .muted{
-  max-width:31ch;
-  color:rgba(45,36,30,.58);
-  font-size:12.5px;
-  line-height:1.48;
+  max-width:34ch;
+  color:rgba(45,36,30,.62);
+  font-size:13.5px;
+  line-height:1.52;
 }
 
 .site .contact-band{
@@ -3204,9 +3223,9 @@ body.site{
     padding-right:0;
     padding-left:0;
   }
-  .site #benefices .benefices-showcase::before{
-    left:42px;
-    right:42px;
+  .site #benefices .benefices-split{
+    grid-template-columns:minmax(260px, .78fr) minmax(440px, 1.22fr);
+    gap:34px;
   }
   .site #benefices .benefit-active h3{
     font-size:clamp(30px, 3.5vw, 42px);
@@ -3259,14 +3278,18 @@ body.site{
   }
   .site #benefices .benefices-showcase{
     grid-template-columns:1fr;
-    row-gap:22px;
+    row-gap:28px;
+  }
+  .site #benefices .benefices-split{
+    grid-template-columns:minmax(250px, .74fr) minmax(390px, 1.26fr);
+    gap:28px;
   }
   .site #benefices .benefices-title-block .h2{
     font-size:clamp(40px, 4.2vw, 52px);
   }
   .site #benefices .benefit-active{
-    min-height:auto;
-    padding:26px 0 28px 26px;
+    min-height:300px;
+    padding:34px 36px;
   }
   .site #benefices .benefit-active h3{
     font-size:clamp(30px, 3.8vw, 40px);
@@ -3308,21 +3331,15 @@ body.site{
   }
   .site .about-10 .layout,
   .site .triptych,
-  .site #benefices .benefices-showcase,
+  .site #benefices .benefices-split,
   .site #benefices .manifesto{grid-template-columns:1fr !important;}
   .site #benefices .benefices-showcase{
     grid-template-areas:
       "title"
-      "selectors"
-      "active"
+      "split"
       "manifesto";
     row-gap:22px;
     padding:0 0 24px;
-  }
-  .site #benefices .benefices-showcase::before{
-    left:22px;
-    right:22px;
-    top:16px;
   }
   .site #benefices .benefices-title-block{
     padding-top:0;
@@ -3334,7 +3351,7 @@ body.site{
   }
   .site #benefices .benefit-active{
     min-height:auto;
-    padding:22px 0 22px 20px;
+    padding:28px 26px;
   }
   .site #benefices .benefit-active::after{
     display:none;
@@ -3342,15 +3359,14 @@ body.site{
   .site #benefices .benefit-selectors{
     width:100%;
     margin-top:0;
-    justify-content:flex-start;
-    gap:0 18px;
+    gap:8px;
     align-content:start;
   }
   .site #benefices .manifesto{
     margin-top:0;
   }
   .site #benefices .manifesto .row{
-    padding:20px 0;
+    padding:18px 0;
     border-left:0;
     border-top:1px solid var(--c01-line);
   }
@@ -3498,10 +3514,9 @@ body.site{
     max-width:none;
   }
   .site #benefices .benefit-active::before{
-    inset:0;
-    width:auto;
-    left:0;
-    right:0;
+    top:24px;
+    right:26px;
+    width:54px;
   }
   .site #benefices .benefit-active h3{
     font-size:30px;
@@ -3514,8 +3529,8 @@ body.site{
     line-height:1.62;
   }
   .site #benefices .benefit-choice{
-    min-height:46px;
-    padding:14px 0 15px;
+    min-height:58px;
+    padding:15px 18px;
     font-size:18px;
   }
   .site #benefices .manifesto .row{
@@ -3637,6 +3652,8 @@ body.site{
   }
 
   .site #benefices .benefit-active,
+  .site #benefices .benefit-active h3,
+  .site #benefices .benefit-active p,
   .site #benefices .benefit-choice,
   .site #benefices .benefit-choice::after{
     transition:none !important;

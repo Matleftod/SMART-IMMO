@@ -62,24 +62,74 @@ benefitChoosers.forEach((chooser) => {
   const choices = Array.from(chooser.querySelectorAll("[data-benefit-choice]"));
   const title = chooser.querySelector("[data-benefit-title]");
   const copy = chooser.querySelector("[data-benefit-copy]");
+  const panel = chooser.querySelector(".benefit-active");
 
-  if (choices.length === 0 || !title || !copy) {
+  if (choices.length === 0 || !title || !copy || !panel) {
     return;
   }
 
-  choices.forEach((choice) => {
-    choice.addEventListener("click", () => {
-      if (choice.classList.contains("is-active")) {
+  let changeTimer;
+
+  const updatePanel = (choice) => {
+    title.textContent = choice.dataset.benefitTitle || choice.textContent || "";
+    copy.textContent = choice.dataset.benefitCopy || "";
+    panel.setAttribute("aria-labelledby", choice.id);
+  };
+
+  const activateChoice = (choice) => {
+    if (!choice || choice.classList.contains("is-active")) {
+      return;
+    }
+
+    window.clearTimeout(changeTimer);
+
+    choices.forEach((item) => {
+      const isActive = item === choice;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+      item.setAttribute("aria-pressed", String(isActive));
+      item.tabIndex = isActive ? 0 : -1;
+    });
+
+    if (prefersReducedMotion.matches) {
+      updatePanel(choice);
+      return;
+    }
+
+    panel.classList.add("is-changing");
+    changeTimer = window.setTimeout(() => {
+      updatePanel(choice);
+      window.requestAnimationFrame(() => {
+        panel.classList.remove("is-changing");
+      });
+    }, 150);
+  };
+
+  choices.forEach((choice, index) => {
+    choice.tabIndex = choice.classList.contains("is-active") ? 0 : -1;
+    choice.setAttribute("aria-selected", String(choice.classList.contains("is-active")));
+    choice.setAttribute("aria-pressed", String(choice.classList.contains("is-active")));
+
+    choice.addEventListener("click", () => activateChoice(choice));
+    choice.addEventListener("keydown", (event) => {
+      const nextIndex = event.key === "ArrowDown" || event.key === "ArrowRight"
+        ? index + 1
+        : event.key === "ArrowUp" || event.key === "ArrowLeft"
+          ? index - 1
+          : event.key === "Home"
+            ? 0
+            : event.key === "End"
+              ? choices.length - 1
+              : index;
+
+      if (nextIndex === index) {
         return;
       }
 
-      choices.forEach((item) => {
-        item.classList.toggle("is-active", item === choice);
-        item.setAttribute("aria-pressed", String(item === choice));
-      });
-
-      title.textContent = choice.dataset.benefitTitle || choice.textContent || "";
-      copy.textContent = choice.dataset.benefitCopy || "";
+      event.preventDefault();
+      const nextChoice = choices[(nextIndex + choices.length) % choices.length];
+      nextChoice.focus();
+      activateChoice(nextChoice);
     });
   });
 });

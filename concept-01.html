@@ -425,16 +425,26 @@
         <p class="eyebrow">Bénéfices et garanties</p>
         <h2 class="h2 serif">Bénéfices et garanties</h2>
       </div>
-      <div class="benefit-selectors" aria-label="Choisir un bénéfice">
-        <button class="benefit-choice is-active" type="button" aria-pressed="true" aria-controls="benefices-active" data-benefit-choice data-benefit-title="1. Comprendre la vraie valeur de votre bien" data-benefit-copy="Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent.">1. Comprendre la vraie valeur de votre bien</button>
-        <button class="benefit-choice" type="button" aria-pressed="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="2. Créer l’envie dès le premier regard" data-benefit-copy="Annonce, photos, vidéo, présentation : tout est pensé pour déclencher de vraies visites, pas du hasard.">2. Créer l’envie dès le premier regard</button>
-        <button class="benefit-choice" type="button" aria-pressed="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="3. Ne garder que les bonnes visites" data-benefit-copy="Ce qui n’est pas sérieux ne passe pas la porte. Ce qui l’est, reste et avance.">3. Ne garder que les bonnes visites</button>
-        <button class="benefit-choice" type="button" aria-pressed="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="4. Accompagner jusqu’à la concrétisation" data-benefit-copy="Une vente réussie, c’est bien souvent une suite de décisions simples, prises au bon moment.">4. Accompagner jusqu’à la concrétisation</button>
+      <div class="benefices-split">
+        <div class="benefit-selectors" role="tablist" aria-label="Choisir un bénéfice" aria-orientation="vertical">
+          <button class="benefit-choice is-active" id="benefit-choice-1" type="button" role="tab" aria-selected="true" aria-controls="benefices-active" data-benefit-choice data-benefit-title="1. Comprendre la vraie valeur de votre bien" data-benefit-copy="Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent.">
+            <span class="benefit-choice__title">1. Comprendre la vraie valeur de votre bien</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-2" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="2. Créer l’envie dès le premier regard" data-benefit-copy="Annonce, photos, vidéo, présentation : tout est pensé pour déclencher de vraies visites, pas du hasard.">
+            <span class="benefit-choice__title">2. Créer l’envie dès le premier regard</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-3" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="3. Ne garder que les bonnes visites" data-benefit-copy="Ce qui n’est pas sérieux ne passe pas la porte. Ce qui l’est, reste et avance.">
+            <span class="benefit-choice__title">3. Ne garder que les bonnes visites</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-4" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" data-benefit-choice data-benefit-title="4. Accompagner jusqu’à la concrétisation" data-benefit-copy="Une vente réussie, c’est bien souvent une suite de décisions simples, prises au bon moment.">
+            <span class="benefit-choice__title">4. Accompagner jusqu’à la concrétisation</span>
+          </button>
+        </div>
+        <article class="benefit-active" id="benefices-active" role="tabpanel" aria-labelledby="benefit-choice-1" aria-live="polite">
+          <h3 class="serif" data-benefit-title>1. Comprendre la vraie valeur de votre bien</h3>
+          <p data-benefit-copy>Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent.</p>
+        </article>
       </div>
-      <article class="benefit-active" id="benefices-active" aria-live="polite">
-        <h3 class="serif" data-benefit-title>1. Comprendre la vraie valeur de votre bien</h3>
-        <p data-benefit-copy>Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent.</p>
-      </article>
       <div class="manifesto" aria-label="Garanties">
         <article class="row">
           <h4 class="serif">Un forfait clair, pas de surprise au résultat</h4>
