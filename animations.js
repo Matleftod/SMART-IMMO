@@ -5,6 +5,7 @@ const heroMedia = document.querySelector(".hero-10 .media");
 const marcheTimelines = Array.from(document.querySelectorAll("[data-marche-timeline]"));
 const saleCalculators = Array.from(document.querySelectorAll("[data-sale-calculator]"));
 const offerComparisons = Array.from(document.querySelectorAll("[data-offers-comparison]"));
+const issueRails = Array.from(document.querySelectorAll("[data-issue-rail]"));
 
 function revealImmediately() {
   revealItems.forEach((item) => {
@@ -121,6 +122,99 @@ offerComparisons.forEach((comparison) => {
   toggle.addEventListener("click", () => {
     setOpen(toggle.getAttribute("aria-expanded") !== "true");
   });
+});
+
+issueRails.forEach((rail) => {
+  const triggers = Array.from(rail.querySelectorAll("[data-issue-trigger]"));
+  const panels = Array.from(rail.querySelectorAll("[data-issue-panel]"));
+
+  if (triggers.length === 0 || panels.length === 0) {
+    return;
+  }
+
+  let activeIssue = triggers.find((trigger) => trigger.classList.contains("is-active"))?.dataset.issueTrigger || triggers[0].dataset.issueTrigger;
+  let hideTimer;
+  let switchTimer;
+  let isInitialized = false;
+
+  const setActiveIssue = (issueKey) => {
+    if (!issueKey) {
+      return;
+    }
+
+    if (isInitialized && issueKey === activeIssue && rail.querySelector(`[data-issue-panel="${issueKey}"]`)?.classList.contains("is-active")) {
+      return;
+    }
+
+    activeIssue = issueKey;
+    isInitialized = true;
+    window.clearTimeout(hideTimer);
+    window.clearTimeout(switchTimer);
+    rail.classList.add("is-switching");
+
+    triggers.forEach((trigger) => {
+      const isActive = trigger.dataset.issueTrigger === issueKey;
+      trigger.classList.toggle("is-active", isActive);
+      trigger.setAttribute("aria-selected", String(isActive));
+      trigger.tabIndex = isActive ? 0 : -1;
+    });
+
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.issuePanel === issueKey;
+
+      if (isActive) {
+        panel.hidden = false;
+        window.requestAnimationFrame(() => {
+          panel.classList.add("is-active");
+          panel.removeAttribute("aria-hidden");
+        });
+        return;
+      }
+
+      panel.classList.remove("is-active");
+      panel.setAttribute("aria-hidden", "true");
+
+      if (prefersReducedMotion.matches) {
+        panel.hidden = true;
+      }
+    });
+
+    if (!prefersReducedMotion.matches) {
+      hideTimer = window.setTimeout(() => {
+        panels.forEach((panel) => {
+          if (!panel.classList.contains("is-active")) {
+            panel.hidden = true;
+          }
+        });
+      }, 460);
+      switchTimer = window.setTimeout(() => {
+        rail.classList.remove("is-switching");
+      }, 500);
+    } else {
+      rail.classList.remove("is-switching");
+    }
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("mouseenter", () => setActiveIssue(trigger.dataset.issueTrigger));
+    trigger.addEventListener("focus", () => setActiveIssue(trigger.dataset.issueTrigger));
+    trigger.addEventListener("click", () => setActiveIssue(trigger.dataset.issueTrigger));
+    trigger.addEventListener("keydown", (event) => {
+      const currentIndex = triggers.indexOf(trigger);
+      const nextIndex = event.key === "ArrowRight" ? currentIndex + 1 : event.key === "ArrowLeft" ? currentIndex - 1 : currentIndex;
+
+      if (nextIndex === currentIndex) {
+        return;
+      }
+
+      event.preventDefault();
+      const nextTrigger = triggers[(nextIndex + triggers.length) % triggers.length];
+      nextTrigger.focus();
+      setActiveIssue(nextTrigger.dataset.issueTrigger);
+    });
+  });
+
+  setActiveIssue(activeIssue);
 });
 
 saleCalculators.forEach((calculator) => {
