@@ -7,6 +7,16 @@ const saleCalculators = Array.from(document.querySelectorAll("[data-sale-calcula
 const offerComparisons = Array.from(document.querySelectorAll("[data-offers-comparison]"));
 const issueRails = Array.from(document.querySelectorAll("[data-issue-rail]"));
 
+if (window.lucide) {
+  window.lucide.createIcons({
+    attrs: {
+      "aria-hidden": "true",
+      focusable: "false",
+      "stroke-width": "1.6"
+    }
+  });
+}
+
 function revealImmediately() {
   revealItems.forEach((item) => {
     item.classList.add("is-visible");

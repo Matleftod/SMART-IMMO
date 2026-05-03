@@ -4730,7 +4730,7 @@ body.site{
   height:23px;
   fill:none;
   stroke:currentColor;
-  stroke-width:1.45;
+  stroke-width:1.6;
   stroke-linecap:round;
   stroke-linejoin:round;
 }
@@ -4786,23 +4786,29 @@ body.site{
 .site #blocages .issue-panel__main{
   min-width:0;
 }
+.site #blocages .issue-panel__copy{
+  display:grid;
+  gap:10px;
+  max-width:48ch;
+  min-width:0;
+}
 .site #blocages .issue-panel__icon,
 .site #blocages .issue-panel__main,
-.site #blocages .issue-panel__detail{
+.site #blocages .issue-panel__copy{
   opacity:0;
   transform:translate3d(0, 10px, 0);
   transition:opacity .34s ease, transform .48s cubic-bezier(.22,1,.36,1);
 }
 .site #blocages .issue-panel.is-active .issue-panel__icon,
 .site #blocages .issue-panel.is-active .issue-panel__main,
-.site #blocages .issue-panel.is-active .issue-panel__detail{
+.site #blocages .issue-panel.is-active .issue-panel__copy{
   opacity:1;
   transform:none;
 }
 .site #blocages .issue-panel.is-active .issue-panel__main{
   transition-delay:.04s;
 }
-.site #blocages .issue-panel.is-active .issue-panel__detail{
+.site #blocages .issue-panel.is-active .issue-panel__copy{
   transition-delay:.09s;
 }
 .site #blocages .issue-panel h3{
@@ -4814,14 +4820,14 @@ body.site{
   letter-spacing:-.026em;
 }
 .site #blocages .issue-panel__impact{
-  max-width:36ch;
-  margin:16px 0 0;
+  max-width:none;
+  margin:0;
   color:rgba(45,36,30,.76);
   font-size:17px;
   line-height:1.54;
 }
 .site #blocages .issue-panel__detail{
-  max-width:44ch;
+  max-width:none;
   margin:0;
   color:rgba(45,36,30,.72);
   font-size:16px;
@@ -4901,7 +4907,6 @@ body.site{
     font-size:30px;
   }
   .site #blocages .issue-panel__impact{
-    margin-top:12px;
     font-size:16px;
   }
   .site #blocages .issues-summary p{
@@ -4917,7 +4922,7 @@ body.site{
   .site #blocages .issue-panel,
   .site #blocages .issue-panel__icon,
   .site #blocages .issue-panel__main,
-  .site #blocages .issue-panel__detail{
+  .site #blocages .issue-panel__copy{
     transition:none !important;
   }
   .site #blocages .issue-tab,
@@ -4926,7 +4931,7 @@ body.site{
   .site #blocages .issue-panel,
   .site #blocages .issue-panel__icon,
   .site #blocages .issue-panel__main,
-  .site #blocages .issue-panel__detail{
+  .site #blocages .issue-panel__copy{
     transform:none !important;
   }
 }

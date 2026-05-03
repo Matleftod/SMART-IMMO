@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200" imagesrcset="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1600 1600w, https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200 2200w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
   <script src="animations.js" defer></script>
 </head>
 <body class="dark-hero site">
@@ -317,31 +318,31 @@
       <div class="issues-tabs" role="tablist" aria-label="Freins à la vente">
         <button class="issue-tab is-active" id="issue-tab-price" type="button" role="tab" aria-selected="true" aria-controls="issue-panel-price" data-issue-trigger="price">
           <span class="issue-tab__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M7 8.5h10.5L25 16l-8 8-10.5-10.5V8.5Z"></path><path d="M12 13h.01"></path><path d="M14.5 19.5c1.1.8 3 .8 4.1-.1 1.2-.9.8-2.5-.8-3l-1.7-.5c-1.6-.5-2-2-.8-3 1.1-.8 2.8-.9 4-.2"></path></svg>
+            <i data-lucide="tag"></i>
           </span>
           <span class="issue-tab__title serif">Prix à côté</span>
         </button>
         <button class="issue-tab" id="issue-tab-annonce" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-annonce" data-issue-trigger="annonce">
           <span class="issue-tab__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M9 5.5h10l4 4V26.5H9V5.5Z"></path><path d="M19 5.5v4h4"></path><path d="M12.5 15h7"></path><path d="M12.5 19h6"></path><path d="M12.5 23h4"></path></svg>
+            <i data-lucide="file-text"></i>
           </span>
           <span class="issue-tab__title serif">Annonce qui ne vend pas</span>
         </button>
         <button class="issue-tab" id="issue-tab-contacts" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-contacts" data-issue-trigger="contacts">
           <span class="issue-tab__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M7 11.5c0-3 2.7-5.5 6-5.5s6 2.5 6 5.5-2.7 5.5-6 5.5H9l-2 2v-7.5Z"></path><path d="M18 13.5h1c3.3 0 6 2.4 6 5.4V26l-2.1-2H19c-2.5 0-4.7-1.4-5.6-3.4"></path></svg>
+            <i data-lucide="message-circle"></i>
           </span>
           <span class="issue-tab__title serif">Contacts mal gérés</span>
         </button>
         <button class="issue-tab" id="issue-tab-visites" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-visites" data-issue-trigger="visites">
           <span class="issue-tab__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M5.5 16s4-7 10.5-7 10.5 7 10.5 7-4 7-10.5 7S5.5 16 5.5 16Z"></path><path d="M16 19.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path><path d="M24 8l-4 4"></path></svg>
+            <i data-lucide="eye"></i>
           </span>
           <span class="issue-tab__title serif">Visites sans impact</span>
         </button>
         <button class="issue-tab" id="issue-tab-negociation" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-negociation" data-issue-trigger="negociation">
           <span class="issue-tab__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M8 12h9"></path><path d="M14 8l4 4-4 4"></path><path d="M24 20h-9"></path><path d="M18 16l-4 4 4 4"></path><path d="M7 25.5h18"></path></svg>
+            <i data-lucide="handshake"></i>
           </span>
           <span class="issue-tab__title serif">Négociation subie</span>
         </button>
@@ -350,53 +351,63 @@
       <div class="issues-detail">
         <article class="issue-panel is-active" id="issue-panel-price" role="tabpanel" aria-labelledby="issue-tab-price" data-issue-panel="price">
           <div class="issue-panel__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M7 8.5h10.5L25 16l-8 8-10.5-10.5V8.5Z"></path><path d="M12 13h.01"></path><path d="M14.5 19.5c1.1.8 3 .8 4.1-.1 1.2-.9.8-2.5-.8-3l-1.7-.5c-1.6-.5-2-2-.8-3 1.1-.8 2.8-.9 4-.2"></path></svg>
+            <i data-lucide="tag"></i>
           </div>
           <div class="issue-panel__main">
             <h3 class="serif">Prix à côté</h3>
-            <p class="issue-panel__impact">Vous mettez votre bien en ligne en pensant être dans les prix.</p>
           </div>
-          <p class="issue-panel__detail">Les jours passent, avec peu de contacts ou des visites sans suite.</p>
+          <div class="issue-panel__copy">
+            <p class="issue-panel__impact">Vous mettez votre bien en ligne en pensant être dans les prix.</p>
+            <p class="issue-panel__detail">Les jours passent, avec peu de contacts ou des visites sans suite.</p>
+          </div>
         </article>
         <article class="issue-panel" id="issue-panel-annonce" role="tabpanel" aria-labelledby="issue-tab-annonce" data-issue-panel="annonce" hidden>
           <div class="issue-panel__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M9 5.5h10l4 4V26.5H9V5.5Z"></path><path d="M19 5.5v4h4"></path><path d="M12.5 15h7"></path><path d="M12.5 19h6"></path><path d="M12.5 23h4"></path></svg>
+            <i data-lucide="file-text"></i>
           </div>
           <div class="issue-panel__main">
             <h3 class="serif">Annonce qui ne vend pas</h3>
-            <p class="issue-panel__impact">Votre annonce est en ligne, mais elle ne génère pas les retours attendus.</p>
           </div>
-          <p class="issue-panel__detail">Les demandes restent limitées ou peu qualifiées.</p>
+          <div class="issue-panel__copy">
+            <p class="issue-panel__impact">Votre annonce est en ligne, mais elle ne génère pas les retours attendus.</p>
+            <p class="issue-panel__detail">Les demandes restent limitées ou peu qualifiées.</p>
+          </div>
         </article>
         <article class="issue-panel" id="issue-panel-contacts" role="tabpanel" aria-labelledby="issue-tab-contacts" data-issue-panel="contacts" hidden>
           <div class="issue-panel__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M7 11.5c0-3 2.7-5.5 6-5.5s6 2.5 6 5.5-2.7 5.5-6 5.5H9l-2 2v-7.5Z"></path><path d="M18 13.5h1c3.3 0 6 2.4 6 5.4V26l-2.1-2H19c-2.5 0-4.7-1.4-5.6-3.4"></path></svg>
+            <i data-lucide="message-circle"></i>
           </div>
           <div class="issue-panel__main">
             <h3 class="serif">Contacts mal gérés</h3>
-            <p class="issue-panel__impact">Les messages et appels s’enchaînent.</p>
           </div>
-          <p class="issue-panel__detail">Certains insistent, d’autres disparaissent, et il devient difficile de faire le tri.</p>
+          <div class="issue-panel__copy">
+            <p class="issue-panel__impact">Les messages et appels s’enchaînent.</p>
+            <p class="issue-panel__detail">Certains insistent, d’autres disparaissent, et il devient difficile de faire le tri.</p>
+          </div>
         </article>
         <article class="issue-panel" id="issue-panel-visites" role="tabpanel" aria-labelledby="issue-tab-visites" data-issue-panel="visites" hidden>
           <div class="issue-panel__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M5.5 16s4-7 10.5-7 10.5 7 10.5 7-4 7-10.5 7S5.5 16 5.5 16Z"></path><path d="M16 19.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path><path d="M24 8l-4 4"></path></svg>
+            <i data-lucide="eye"></i>
           </div>
           <div class="issue-panel__main">
             <h3 class="serif">Visites sans impact</h3>
-            <p class="issue-panel__impact">Les visites se passent bien sur le moment.</p>
           </div>
-          <p class="issue-panel__detail">Mais derrière, peu de retours concrets ou aucune offre.</p>
+          <div class="issue-panel__copy">
+            <p class="issue-panel__impact">Les visites se passent bien sur le moment.</p>
+            <p class="issue-panel__detail">Mais derrière, peu de retours concrets ou aucune offre.</p>
+          </div>
         </article>
         <article class="issue-panel" id="issue-panel-negociation" role="tabpanel" aria-labelledby="issue-tab-negociation" data-issue-panel="negociation" hidden>
           <div class="issue-panel__icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false"><path d="M8 12h9"></path><path d="M14 8l4 4-4 4"></path><path d="M24 20h-9"></path><path d="M18 16l-4 4 4 4"></path><path d="M7 25.5h18"></path></svg>
+            <i data-lucide="handshake"></i>
           </div>
           <div class="issue-panel__main">
             <h3 class="serif">Négociation subie</h3>
-            <p class="issue-panel__impact">Une offre arrive, souvent en dessous du prix.</p>
           </div>
-          <p class="issue-panel__detail">Le doute s’installe sur la décision à prendre et la marge de négociation.</p>
+          <div class="issue-panel__copy">
+            <p class="issue-panel__impact">Une offre arrive, souvent en dessous du prix.</p>
+            <p class="issue-panel__detail">Le doute s’installe sur la décision à prendre et la marge de négociation.</p>
+          </div>
         </article>
       </div>
 
