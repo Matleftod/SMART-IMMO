@@ -60,9 +60,9 @@ if (revealItems.length === 0) {
 
 benefitChoosers.forEach((chooser) => {
   const choices = Array.from(chooser.querySelectorAll("[data-benefit-choice]"));
-  const title = chooser.querySelector("[data-benefit-title]");
-  const copy = chooser.querySelector("[data-benefit-copy]");
   const panel = chooser.querySelector(".benefit-active");
+  const title = panel?.querySelector("[data-benefit-title]");
+  const copy = panel?.querySelector("[data-benefit-copy]");
 
   if (choices.length === 0 || !title || !copy || !panel) {
     return;
