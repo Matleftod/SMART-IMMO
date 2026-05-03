@@ -4247,6 +4247,9 @@ body.site{
 .site #offres .offers-detail__group .ledger-row:first-of-type{
   border-top:0;
 }
+.site #offres .offers-detail__group .ledger-row:first-of-type .feature-label{
+  border-top:0;
+}
 .site #offres .availability{
   display:contents;
 }
@@ -4268,8 +4271,11 @@ body.site{
 .site #offres .offers-detail__group .ledger-row:first-of-type .mark{
   border-top:0;
 }
+.site #offres .mark.yes{
+  color:#5f744f;
+}
 .site #offres .mark.no{
-  color:rgba(45,36,30,.34);
+  color:#a7645c;
 }
 .site #offres .mark.price{
   justify-content:center;
@@ -4286,6 +4292,9 @@ body.site{
   border-top:0;
   background:rgba(96,76,60,.045);
 }
+.site #offres .offers-detail__group--price .feature-label:empty{
+  background:transparent;
+}
 .site .sale-calculator-section{
   padding:72px 0 96px;
   background:linear-gradient(180deg, #efe7d8 0%, rgba(248,242,233,.94) 100%);
@@ -4296,8 +4305,6 @@ body.site{
   gap:clamp(48px, 6.4vw, 92px);
   align-items:stretch;
   padding:clamp(38px, 4.4vw, 58px) 0;
-  border-top:1px solid rgba(124,98,78,.22);
-  border-bottom:1px solid rgba(124,98,78,.16);
 }
 .site .sale-calculator__intro{
   display:grid;
