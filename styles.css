@@ -2949,10 +2949,6 @@ body.site{
   line-height:1.04;
   letter-spacing:-.03em;
 }
-.site #benefices .benefices-title-block .h2 span{
-  display:block;
-  white-space:nowrap;
-}
 .site #benefices .benefit-active{
   grid-area:active;
   position:relative;
@@ -4528,6 +4524,117 @@ body.site{
 .site .calc-cost-preview strong{
   color:var(--brown-deep);
   font-weight:700;
+}
+
+/* Impeccable /prompts:polish global section consistency */
+.site main > section:not(.hero-10) > .wrap{
+  max-width:var(--content);
+}
+.site #methode .section-head.no-meta,
+.site #offres .section-head.no-meta,
+.site #blocages .section-head.no-meta,
+.site #contact .section-head.no-meta{
+  max-width:none;
+  margin-bottom:clamp(44px, 5.2vw, 68px);
+  padding-bottom:clamp(22px, 3vw, 34px);
+}
+.site #contact .section-head.compact.no-meta{
+  margin-bottom:clamp(34px, 4vw, 52px);
+}
+.site #methode .section-head.no-meta > div,
+.site #offres .section-head.no-meta > div,
+.site #blocages .section-head.no-meta > div,
+.site #contact .section-head.no-meta > div{
+  max-width:1120px;
+}
+.site .section-head .eyebrow,
+.site .about-redesign__eyebrow,
+.site .sale-calculator__intro .eyebrow,
+.site #benefices .benefices-title-block .eyebrow,
+.site #contact .contact-copy .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;
+  color:var(--brown);
+  font-size:13px;
+  line-height:1.35;
+  letter-spacing:.075em;
+  text-transform:none;
+}
+.site .section-head .eyebrow::before,
+.site .about-redesign__eyebrow::before,
+.site .sale-calculator__intro .eyebrow::before,
+.site #benefices .benefices-title-block .eyebrow::before,
+.site #contact .contact-copy .eyebrow::before{
+  content:"";
+  width:52px;
+  height:1px;
+  flex:0 0 52px;
+  background:rgba(124,98,78,.22);
+}
+.site .section-head .h2,
+.site #marche .marche-intro .h2,
+.site #methode .section-head .h2,
+.site #offres .section-head .h2,
+.site .sale-calculator__title,
+.site #blocages .section-head .h2,
+.site #contact .section-head .h2{
+  max-width:25ch;
+  color:var(--brown-deep);
+  font-size:clamp(34px, 4vw, 52px);
+  line-height:1.08;
+  letter-spacing:-.03em;
+}
+.site .about-redesign__title{
+  font-size:clamp(34px, 4vw, 52px);
+  line-height:1.08;
+}
+.site #benefices .wrap{
+  max-width:var(--content);
+}
+.site #benefices .benefices-title-block .h2{
+  max-width:25ch;
+  color:var(--brown-deep);
+  font-size:clamp(36px, 4vw, 52px);
+  line-height:1.08;
+  letter-spacing:-.03em;
+}
+.site #contact .contact-title{
+  font-size:clamp(30px, 3.2vw, 42px);
+  line-height:1.1;
+}
+.site .section-head .lead,
+.site #marche .marche-intro .lead,
+.site #offres .section-head .lead{
+  max-width:68ch;
+  margin-top:18px;
+  color:rgba(45,36,30,.72);
+  font-size:18px;
+  line-height:1.64;
+}
+.site .section-head .lead + .lead{
+  margin-top:10px;
+}
+.site .about-redesign__header{
+  max-width:1120px;
+  margin-bottom:clamp(44px, 5vw, 58px);
+}
+.site .about-redesign__explanation p,
+.site #benefices .benefit-active p,
+.site #benefices .manifesto .muted{
+  color:rgba(45,36,30,.72);
+}
+.site #methode .phase-copy,
+.site #blocages .issue p,
+.site .sale-calculator__copy{
+  color:rgba(45,36,30,.72);
+}
+.site .contact-shell,
+.site .sale-calculator__panel,
+.site #offres .offer-pack-row,
+.site .offer-addon__service{
+  border-color:rgba(124,98,78,.18);
 }
 
 @media (max-width: 1024px){
