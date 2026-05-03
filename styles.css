@@ -3001,7 +3001,6 @@ body.site{
   font-size:clamp(34px, 3.7vw, 50px);
   line-height:1.05;
   letter-spacing:-.026em;
-  max-width:16ch;
   text-wrap:balance;
   transition:opacity .34s ease, transform .48s cubic-bezier(.22,1,.36,1);
 }
@@ -3086,7 +3085,6 @@ body.site{
 }
 .site #benefices .benefit-choice__title{
   display:block;
-  max-width:18ch;
 }
 .site #benefices .manifesto{
   grid-area:manifesto;
@@ -5018,7 +5016,6 @@ body.site{
     margin-bottom:52px;
   }
   .site #marche .marche-intro .h2{
-    max-width:22ch;
     font-size:clamp(34px, 4.6vw, 48px);
   }
   .site #marche .marche-timeline{
