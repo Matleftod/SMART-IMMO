@@ -87,7 +87,6 @@ benefitChoosers.forEach((chooser) => {
       const isActive = item === choice;
       item.classList.toggle("is-active", isActive);
       item.setAttribute("aria-selected", String(isActive));
-      item.setAttribute("aria-pressed", String(isActive));
       item.tabIndex = isActive ? 0 : -1;
     });
 
@@ -108,7 +107,6 @@ benefitChoosers.forEach((chooser) => {
   choices.forEach((choice, index) => {
     choice.tabIndex = choice.classList.contains("is-active") ? 0 : -1;
     choice.setAttribute("aria-selected", String(choice.classList.contains("is-active")));
-    choice.setAttribute("aria-pressed", String(choice.classList.contains("is-active")));
 
     choice.addEventListener("click", () => activateChoice(choice));
     choice.addEventListener("keydown", (event) => {
