@@ -257,9 +257,9 @@
         <p class="eyebrow">Simulation</p>
         <h2 class="sale-calculator__title serif">Chaque vente à un coût</h2>
         <p class="sale-calculator__copy">Simulation indicative basée sur les paramètres renseignés</p>
-        <div class="sale-calculator__result" aria-live="polite">
-          <span>Ce qu’il vous reste après la vente</span>
-          <output data-net-result for="sale-price percent-range fixed-cost">332 500 €</output>
+        <div class="sale-calculator__result" role="status" aria-live="polite" aria-atomic="true">
+          <span id="net-result-label">Ce qu’il vous reste après la vente</span>
+          <output id="net-result" data-net-result for="sale-price percent-range percent-input fixed-cost" aria-labelledby="net-result-label">332 500 €</output>
         </div>
       </div>
 
@@ -273,25 +273,27 @@
         </label>
 
         <fieldset class="calc-cost">
-          <legend>Coût de la vente</legend>
-          <div class="calc-mode-switch" role="radiogroup" aria-label="Coût de la vente">
-            <button class="is-active" type="button" aria-pressed="true" data-cost-mode="percent">Pourcentage</button>
-            <button type="button" aria-pressed="false" data-cost-mode="fixed">Forfait</button>
+          <legend id="cost-mode-legend">Coût de la vente</legend>
+          <div class="calc-mode-switch" role="radiogroup" aria-labelledby="cost-mode-legend">
+            <button class="is-active" type="button" role="radio" aria-checked="true" aria-controls="cost-panel-percent" tabindex="0" data-cost-mode="percent">Pourcentage</button>
+            <button type="button" role="radio" aria-checked="false" aria-controls="cost-panel-fixed" tabindex="-1" data-cost-mode="fixed">Forfait</button>
           </div>
 
-          <div class="calc-mode-panel is-active" data-cost-panel="percent">
+          <div class="calc-mode-panel is-active" id="cost-panel-percent" data-cost-panel="percent">
             <div class="calc-percent-head">
               <label for="percent-range">Pourcentage appliqué</label>
               <div class="calc-percent-value">
-                <input id="percent-input" type="number" min="4" max="9" step="0.1" value="5" data-percent-input aria-label="Pourcentage du coût de la vente">
+                <label class="calc-sr-only" for="percent-input">Pourcentage du coût de la vente</label>
+                <input id="percent-input" type="number" min="4" max="9" step="0.1" value="5" data-percent-input>
                 <span>%</span>
               </div>
             </div>
-            <input id="percent-range" type="range" min="4" max="9" step="0.1" value="5" data-percent-range>
-            <p class="calc-cost-preview">Coût calculé : <strong data-cost-preview>17 500 €</strong></p>
+            <input id="percent-range" type="range" min="4" max="9" step="0.1" value="5" data-percent-range aria-describedby="percent-range-help percent-cost-preview">
+            <p class="calc-sr-only" id="percent-range-help">Valeur comprise entre 4% et 9%.</p>
+            <p class="calc-cost-preview" id="percent-cost-preview" aria-live="polite" aria-atomic="true">Coût calculé : <strong data-cost-preview>17 500 €</strong></p>
           </div>
 
-          <div class="calc-mode-panel is-disabled" data-cost-panel="fixed" aria-disabled="true">
+          <div class="calc-mode-panel is-disabled" id="cost-panel-fixed" data-cost-panel="fixed" aria-disabled="true">
             <label class="calc-field" for="fixed-cost">
               <span>Montant du forfait</span>
               <span class="calc-input-shell">

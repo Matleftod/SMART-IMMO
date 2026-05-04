@@ -330,7 +330,8 @@ saleCalculators.forEach((calculator) => {
     modeButtons.forEach((button) => {
       const isActive = button.dataset.costMode === mode;
       button.classList.toggle("is-active", isActive);
-      button.setAttribute("aria-pressed", String(isActive));
+      button.setAttribute("aria-checked", String(isActive));
+      button.tabIndex = isActive ? 0 : -1;
     });
 
     modePanels.forEach((panel) => {
@@ -338,6 +339,7 @@ saleCalculators.forEach((calculator) => {
       panel.classList.toggle("is-active", isActive);
       panel.classList.toggle("is-disabled", !isActive);
       panel.setAttribute("aria-disabled", String(!isActive));
+      panel.setAttribute("aria-hidden", String(!isActive));
     });
 
     percentRange.disabled = mode !== "percent";
@@ -368,6 +370,23 @@ saleCalculators.forEach((calculator) => {
 
   modeButtons.forEach((button) => {
     button.addEventListener("click", () => setMode(button.dataset.costMode || "percent"));
+    button.addEventListener("keydown", (event) => {
+      const currentIndex = modeButtons.indexOf(button);
+      let nextIndex = currentIndex;
+
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+        nextIndex = (currentIndex + 1) % modeButtons.length;
+      } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+        nextIndex = (currentIndex - 1 + modeButtons.length) % modeButtons.length;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      const nextButton = modeButtons[nextIndex];
+      nextButton.focus();
+      setMode(nextButton.dataset.costMode || "percent");
+    });
   });
 
   salePrice.addEventListener("input", updateCalculator);
