@@ -3320,7 +3320,7 @@ body.site{
   .site .hero-10{
     height:auto;
     min-height:calc(100svh - 70px);
-    overflow:visible;
+    overflow:hidden;
   }
   .site .hero-10 .content{
     height:auto;
