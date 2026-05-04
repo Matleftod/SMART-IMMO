@@ -18,8 +18,32 @@ if (window.lucide) {
 }
 
 function revealImmediately() {
+  document.documentElement.classList.add("reveal-fallback");
+
   revealItems.forEach((item) => {
     item.classList.add("is-visible");
+  });
+}
+
+function revealItemsInViewport() {
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+  revealItems.forEach((item) => {
+    if (item.classList.contains("is-visible")) {
+      return;
+    }
+
+    const rect = item.getBoundingClientRect();
+    const isInViewport =
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= viewportHeight * 1.08 &&
+      rect.left <= viewportWidth;
+
+    if (isInViewport) {
+      item.classList.add("is-visible");
+    }
   });
 }
 
@@ -56,6 +80,14 @@ if (revealItems.length === 0) {
   );
 
   revealItems.forEach((item) => observer.observe(item));
+
+  const revealViewportFallbackTimer = window.setTimeout(revealItemsInViewport, 900);
+
+  window.addEventListener("beforeprint", () => {
+    window.clearTimeout(revealViewportFallbackTimer);
+    revealImmediately();
+    observer.disconnect();
+  });
 }
 
 benefitChoosers.forEach((chooser) => {

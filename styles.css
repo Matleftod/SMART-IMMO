@@ -3155,6 +3155,34 @@ body.site{
   }
 }
 
+.reveal-ready.reveal-fallback [data-reveal],
+.reveal-ready.reveal-fallback [data-reveal="timeline"] .step{
+  opacity:1 !important;
+  transform:none !important;
+  transition:none !important;
+  will-change:auto !important;
+}
+
+.reveal-ready.reveal-fallback [data-reveal="timeline"] .step:not(:last-child)::after{
+  transform:scaleX(1) !important;
+  transition:none !important;
+}
+
+@media print{
+  .reveal-ready [data-reveal],
+  .reveal-ready [data-reveal="timeline"] .step{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+    will-change:auto !important;
+  }
+
+  .reveal-ready [data-reveal="timeline"] .step:not(:last-child)::after{
+    transform:scaleX(1) !important;
+    transition:none !important;
+  }
+}
+
 /* Fusion overrides: concept-01 content inside concept-02 visual system */
 .site .about-10{
   background:linear-gradient(180deg, rgba(248,242,233,.82) 0%, rgba(242,234,223,.92) 100%);
