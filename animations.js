@@ -160,11 +160,58 @@ benefitChoosers.forEach((chooser) => {
   }
 
   let changeTimer;
+  const imagePreloadCache = new Map();
+
+  const preloadBenefitImage = (url) => {
+    if (!url) {
+      return Promise.resolve();
+    }
+
+    if (imagePreloadCache.has(url)) {
+      return imagePreloadCache.get(url);
+    }
+
+    const preloadPromise = new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(url);
+      img.onerror = () => resolve(url);
+      img.src = url;
+    });
+
+    imagePreloadCache.set(url, preloadPromise);
+    return preloadPromise;
+  };
+
+  choices.forEach((choice) => {
+    if (choice.dataset.benefitImage) {
+      preloadBenefitImage(choice.dataset.benefitImage);
+    }
+  });
 
   const updatePanel = (choice) => {
     title.textContent = choice.dataset.benefitTitle || choice.textContent || "";
     copy.textContent = choice.dataset.benefitCopy || "";
     panel.setAttribute("aria-labelledby", choice.id);
+
+    const imageUrl = choice.dataset.benefitImage;
+    const imagePosition = choice.dataset.benefitImagePosition;
+
+    if (!imageUrl) {
+      panel.style.removeProperty("--benefit-visual-image");
+    } else {
+      preloadBenefitImage(imageUrl).then((loadedUrl) => {
+        if (!loadedUrl) {
+          return;
+        }
+
+        const safeUrl = loadedUrl.replace(/"/g, "");
+        panel.style.setProperty("--benefit-visual-image", `url("${safeUrl}")`);
+      });
+    }
+
+    if (imagePosition) {
+      panel.style.setProperty("--benefit-visual-position", imagePosition);
+    }
   };
 
   const activateChoice = (choice) => {
@@ -221,6 +268,9 @@ benefitChoosers.forEach((chooser) => {
       activateChoice(nextChoice);
     });
   });
+
+  const initialChoice = choices.find((choice) => choice.classList.contains("is-active")) || choices[0];
+  updatePanel(initialChoice);
 });
 
 saleCalculators.forEach((calculator) => {
