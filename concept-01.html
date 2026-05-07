@@ -314,103 +314,44 @@
         <h2 class="h2 serif">Freins à la vente</h2>
       </div>
     </div>
-    <div class="issues-experience" data-issue-rail data-reveal="fade">
-      <div class="issues-tabs" role="tablist" aria-label="Freins à la vente">
-        <button class="issue-tab is-active" id="issue-tab-price" type="button" role="tab" aria-selected="true" aria-controls="issue-panel-price" data-issue-trigger="price">
-          <span class="issue-tab__icon" aria-hidden="true">
-            <i data-lucide="tag"></i>
-          </span>
-          <span class="issue-tab__title serif">Prix à côté</span>
-        </button>
-        <button class="issue-tab" id="issue-tab-annonce" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-annonce" data-issue-trigger="annonce">
-          <span class="issue-tab__icon" aria-hidden="true">
-            <i data-lucide="file-text"></i>
-          </span>
-          <span class="issue-tab__title serif">Annonce qui ne vend pas</span>
-        </button>
-        <button class="issue-tab" id="issue-tab-contacts" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-contacts" data-issue-trigger="contacts">
-          <span class="issue-tab__icon" aria-hidden="true">
-            <i data-lucide="message-circle"></i>
-          </span>
-          <span class="issue-tab__title serif">Contacts mal gérés</span>
-        </button>
-        <button class="issue-tab" id="issue-tab-visites" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-visites" data-issue-trigger="visites">
-          <span class="issue-tab__icon" aria-hidden="true">
-            <i data-lucide="eye"></i>
-          </span>
-          <span class="issue-tab__title serif">Visites sans impact</span>
-        </button>
-        <button class="issue-tab" id="issue-tab-negociation" type="button" role="tab" aria-selected="false" aria-controls="issue-panel-negociation" data-issue-trigger="negociation">
-          <span class="issue-tab__icon" aria-hidden="true">
-            <i data-lucide="handshake"></i>
-          </span>
-          <span class="issue-tab__title serif">Négociation subie</span>
-        </button>
-      </div>
-
-      <div class="issues-detail">
-        <article class="issue-panel is-active" id="issue-panel-price" role="tabpanel" aria-labelledby="issue-tab-price" data-issue-panel="price">
-          <div class="issue-panel__icon" aria-hidden="true">
-            <i data-lucide="tag"></i>
+    <div class="issues-experience" data-reveal="fade">
+      <div class="issues-grid" aria-label="Freins à la vente">
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="0">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="badge-euro"></i>
           </div>
-          <div class="issue-panel__main">
-            <h3 class="serif">Prix à côté</h3>
-          </div>
-          <div class="issue-panel__copy">
-            <p class="issue-panel__impact">Vous mettez votre bien en ligne en pensant être dans les prix.</p>
-            <p class="issue-panel__detail">Les jours passent, avec peu de contacts ou des visites sans suite.</p>
-          </div>
+          <h3 class="issue-card__title serif">Prix à côté</h3>
+          <p class="issue-card__copy">Vous mettez votre bien en ligne en pensant être dans les prix.<br>Les jours passent, avec peu de contacts ou des visites sans suite.</p>
         </article>
-        <article class="issue-panel" id="issue-panel-annonce" role="tabpanel" aria-labelledby="issue-tab-annonce" data-issue-panel="annonce" hidden>
-          <div class="issue-panel__icon" aria-hidden="true">
-            <i data-lucide="file-text"></i>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="80">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="monitor-play"></i>
           </div>
-          <div class="issue-panel__main">
-            <h3 class="serif">Annonce qui ne vend pas</h3>
-          </div>
-          <div class="issue-panel__copy">
-            <p class="issue-panel__impact">Votre annonce est en ligne, mais elle ne génère pas les retours attendus.</p>
-            <p class="issue-panel__detail">Les demandes restent limitées ou peu qualifiées.</p>
-          </div>
+          <h3 class="issue-card__title serif">Annonce qui ne vend pas</h3>
+          <p class="issue-card__copy">Votre annonce est en ligne, mais elle ne génère pas les retours attendus.<br>Les demandes restent limitées ou peu qualifiées.</p>
         </article>
-        <article class="issue-panel" id="issue-panel-contacts" role="tabpanel" aria-labelledby="issue-tab-contacts" data-issue-panel="contacts" hidden>
-          <div class="issue-panel__icon" aria-hidden="true">
-            <i data-lucide="message-circle"></i>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="160">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="messages-square"></i>
           </div>
-          <div class="issue-panel__main">
-            <h3 class="serif">Contacts mal gérés</h3>
-          </div>
-          <div class="issue-panel__copy">
-            <p class="issue-panel__impact">Les messages et appels s’enchaînent.</p>
-            <p class="issue-panel__detail">Certains insistent, d’autres disparaissent, et il devient difficile de faire le tri.</p>
-          </div>
+          <h3 class="issue-card__title serif">Contacts mal gérés</h3>
+          <p class="issue-card__copy">Les messages et appels s’enchaînent.<br>Certains insistent, d’autres disparaissent, et il devient difficile de faire le tri.</p>
         </article>
-        <article class="issue-panel" id="issue-panel-visites" role="tabpanel" aria-labelledby="issue-tab-visites" data-issue-panel="visites" hidden>
-          <div class="issue-panel__icon" aria-hidden="true">
-            <i data-lucide="eye"></i>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="240">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="door-open"></i>
           </div>
-          <div class="issue-panel__main">
-            <h3 class="serif">Visites sans impact</h3>
-          </div>
-          <div class="issue-panel__copy">
-            <p class="issue-panel__impact">Les visites se passent bien sur le moment.</p>
-            <p class="issue-panel__detail">Mais derrière, peu de retours concrets ou aucune offre.</p>
-          </div>
+          <h3 class="issue-card__title serif">Visites sans impact</h3>
+          <p class="issue-card__copy">Les visites se passent bien sur le moment.<br>Mais derrière, peu de retours concrets ou aucune offre.</p>
         </article>
-        <article class="issue-panel" id="issue-panel-negociation" role="tabpanel" aria-labelledby="issue-tab-negociation" data-issue-panel="negociation" hidden>
-          <div class="issue-panel__icon" aria-hidden="true">
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="320">
+          <div class="issue-card__icon" aria-hidden="true">
             <i data-lucide="handshake"></i>
           </div>
-          <div class="issue-panel__main">
-            <h3 class="serif">Négociation subie</h3>
-          </div>
-          <div class="issue-panel__copy">
-            <p class="issue-panel__impact">Une offre arrive, souvent en dessous du prix.</p>
-            <p class="issue-panel__detail">Le doute s’installe sur la décision à prendre et la marge de négociation.</p>
-          </div>
+          <h3 class="issue-card__title serif">Négociation subie</h3>
+          <p class="issue-card__copy">Une offre arrive, souvent en dessous du prix.<br>Le doute s’installe sur la décision à prendre et la marge de négociation.</p>
         </article>
       </div>
-
       <div class="issues-summary">
         <p>C’est généralement dans ces moments-là que les décisions deviennent plus difficiles à prendre seul.</p>
       </div>
