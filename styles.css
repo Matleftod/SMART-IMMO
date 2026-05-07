@@ -5120,21 +5120,42 @@ body.site{
   }
 }
 
-@media (max-width: 1120px){
+@media (max-width: 1070px){
   .site #blocages .issues-grid{
     grid-template-columns:repeat(3, minmax(0, 1fr));
-    border-right:1px solid rgba(124,98,78,.2);
+    border:0;
   }
   .site #blocages .issue-card{
+    position:relative;
     padding:26px 20px 30px;
-    border-right:1px solid rgba(124,98,78,.2);
-    border-bottom:1px solid rgba(124,98,78,.2);
+    border:0;
   }
-  .site #blocages .issue-card:nth-child(3n){
-    border-right:0;
+  .site #blocages .issue-card::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0;
+    width:1px;
+    height:75%;
+    background:rgba(124,98,78,.2);
+    transform:translateY(-50%);
   }
-  .site #blocages .issue-card:nth-last-child(-n + 2){
-    border-bottom:0;
+  .site #blocages .issue-card::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:75%;
+    height:1px;
+    background:rgba(124,98,78,.2);
+    transform:translateX(-50%);
+  }
+  .site #blocages .issue-card:nth-child(3n):not(:last-child)::before,
+  .site #blocages .issue-card:last-child::before{
+    display:none;
+  }
+  .site #blocages .issue-card:nth-child(4)::after{
+    display:block;
   }
   .site #blocages .issue-card__title{
     font-size:clamp(24px, 2vw, 28px);
@@ -5144,6 +5165,7 @@ body.site{
 @media (max-width: 820px){
   .site #blocages .issues-grid{
     grid-template-columns:1fr;
+    border:0;
   }
   .site #blocages .issue-card{
     grid-template-columns:52px minmax(0, 1fr);
@@ -5153,10 +5175,27 @@ body.site{
     align-items:start;
     column-gap:16px;
     row-gap:8px;
-    border-right:0;
+    border:0;
   }
-  .site #blocages .issue-card:last-child{
-    border-bottom:0;
+  .site #blocages .issue-card::before{
+    display:none;
+  }
+  .site #blocages .issue-card::after{
+    display:block;
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:75%;
+    height:1px;
+    background:rgba(124,98,78,.2);
+    transform:translateX(-50%);
+  }
+  .site #blocages .issue-card:nth-child(4)::after{
+    display:block;
+  }
+  .site #blocages .issue-card:last-child::after{
+    display:none;
   }
   .site #blocages .issue-card__icon{
     grid-area:icon;
