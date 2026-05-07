@@ -152,15 +152,46 @@ if (mobileMenuToggle && mobileNavigation) {
 benefitChoosers.forEach((chooser) => {
   const choices = Array.from(chooser.querySelectorAll("[data-benefit-choice]"));
   const panel = chooser.querySelector(".benefit-active");
+  const selectors = chooser.querySelector(".benefit-selectors");
   const title = panel?.querySelector("[data-benefit-title]");
   const copy = panel?.querySelector("[data-benefit-copy]");
 
-  if (choices.length === 0 || !title || !copy || !panel) {
+  if (choices.length === 0 || !title || !copy || !panel || !selectors) {
     return;
   }
 
   let changeTimer;
   const imagePreloadCache = new Map();
+  const benefitMobileMq = window.matchMedia("(max-width: 820px)");
+  const panelDesktopParent = panel.parentElement;
+  const panelDesktopNextSibling = panel.nextElementSibling;
+  const panelId = panel.id;
+
+  const isMobileAccordion = () => benefitMobileMq.matches;
+
+  const placePanelUnderChoice = (choice) => {
+    if (!choice || !isMobileAccordion()) {
+      return;
+    }
+
+    selectors.insertBefore(panel, choice.nextSibling);
+  };
+
+  const applyDesktopSemantics = () => {
+    selectors.setAttribute("role", "tablist");
+    selectors.setAttribute("aria-label", "Choisir un bénéfice");
+    selectors.setAttribute("aria-orientation", "vertical");
+    panel.setAttribute("role", "tabpanel");
+    panel.setAttribute("aria-live", "polite");
+  };
+
+  const applyMobileSemantics = () => {
+    selectors.setAttribute("role", "group");
+    selectors.setAttribute("aria-label", "Bénéfices");
+    selectors.removeAttribute("aria-orientation");
+    panel.setAttribute("role", "region");
+    panel.removeAttribute("aria-live");
+  };
 
   const preloadBenefitImage = (url) => {
     if (!url) {
@@ -212,6 +243,8 @@ benefitChoosers.forEach((chooser) => {
     if (imagePosition) {
       panel.style.setProperty("--benefit-visual-position", imagePosition);
     }
+
+    placePanelUnderChoice(choice);
   };
 
   const activateChoice = (choice) => {
@@ -226,6 +259,8 @@ benefitChoosers.forEach((chooser) => {
       item.classList.toggle("is-active", isActive);
       item.setAttribute("aria-selected", String(isActive));
       item.tabIndex = isActive ? 0 : -1;
+      item.setAttribute("aria-expanded", String(isActive));
+      item.setAttribute("aria-controls", panelId);
     });
 
     if (prefersReducedMotion.matches) {
@@ -245,9 +280,15 @@ benefitChoosers.forEach((chooser) => {
   choices.forEach((choice, index) => {
     choice.tabIndex = choice.classList.contains("is-active") ? 0 : -1;
     choice.setAttribute("aria-selected", String(choice.classList.contains("is-active")));
+    choice.setAttribute("aria-controls", panelId);
+    choice.setAttribute("aria-expanded", String(choice.classList.contains("is-active")));
 
     choice.addEventListener("click", () => activateChoice(choice));
     choice.addEventListener("keydown", (event) => {
+      if (isMobileAccordion()) {
+        return;
+      }
+
       const nextIndex = event.key === "ArrowDown" || event.key === "ArrowRight"
         ? index + 1
         : event.key === "ArrowUp" || event.key === "ArrowLeft"
@@ -270,6 +311,30 @@ benefitChoosers.forEach((chooser) => {
   });
 
   const initialChoice = choices.find((choice) => choice.classList.contains("is-active")) || choices[0];
+  const syncBenefitMode = () => {
+    if (isMobileAccordion()) {
+      applyMobileSemantics();
+      choices.forEach((choice) => {
+        choice.removeAttribute("role");
+        choice.tabIndex = 0;
+      });
+      placePanelUnderChoice(choices.find((choice) => choice.classList.contains("is-active")) || initialChoice);
+      return;
+    }
+
+    applyDesktopSemantics();
+    choices.forEach((choice) => {
+      choice.setAttribute("role", "tab");
+      const isActive = choice.classList.contains("is-active");
+      choice.tabIndex = isActive ? 0 : -1;
+    });
+    if (panelDesktopParent) {
+      panelDesktopParent.insertBefore(panel, panelDesktopNextSibling);
+    }
+  };
+
+  syncBenefitMode();
+  benefitMobileMq.addEventListener("change", syncBenefitMode);
   updatePanel(initialChoice);
 });
 

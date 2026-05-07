@@ -2999,8 +2999,8 @@ body.site{
     padding:28px 26px;
   }
   .site #benefices{
-    --benefit-visual-opacity:.06;
-    --benefit-visual-position:100% 66%;
+    --benefit-visual-opacity:.16;
+    --benefit-visual-position:86% 60%;
   }
   .site #benefices .benefit-active::after{
     display:none;
@@ -3010,6 +3010,31 @@ body.site{
     margin-top:0;
     gap:8px;
     align-content:start;
+  }
+  .site #benefices .benefit-choice{
+    min-height:58px;
+    padding:15px 18px;
+    font-size:18px;
+  }
+  .site #benefices .benefit-selectors .benefit-active{
+    margin:0 0 10px;
+    padding:18px 18px 16px;
+    min-height:0;
+    border-radius:8px;
+    box-shadow:none;
+  }
+  .site #benefices .benefit-selectors .benefit-active::before{
+    opacity:.08;
+  }
+  .site #benefices .benefit-selectors .benefit-active h3{
+    font-size:24px;
+    line-height:1.12;
+  }
+  .site #benefices .benefit-selectors .benefit-active p{
+    margin-top:12px;
+    font-size:15px;
+    line-height:1.58;
+    max-width:none;
   }
   .site #benefices .manifesto{
     margin-top:0;
@@ -3175,23 +3200,12 @@ body.site{
     grid-column:2;
     max-width:none;
   }
-  .site #benefices .benefit-active::before{
-    opacity:0;
+  .site #benefices .benefit-selectors .benefit-active h3{
+    font-size:22px;
   }
-  .site #benefices .benefit-active h3{
-    font-size:30px;
-    line-height:1.08;
-  }
-  .site #benefices .benefit-active p{
-    max-width:none;
-    margin-top:16px;
-    font-size:15px;
-    line-height:1.62;
-  }
-  .site #benefices .benefit-choice{
-    min-height:58px;
-    padding:15px 18px;
-    font-size:18px;
+  .site #benefices .benefit-selectors .benefit-active p{
+    font-size:14.5px;
+    line-height:1.56;
   }
   .site #benefices .manifesto .row{
     grid-template-columns:1fr;
