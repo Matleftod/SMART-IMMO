@@ -2977,6 +2977,14 @@ body.site{
     align-content:end;
     padding-top:56px;
   }
+  .site #accueil .intro{
+    max-width:100%;
+    min-width:0;
+  }
+  .site #accueil .h1{
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
   .site .about-10 .layout,
   .site .triptych,
   .site #benefices .benefices-split,
@@ -3122,6 +3130,11 @@ body.site{
   .site .h1{
     font-size:clamp(38px, 11vw, 50px);
     max-width:10.8ch;
+  }
+  .site #accueil .h1{
+    max-width:100%;
+    font-size:clamp(34px, 10.2vw, 46px);
+    line-height:.95;
   }
   .site .hero-10 .lead{
     font-size:15px;
@@ -3376,7 +3389,7 @@ body.site{
 }
 .site #accueil .hero-title-line{
   display:block;
-  white-space:nowrap;
+  white-space:normal;
 }
 .site #accueil .h1{
   max-width:none;
@@ -4153,26 +4166,10 @@ body.site{
   transform-origin:center;
 }
 .site #offres .offers-table__flag::before{
-  content:"";
-  position:absolute;
-  top:50%;
-  left:-3px;
-  width:5px;
-  height:16px;
-  border-radius:0 999px 999px 0;
-  background:rgba(247,241,230,.96);
-  transform:translateY(-50%);
+  content:none;
 }
 .site #offres .offers-table__flag::after{
-  content:"";
-  position:absolute;
-  top:50%;
-  right:-3px;
-  width:5px;
-  height:16px;
-  border-radius:999px 0 0 999px;
-  background:rgba(247,241,230,.96);
-  transform:translateY(-50%);
+  content:none;
 }
 .site #offres .offers-table tbody th{
   padding:10px 20px;
@@ -5917,12 +5914,14 @@ body.site{
 /* Hero top spacing override (final) */
 @media (max-width: 820px){
   .site #accueil .content{
-    padding-top:46px !important;
+    align-content:start !important;
+    padding-top:26px !important;
   }
 }
 
 @media (max-width: 640px){
   .site #accueil .content{
-    padding:46px 20px 18px !important;
+    align-content:start !important;
+    padding:22px 20px 18px !important;
   }
 }
