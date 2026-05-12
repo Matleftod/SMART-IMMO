@@ -5075,12 +5075,6 @@ body.site{
     height:auto !important;
     min-height:0;
     padding:10px 12px;
-    background-color:#f5efe1 !important;
-    background-image:none !important;
-  }
-
-  .site #offres .offers-table tbody tr:nth-child(even) th{
-    background-color:#f5efe1 !important;
   }
 
   .site #offres .offers-table tbody td{
