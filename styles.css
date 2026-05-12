@@ -5164,16 +5164,7 @@ body.site{
   .site section{padding:52px 0 !important;}
   .site #apropos.about-redesign{padding:46px 0 !important;}
   .site #methode{padding:54px 0 60px !important;}
-}
-
-@media (max-width: 640px){
-  .site section{padding:44px 0 !important;}
-  .site #apropos.about-redesign{padding:40px 0 !important;}
-  .site #methode{padding:48px 0 52px !important;}
-}
-
-/* Hero top spacing override (final) */
-@media (max-width: 820px){
+  /* Hero top spacing override (final) */
   .site #accueil .content{
     display:flex !important;
     flex-direction:column !important;
@@ -5223,6 +5214,9 @@ body.site{
 }
 
 @media (max-width: 640px){
+  .site section{padding:44px 0 !important;}
+  .site #apropos.about-redesign{padding:40px 0 !important;}
+  .site #methode{padding:48px 0 52px !important;}
   .site #accueil .content{
     align-content:start !important;
     padding:22px 20px 18px !important;
