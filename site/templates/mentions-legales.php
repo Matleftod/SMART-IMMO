@@ -1,3 +1,10 @@
+<?php
+$siteTitle = $site->siteTitle()->or("Smart'Immo Coaching")->value();
+$contactEmail = $site->contactEmail()->or('contact@smartimmocoaching.fr')->value();
+$contactPhone = $site->contactPhone()->or('06.XX.XX.XX.XX')->value();
+$contactPhoneDigits = preg_replace('/\D+/', '', $contactPhone);
+$contactPhoneHref = (strlen($contactPhoneDigits) >= 6) ? $contactPhoneDigits : '06XXXXXXXX';
+?>
 <?php snippet('head', ['isHome' => false, 'bodyClass' => 'site legal-page']) ?>
 <?php snippet('header', ['isHome' => false]) ?>
 <main class="legal-main">
@@ -5,7 +12,7 @@
     <div class="wrap">
       <p class="legal-eyebrow">Informations légales</p>
       <h1 class="serif">Mentions légales</h1>
-      <p>Cette page regroupe les informations permettant d’identifier l’éditeur du site Smart’Immo Coaching, son hébergeur, ainsi que les conditions générales d’utilisation du site.</p>
+      <p>Cette page regroupe les informations permettant d’identifier l’éditeur du site <?= esc($siteTitle) ?>, son hébergeur, ainsi que les conditions générales d’utilisation du site.</p>
       <p class="legal-alert">Les informations manquantes sont indiquées en rouge pour être complétées avant mise en ligne.</p>
     </div>
   </section>
@@ -17,7 +24,7 @@
         <dl class="legal-list">
           <div>
             <dt>Nom commercial</dt>
-            <dd>Smart’Immo Coaching</dd>
+            <dd><?= esc($siteTitle) ?></dd>
           </div>
           <div>
             <dt>Statut juridique</dt>
@@ -60,11 +67,11 @@
         <dl class="legal-list">
           <div>
             <dt>Email</dt>
-            <dd><a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a></dd>
+            <dd><a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a></dd>
           </div>
           <div>
             <dt>Téléphone</dt>
-            <dd><a href="tel:06XXXXXXXX">06.XX.XX.XX.XX</a></dd>
+            <dd><a href="tel:<?= esc($contactPhoneHref, 'attr') ?>"><?= esc($contactPhone) ?></a></dd>
           </div>
           <div>
             <dt>Zone d’intervention</dt>
@@ -93,7 +100,7 @@
 
       <article class="legal-card">
         <h2 class="serif">Activité</h2>
-        <p>Smart’Immo Coaching propose un accompagnement indépendant destiné à aider les propriétaires à structurer leur vente immobilière, sans mandat de vente et sans frais d’intermédiaire.</p>
+        <p><?= esc($siteTitle) ?> propose un accompagnement indépendant destiné à aider les propriétaires à structurer leur vente immobilière, sans mandat de vente et sans frais d’intermédiaire.</p>
         <p><span class="legal-missing">À confirmer : l’activité est-elle soumise à une autorisation, une carte professionnelle, une assurance professionnelle obligatoire ou une réglementation particulière ? Si oui, fournir les références exactes.</span></p>
       </article>
 
@@ -107,7 +114,7 @@
       <article class="legal-card">
         <h2 class="serif">Données personnelles</h2>
         <p>Les données personnelles éventuellement transmises par email ou téléphone sont utilisées uniquement pour répondre aux demandes de contact et assurer le suivi des échanges liés au projet immobilier.</p>
-        <p>L’utilisateur peut demander l’accès, la rectification, l’effacement ou la limitation du traitement de ses données personnelles en écrivant à <a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a>.</p>
+        <p>L’utilisateur peut demander l’accès, la rectification, l’effacement ou la limitation du traitement de ses données personnelles en écrivant à <a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a>.</p>
         <p><span class="legal-missing">À compléter : durée de conservation des données, base juridique du traitement, destinataires éventuels, existence ou non d’un DPO, lien vers la politique de confidentialité complète.</span></p>
       </article>
 
@@ -123,7 +130,7 @@
 
       <article class="legal-card">
         <h2 class="serif">Responsabilité</h2>
-        <p>Les informations présentes sur le site sont fournies à titre informatif. Smart’Immo Coaching s’efforce d’assurer l’exactitude et la mise à jour des informations diffusées, mais ne peut garantir l’absence totale d’erreur ou d’omission.</p>
+        <p>Les informations présentes sur le site sont fournies à titre informatif. <?= esc($siteTitle) ?> s’efforce d’assurer l’exactitude et la mise à jour des informations diffusées, mais ne peut garantir l’absence totale d’erreur ou d’omission.</p>
         <p>L’utilisateur reste responsable de l’usage qu’il fait des informations consultées sur le site.</p>
       </article>
 

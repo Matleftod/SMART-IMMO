@@ -1,0 +1,29 @@
+title: Politique de confidentialité
+options:
+  changeStatus: false
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+sections:
+  seo:
+    type: fields
+    headline: Référencement (SEO)
+    fields:
+      title:
+        label: Titre interne (Panel)
+        type: text
+        width: 1/2
+        help: Titre de la page dans le Panel Kirby.
+      seoTitle:
+        label: Titre SEO
+        type: text
+        width: 1/2
+        help: Titre utilisé dans l'onglet du navigateur et les résultats de recherche.
+      metaDescription:
+        label: Méta-description
+        type: textarea
+        buttons: false
+        size: small
+        help: Description courte pour les moteurs de recherche. Non affichée dans la page.

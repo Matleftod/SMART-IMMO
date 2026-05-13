@@ -294,7 +294,7 @@ body.site{
 .site .hero-10 .media{
   background:
     linear-gradient(90deg, rgba(30,23,19,.82) 0%, rgba(30,23,19,.6) 38%, rgba(30,23,19,.2) 66%, rgba(30,23,19,.34) 100%),
-    url('https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000') center/cover no-repeat !important;
+    var(--hero-bg-image, none) center/cover no-repeat !important;
   transform:none;
 }
 .site .hero-10 .content{
@@ -995,4 +995,3 @@ body.site{
 /* Inline style replacements */
 .site .contact-copy .contact-title{font-size:34px;line-height:1.15;margin-bottom:14px;color:var(--brown-deep)}
 .site .contact-actions .contact-phone{border-color:rgba(124,98,78,.24);color:var(--brown)}
-

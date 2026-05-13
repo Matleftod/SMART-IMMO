@@ -1,3 +1,4 @@
+<?php $siteTitle = $site->siteTitle()->or("Smart'Immo Coaching")->value(); ?>
 <section id="apropos" class="about-redesign">
   <div class="wrap">
     <div class="about-redesign__header" data-reveal="fade">
@@ -6,13 +7,13 @@
         <h2 class="about-redesign__title">Le coaching immobilier, une nouvelle façon de vendre son bien ?</h2>
       </div>
       <figure class="about-redesign__portrait">
-        <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de Smart’Immo Coaching" loading="lazy" decoding="async" width="864" height="1184">
+        <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de <?= esc($siteTitle) ?>" loading="lazy" decoding="async" width="864" height="1184">
       </figure>
     </div>
     <div class="about-redesign__body">
       <div class="about-redesign__explanation">
         <figure class="about-redesign__portrait about-redesign__portrait--mobile">
-          <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de Smart’Immo Coaching" loading="lazy" decoding="async" width="864" height="1184">
+          <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de <?= esc($siteTitle) ?>" loading="lazy" decoding="async" width="864" height="1184">
         </figure>
         <p data-reveal="slide-up">Entre les plateformes, les annonces et des acheteurs mieux informés, la vente d’un bien immobilier s’est clairement complexifiée, et beaucoup de propriétaires se retrouvent seuls face à des décisions importantes.</p>
         <p data-reveal="slide-up" data-reveal-delay="90">Il devient fréquent de vouloir vendre son bien en maîtrisant ses coûts, sans faire d’erreurs ni avancer seul.</p>

@@ -1,3 +1,7 @@
+<?php
+$siteTitle = $site->siteTitle()->or("Smart'Immo Coaching")->value();
+$contactEmail = $site->contactEmail()->or('contact@smartimmocoaching.fr')->value();
+?>
 <?php snippet('head', ['isHome' => false, 'bodyClass' => 'site legal-page']) ?>
 <?php snippet('header', ['isHome' => false]) ?>
 <main class="legal-main">
@@ -5,7 +9,7 @@
     <div class="wrap">
       <p class="legal-eyebrow">Données personnelles</p>
       <h1 class="serif">Politique de confidentialité</h1>
-      <p>Cette politique explique comment Smart’Immo Coaching collecte, utilise et protège les données personnelles transmises dans le cadre d’une demande de contact ou d’un échange lié à un projet immobilier.</p>
+      <p>Cette politique explique comment <?= esc($siteTitle) ?> collecte, utilise et protège les données personnelles transmises dans le cadre d’une demande de contact ou d’un échange lié à un projet immobilier.</p>
       <p class="legal-alert">Les informations manquantes sont indiquées en rouge pour être complétées avant mise en ligne.</p>
     </div>
   </section>
@@ -17,7 +21,7 @@
         <dl class="legal-list">
           <div>
             <dt>Nom commercial</dt>
-            <dd>Smart’Immo Coaching</dd>
+            <dd><?= esc($siteTitle) ?></dd>
           </div>
           <div>
             <dt>Responsable</dt>
@@ -29,14 +33,14 @@
           </div>
           <div>
             <dt>Email de contact</dt>
-            <dd><a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a></dd>
+            <dd><a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a></dd>
           </div>
         </dl>
       </article>
 
       <article class="legal-card">
         <h2 class="serif">Données collectées</h2>
-        <p>Smart’Immo Coaching peut collecter les données personnelles transmises volontairement par l’utilisateur lors d’une prise de contact par email, téléphone ou tout autre moyen de communication mis à disposition sur le site.</p>
+        <p><?= esc($siteTitle) ?> peut collecter les données personnelles transmises volontairement par l’utilisateur lors d’une prise de contact par email, téléphone ou tout autre moyen de communication mis à disposition sur le site.</p>
         <p>Ces données peuvent notamment comprendre : nom, prénom, coordonnées, informations relatives au projet immobilier, contenu des messages échangés et toute information communiquée spontanément par l’utilisateur.</p>
         <p><span class="legal-missing">À compléter : préciser s’il existe un formulaire de contact, un outil de prise de rendez-vous, un CRM, un agenda en ligne ou tout autre service collectant des données.</span></p>
       </article>
@@ -52,7 +56,7 @@
         <dl class="legal-list">
           <div>
             <dt>Demandes de contact</dt>
-            <dd>Intérêt légitime de Smart’Immo Coaching à répondre aux demandes reçues.</dd>
+            <dd>Intérêt légitime de <?= esc($siteTitle) ?> à répondre aux demandes reçues.</dd>
           </div>
           <div>
             <dt>Préparation ou exécution d’une prestation</dt>
@@ -68,13 +72,13 @@
 
       <article class="legal-card">
         <h2 class="serif">Caractère obligatoire ou facultatif</h2>
-        <p>La transmission de données personnelles est facultative. Toutefois, l’absence de certaines informations peut empêcher Smart’Immo Coaching de répondre précisément à une demande ou de proposer un accompagnement adapté.</p>
+        <p>La transmission de données personnelles est facultative. Toutefois, l’absence de certaines informations peut empêcher <?= esc($siteTitle) ?> de répondre précisément à une demande ou de proposer un accompagnement adapté.</p>
         <p><span class="legal-missing">À compléter : si un formulaire existe, préciser les champs obligatoires et facultatifs.</span></p>
       </article>
 
       <article class="legal-card">
         <h2 class="serif">Destinataires des données</h2>
-        <p>Les données sont destinées à Smart’Immo Coaching et, lorsque cela est nécessaire, aux prestataires techniques ou administratifs intervenant pour le fonctionnement du site, la messagerie, l’hébergement, la gestion administrative ou comptable.</p>
+        <p>Les données sont destinées à <?= esc($siteTitle) ?> et, lorsque cela est nécessaire, aux prestataires techniques ou administratifs intervenant pour le fonctionnement du site, la messagerie, l’hébergement, la gestion administrative ou comptable.</p>
         <p><span class="legal-missing">À compléter : lister les prestataires réellement utilisés, par exemple hébergeur, fournisseur email, outil de prise de rendez-vous, outil analytics, comptable, CRM.</span></p>
       </article>
 
@@ -100,7 +104,7 @@
       <article class="legal-card">
         <h2 class="serif">Droits des personnes</h2>
         <p>Conformément à la réglementation applicable, l’utilisateur peut demander l’accès à ses données personnelles, leur rectification, leur effacement, la limitation du traitement, ainsi que s’opposer à certains traitements lorsque la loi le permet.</p>
-        <p>Pour exercer ces droits, l’utilisateur peut écrire à <a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a>. Une réponse sera apportée dans les délais prévus par la réglementation.</p>
+        <p>Pour exercer ces droits, l’utilisateur peut écrire à <a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a>. Une réponse sera apportée dans les délais prévus par la réglementation.</p>
         <p>L’utilisateur dispose également du droit d’introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" rel="noopener">www.cnil.fr</a>.</p>
       </article>
 
@@ -121,7 +125,7 @@
 
       <article class="legal-card">
         <h2 class="serif">Sécurité des données</h2>
-        <p>Smart’Immo Coaching met en œuvre des mesures raisonnables pour protéger les données personnelles contre la perte, l’accès non autorisé, la divulgation, l’altération ou la destruction.</p>
+        <p><?= esc($siteTitle) ?> met en œuvre des mesures raisonnables pour protéger les données personnelles contre la perte, l’accès non autorisé, la divulgation, l’altération ou la destruction.</p>
         <p><span class="legal-missing">À compléter : préciser les mesures réellement en place si nécessaire, par exemple accès limité, mots de passe, messagerie sécurisée, sauvegardes, hébergement sécurisé.</span></p>
       </article>
 

@@ -1,14 +1,19 @@
 <?php
 $isHome = $isHome ?? false;
 $bodyClass = $bodyClass ?? 'site';
+$siteTitle = $site->siteTitle()->or($site->title())->or("Smart'Immo Coaching")->value();
 
 if (($title ?? null) !== null) {
   $pageTitle = $title;
 } elseif ($isHome) {
-  $pageTitle = $page->seoTitle()->or($page->title())->value();
+  $pageTitle = $page->seoTitle()->or($siteTitle)->or($page->title())->value();
 } else {
-  $pageTitle = $page->title()->value() . " - Smart'Immo Coaching";
+  $pageTitle = $page->seoTitle()->or($page->title()->value() . " - " . $siteTitle)->or($page->title())->value();
 }
+
+$metaDescription = (string)$page->metaDescription()->value();
+$heroImageFile = $page->heroImage()->toFile() ?? $page->image('hero-main.jpg');
+$heroImageUrl = $heroImageFile ? $heroImageFile->url() : '';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -17,9 +22,13 @@ if (($title ?? null) !== null) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= esc($pageTitle) ?></title>
+  <?php if ($metaDescription !== ''): ?>
+    <meta name="description" content="<?= esc($metaDescription) ?>">
+  <?php endif ?>
   <?php if ($isHome): ?>
-    <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200" imagesrcset="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1600 1600w, https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200 2200w" imagesizes="100vw" fetchpriority="high">
+    <?php if ($heroImageUrl !== ''): ?>
+      <link rel="preload" as="image" href="<?= esc($heroImageUrl, 'attr') ?>" fetchpriority="high">
+    <?php endif ?>
   <?php endif ?>
   <link rel="icon" href="<?= url('assets/images/logo.png') ?>">
   <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">

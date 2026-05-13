@@ -1,5 +1,9 @@
+<?php
+$heroImageFile = $page->heroImage()->toFile() ?? $page->image('hero-main.jpg');
+$heroImageUrl = $heroImageFile ? $heroImageFile->url() : '';
+?>
   <section id="accueil" class="hero-10">
-    <div class="media" aria-hidden="true"></div>
+    <div class="media" aria-hidden="true" style="--hero-bg-image:url('<?= esc($heroImageUrl, 'attr') ?>');"></div>
     <div class="content">
       <div class="intro" data-reveal="fade">
         <p class="eyebrow">Accompagnement immobilier</p>

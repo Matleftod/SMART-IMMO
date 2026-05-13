@@ -3,11 +3,12 @@ $isHome = $isHome ?? false;
 $homeBase = $isHome ? '' : url('/');
 $topHref = $isHome ? '#top' : $homeBase . '#top';
 $sectionHref = static fn (string $id) => ($isHome ? '#' : $homeBase . '#') . $id;
+$siteTitle = $site->siteTitle()->or("Smart'Immo Coaching")->value();
 ?>
 <header class="topbar">
   <div class="nav-shell">
     <a class="brand" href="<?= $topHref ?>">
-      <img class="brand__logo" src="<?= url('assets/images/logo.png') ?>" alt="Smart’Immo Coaching" width="320" height="120">
+      <img class="brand__logo" src="<?= url('assets/images/logo.png') ?>" alt="<?= esc($siteTitle) ?>" width="320" height="120">
     </a>
     <nav class="nav-links" aria-label="Navigation">
       <a href="<?= $sectionHref('apropos') ?>">À propos</a>

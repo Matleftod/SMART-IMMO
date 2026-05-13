@@ -1,3 +1,4 @@
+<?php $siteTitle = $site->siteTitle()->or("Smart'Immo Coaching")->value(); ?>
 <section id="offres" class="offers-8">
   <div class="wrap">
     <div class="section-head no-meta" data-reveal="fade">
@@ -13,7 +14,7 @@
       <p class="offers-table__mobile-hint" aria-hidden="true">Glisser pour comparer</p>
       <div class="offers-table-scroll">
         <table class="offers-table">
-        <caption>Comparatif des prestations incluses dans les trois packs Smart’Immo Coaching.</caption>
+        <caption>Comparatif des prestations incluses dans les trois packs <?= esc($siteTitle) ?>.</caption>
         <colgroup>
           <col class="offers-table__feature-col">
           <col>

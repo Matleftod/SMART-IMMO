@@ -1,1 +1,13 @@
 Title: Smart’Immo Coaching
+
+----
+
+siteTitle: Smart'Immo Coaching
+
+----
+
+contactEmail: contact@smartimmocoaching.fr
+
+----
+
+contactPhone: 06.XX.XX.XX.XX

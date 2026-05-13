@@ -1,3 +1,14 @@
+<?php
+$methodImage1File = $page->methodImage1()->toFile() ?? $page->image('method-step-1.jpg');
+$methodImage2File = $page->methodImage2()->toFile() ?? $page->image('method-step-2.jpg');
+$methodImage3File = $page->methodImage3()->toFile() ?? $page->image('method-step-3.jpg');
+$methodImage1Url = $methodImage1File ? $methodImage1File->url() : '';
+$methodImage2Url = $methodImage2File ? $methodImage2File->url() : '';
+$methodImage3Url = $methodImage3File ? $methodImage3File->url() : '';
+$methodImage1Alt = $methodImage1File ? $methodImage1File->alt()->or('Visuel de préparation')->value() : 'Visuel de préparation';
+$methodImage2Alt = $methodImage2File ? $methodImage2File->alt()->or('Visuel de suivi')->value() : 'Visuel de suivi';
+$methodImage3Alt = $methodImage3File ? $methodImage3File->alt()->or('Visuel de sécurisation')->value() : 'Visuel de sécurisation';
+?>
 <section id="methode" class="method-full">
   <div class="wrap">
     <div class="section-head no-meta" data-reveal="fade">
@@ -8,7 +19,7 @@
     </div>
     <div class="triptych">
       <article class="phase" data-reveal="slide-up">
-        <img src="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de préparation" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <img src="<?= esc($methodImage1Url, 'attr') ?>" srcset="<?= esc($methodImage1Url, 'attr') ?> 640w, <?= esc($methodImage1Url, 'attr') ?> 900w, <?= esc($methodImage1Url, 'attr') ?> 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="<?= esc($methodImage1Alt, 'attr') ?>" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
         <div class="body">
           <div class="tag"><i></i><span>Avant</span></div>
           <h3 class="serif">Tout commence ici</h3>
@@ -16,7 +27,7 @@
         </div>
       </article>
       <article class="phase" data-reveal="slide-up" data-reveal-delay="500">
-        <img src="https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de suivi" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <img src="<?= esc($methodImage2Url, 'attr') ?>" srcset="<?= esc($methodImage2Url, 'attr') ?> 640w, <?= esc($methodImage2Url, 'attr') ?> 900w, <?= esc($methodImage2Url, 'attr') ?> 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="<?= esc($methodImage2Alt, 'attr') ?>" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
         <div class="body">
           <div class="tag"><i></i><span>Pendant</span></div>
           <h3 class="serif">Le marché s’exprime</h3>
@@ -24,7 +35,7 @@
         </div>
       </article>
       <article class="phase" data-reveal="slide-up" data-reveal-delay="1000">
-        <img src="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de sécurisation" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <img src="<?= esc($methodImage3Url, 'attr') ?>" srcset="<?= esc($methodImage3Url, 'attr') ?> 640w, <?= esc($methodImage3Url, 'attr') ?> 900w, <?= esc($methodImage3Url, 'attr') ?> 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="<?= esc($methodImage3Alt, 'attr') ?>" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
         <div class="body">
           <div class="tag"><i></i><span>Après</span></div>
           <h3 class="serif">La phase de décision</h3>
