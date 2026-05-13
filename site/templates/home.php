@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><?= esc($page->seoTitle()->or($page->title())) ?></title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200" imagesrcset="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1600 1600w, https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200 2200w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="<?= url('assets/js/main.js') ?>" defer></script>
+</head>
+<body class="dark-hero site">
+  <div class="page" id="top">
+
+<header class="topbar">
+  <div class="nav-shell">
+    <a class="brand" href="#top">
+      <img class="brand__logo" src="<?= url('assets/images/logo.png') ?>" alt="Smart’Immo Coaching" width="320" height="120">
+    </a>
+    <nav class="nav-links" aria-label="Navigation">
+      <a href="#apropos">À propos</a>
+      <a href="#methode">Méthode</a>
+      <a href="#marche">Déroulé</a>
+      <a href="#offres">Offres</a>
+      <a href="#blocages">Freins</a>
+      <a href="#benefices">Bénéfices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation">
+      <span>Menu</span>
+      <i aria-hidden="true"></i>
+    </button>
+    <a class="nav-cta" href="#contact">PRENDRE CONTACT</a>
+  </div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Navigation mobile" hidden>
+    <a href="#apropos">À propos</a>
+    <a href="#methode">Méthode</a>
+    <a href="#marche">Déroulé</a>
+    <a href="#offres">Offres</a>
+    <a href="#blocages">Freins</a>
+    <a href="#benefices">Bénéfices</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-nav__cta" href="#contact">Prendre contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="accueil" class="hero-10">
+    <div class="media" aria-hidden="true"></div>
+    <div class="content">
+      <div class="intro" data-reveal="fade">
+        <p class="eyebrow">Accompagnement immobilier</p>
+        <h1 class="h1 serif"><span class="hero-title-line">Vendez librement,</span><span class="hero-title-line">mais jamais seul.</span></h1>
+        <p class="lead">Un accompagnement indépendant pour vendre votre bien par vous-même, avec méthode, clarté et sérénité. Sans mandat, sans frais d’intermédiaire, vous gardez le contrôle et optimisez votre vente.</p>
+        <div class="actions">
+          <a class="btn primary" href="#offres">Voir les offres</a>
+          <a class="btn ghost" href="#contact">Prendre contact</a>
+        </div>
+      </div>
+      <aside class="blur-note" data-reveal="slide-right">
+        <p class="note-title serif">Vendre sereinement, ça se prépare.</p>
+        <p>Je vous accompagne pour structurer votre vente entre particuliers, prendre les bonnes décisions au bon moment, et garder le cap jusqu’au bout.</p>
+        <div class="line"></div>
+        <p>Vous savez où vous mettez les pieds, et comment avancer.</p>
+      </aside>
+    </div>
+  </section>
+
+<section id="apropos" class="about-redesign">
+  <div class="wrap">
+    <div class="about-redesign__header" data-reveal="fade">
+      <div class="about-redesign__heading">
+        <p class="about-redesign__eyebrow">À propos</p>
+        <h2 class="about-redesign__title">Le coaching immobilier, une nouvelle façon de vendre son bien ?</h2>
+      </div>
+      <figure class="about-redesign__portrait">
+        <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de Smart’Immo Coaching" loading="lazy" decoding="async" width="864" height="1184">
+      </figure>
+    </div>
+    <div class="about-redesign__body">
+      <div class="about-redesign__explanation">
+        <figure class="about-redesign__portrait about-redesign__portrait--mobile">
+          <img src="<?= url('assets/images/profile_picture.jpg') ?>" alt="Portrait du fondateur de Smart’Immo Coaching" loading="lazy" decoding="async" width="864" height="1184">
+        </figure>
+        <p data-reveal="slide-up">Entre les plateformes, les annonces et des acheteurs mieux informés, la vente d’un bien immobilier s’est clairement complexifiée, et beaucoup de propriétaires se retrouvent seuls face à des décisions importantes.</p>
+        <p data-reveal="slide-up" data-reveal-delay="90">Il devient fréquent de vouloir vendre son bien en maîtrisant ses coûts, sans faire d’erreurs ni avancer seul.</p>
+        <p data-reveal="slide-up" data-reveal-delay="180">C’est précisément dans ce contexte qu’est né le coaching immobilier : un accompagnement indépendant, concret et ancré sur le terrain, avec des échanges en direct au plus près du bien, qui permet de garder la maîtrise de sa vente, tout en s’appuyant sur une méthode et des conseils issus des pratiques professionnelles.</p>
+        <p data-reveal="slide-up" data-reveal-delay="270">Entre l’autonomie totale et le recours à une agence, il s’agit d’une approche intermédiaire, qui aide à structurer sa vente, prendre du recul et avancer sans subir ni dépendre.</p>
+        <p data-reveal="slide-up" data-reveal-delay="360">C’est exactement pour cela que j’ai choisi de proposer cette approche.</p>
+      </div>
+      <div class="about-redesign__promise">
+        <p data-reveal="slide-up">Vous restez décisionnaire du début à la fin.</p>
+        <p data-reveal="slide-up" data-reveal-delay="110">Je ne vends pas à votre place et je ne prends pas de mandat.</p>
+        <p data-reveal="slide-up" data-reveal-delay="220">Mon rôle est de vous aider à structurer votre vente, faire les bons choix et garder le cap jusqu’au bout.</p>
+      </div>
+    </div>
+    <div class="about-redesign__summary">
+      <article class="about-redesign__summary-item" data-reveal="slide-up">
+        <div class="about-redesign__summary-number">01</div>
+        <strong>Remettre de la clarté dans votre vente</strong>
+        <p>Vous savez où vous allez, ce qu’il faut faire, et dans quel ordre avancer pour ne pas vous perdre en route.</p>
+      </article>
+      <article class="about-redesign__summary-item" data-reveal="slide-up" data-reveal-delay="110">
+        <div class="about-redesign__summary-number">02</div>
+        <strong>Vous évitez les erreurs classiques</strong>
+        <p>Des recommandations concrètes, issues de situations réelles de vente, pour vous aider à éviter les pièges les plus courants.</p>
+      </article>
+      <article class="about-redesign__summary-item" data-reveal="slide-up" data-reveal-delay="220">
+        <div class="about-redesign__summary-number">03</div>
+        <strong>Garder un lien simple et humain</strong>
+        <p>Un échange direct, sans complexité inutile, pour avancer avec sérénité et garder le contrôle de votre projet.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="methode" class="method-full">
+  <div class="wrap">
+    <div class="section-head no-meta" data-reveal="fade">
+      <div>
+        <p class="eyebrow">Méthode</p>
+        <h2 class="h2 serif">Une vente, ça se construit étape par étape.</h2>
+      </div>
+    </div>
+    <div class="triptych">
+      <article class="phase" data-reveal="slide-up">
+        <img src="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1771888703723-01d85da1dae1?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de préparation" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <div class="body">
+          <div class="tag"><i></i><span>Avant</span></div>
+          <h3 class="serif">Tout commence ici</h3>
+          <p class="phase-copy">C’est à ce moment que se définissent les bases du projet : la compréhension du bien, sa position sur le marché et les éléments qui vont structurer toute la suite de la vente. Une préparation solide permet d’aborder le marché avec cohérence et de limiter les incertitudes.</p>
+        </div>
+      </article>
+      <article class="phase" data-reveal="slide-up" data-reveal-delay="500">
+        <img src="https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1768904228330-62196a0171d6?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de suivi" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <div class="body">
+          <div class="tag"><i></i><span>Pendant</span></div>
+          <h3 class="serif">Le marché s’exprime</h3>
+          <p class="phase-copy">Les retours des acheteurs, les visites et les signaux du marché permettent de mesurer l’intérêt réel et d’ajuster la compréhension de la situation. Cette étape demande de la lecture et de l’analyse pour garder une trajectoire stable.</p>
+        </div>
+      </article>
+      <article class="phase" data-reveal="slide-up" data-reveal-delay="1000">
+        <img src="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200" srcset="https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=640 640w, https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=900 900w, https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1200 1200w" sizes="(max-width: 640px) calc(100vw - 104px), (max-width: 820px) calc(100vw - 128px), 380px" alt="Visuel de sécurisation" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="800">
+        <div class="body">
+          <div class="tag"><i></i><span>Après</span></div>
+          <h3 class="serif">La phase de décision</h3>
+          <p class="phase-copy">C’est le moment où les propositions sont étudiées et où les décisions finales sont prises jusqu’à la signature. Cette étape demande de la clarté et une vision globale pour avancer sereinement vers la conclusion.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="marche" class="marche-timeline-section">
+  <div class="wrap">
+    <div class="section-head no-meta marche-intro" data-reveal="fade">
+      <div>
+        <p class="eyebrow">Déroulé de l’accompagnement</p>
+        <h2 class="h2 serif">On avance ensemble, du premier doute à la décision finale.</h2>
+        <p class="lead">Un projet de vente, ça soulève toujours des questions. Par où commencer, quoi faire, à quel moment… Ici, on revient à quelque chose d’efficace et concret.</p>
+      </div>
+    </div>
+    <div class="rail marche-timeline" data-marche-timeline>
+      <div class="marche-spine" aria-hidden="true"><span></span></div>
+      <article class="step marche-step" data-marche-step><div class="dot marche-marker"><div class="n">1</div></div><div class="marche-step-content"><h3 class="serif">Comprendre votre projet</h3><p>On prend le temps de comprendre votre projet, votre bien et votre situation. Vous repartez déjà avec une première vision claire.</p></div></article>
+      <article class="step marche-step" data-marche-step><div class="dot marche-marker"><div class="n">2</div></div><div class="marche-step-content"><h3 class="serif">Définir le bon prix</h3><p>Je vous restitue l’analyse du marché et le positionnement de votre bien. On prépare aussi la mise en vente : visuels, angle, stratégie. Vous savez comment vous positionner, et pourquoi.</p></div></article>
+      <article class="step marche-step" data-marche-step><div class="dot marche-marker"><div class="n">3</div></div><div class="marche-step-content"><h3 class="serif">Contacts & visites</h3><p>Je vous accompagne sur la manière de répondre, filtrer et organiser les visites. On travaille votre posture et votre discours. Vous gagnez en assurance et en efficacité.</p></div></article>
+      <article class="step marche-step" data-marche-step><div class="dot marche-marker"><div class="n">4</div></div><div class="marche-step-content"><h3 class="serif">Offres & décision</h3><p>On voit la méthodologie pour l’analyse des propositions, on prépare la négociation et vos prises de décision. Vous gardez la maîtrise de vos choix à chaque étape de la négociation</p></div></article>
+      <article class="step marche-step" data-marche-step><div class="dot marche-marker"><div class="n">5</div></div><div class="marche-step-content"><h3 class="serif">Vérifier et finaliser</h3><p>On passe ensemble les documents importants (compromis, éléments clés). On sécurise les derniers points avant engagement. Vous avancez sans zone floue jusqu’à la signature.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="offres" class="offers-8">
+  <div class="wrap">
+    <div class="section-head no-meta" data-reveal="fade">
+      <div>
+        <p class="eyebrow">Offres et comparaison</p>
+        <h2 class="h2 serif">Offres et comparaison</h2>
+        <p class="lead">Vous ne payez pas une commission. Vous choisissez un accompagnement.</p>
+        <p class="lead">Chaque formule correspond à un niveau de besoin, du cadrage initial jusqu’à l’accompagnement complet.</p>
+      </div>
+    </div>
+    <div class="offers-comparison offers-comparison--table" data-reveal="fade">
+      <span class="offers-table__mobile-flag" aria-hidden="true">Recommandé</span>
+      <p class="offers-table__mobile-hint" aria-hidden="true">Glisser pour comparer</p>
+      <div class="offers-table-scroll">
+        <table class="offers-table">
+        <caption>Comparatif des prestations incluses dans les trois packs Smart’Immo Coaching.</caption>
+        <colgroup>
+          <col class="offers-table__feature-col">
+          <col>
+          <col>
+          <col class="offers-table__recommended-col">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="offers-table__feature-head">Prestations</th>
+            <th scope="col">
+              <span class="offers-table__pack-name serif">PACK COUP DE POUCE</span>
+            </th>
+            <th scope="col">
+              <span class="offers-table__pack-name serif">PACK COUP DE MAIN</span>
+            </th>
+            <th scope="col" class="offers-table__recommended-head">
+              <span class="offers-table__flag">Recommandé</span>
+              <span class="offers-table__pack-name serif">PACK COUP DE MAÎTRE</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Avis de valeur</th><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Reportage photo (vue aérienne comprise)</th><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Photos home-staging</th><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Rédaction de l’annonce de vente</th><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Vidéo de présentation</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Contact prestataire (artisans,notaire etc)</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Constitution du dossier de vente</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Fiche/dossier de présentation du bien</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Accompagnement à la publication de l’annonce</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Coaching “Filtrage contact acquéreur”</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Coaching “Visite du bien”</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Coaching “Gestion des objections”</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Coaching “Offre d’achat et négociation”</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Réalisation d’un croquis 2D du bien</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Réalisation d’un panneau “À vendre”</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Analyse et compréhension des documents liés à la vente</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr><th scope="row">Accompagnement démarches administratives</th><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--no" aria-label="Non inclus"><span aria-hidden="true">×</span><span class="offers-sr-only">Non inclus</span></span></td><td><span class="table-mark table-mark--yes" aria-label="Inclus"><span aria-hidden="true">✓</span><span class="offers-sr-only">Inclus</span></span></td></tr>
+          <tr class="offers-table__price-row"><th scope="row">Prix</th><td>600.00€ TTC</td><td>2400.00€ TTC</td><td>3000.00€ TTC</td></tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="offer-addon" data-reveal="fade">
+      <div class="offer-addon__label">
+        <span>Accompagnement disponible à la demande</span>
+        <strong>Prestation disponible à la demande du client</strong>
+      </div>
+      <div class="offer-addon__service">
+        <span>Avis de valeur</span>
+        <strong>200€ TTC</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="calculateur" class="sale-calculator-section">
+  <div class="wrap">
+    <div class="sale-calculator" data-sale-calculator data-reveal="fade">
+      <div class="sale-calculator__intro">
+        <p class="eyebrow">Simulation</p>
+        <h2 class="sale-calculator__title serif">Chaque vente à un coût</h2>
+        <p class="sale-calculator__copy">Simulation indicative basée sur les paramètres renseignés</p>
+        <div class="sale-calculator__result" role="status" aria-live="polite" aria-atomic="true">
+          <span id="net-result-label">Ce qu’il vous reste après la vente</span>
+          <output id="net-result" data-net-result for="sale-price percent-range percent-input fixed-cost" aria-labelledby="net-result-label">332 500 €</output>
+        </div>
+      </div>
+
+      <form class="sale-calculator__panel" aria-label="Calculateur du coût de la vente">
+        <label class="calc-field" for="sale-price">
+          <span>Prix de vente de votre bien</span>
+          <span class="calc-input-shell">
+            <input id="sale-price" type="text" inputmode="numeric" autocomplete="off" value="350 000" data-sale-price>
+            <span>€</span>
+          </span>
+        </label>
+
+        <fieldset class="calc-cost">
+          <legend id="cost-mode-legend">Coût de la vente</legend>
+          <div class="calc-mode-switch" role="radiogroup" aria-labelledby="cost-mode-legend">
+            <button class="is-active" type="button" role="radio" aria-checked="true" aria-controls="cost-panel-percent" tabindex="0" data-cost-mode="percent">Pourcentage</button>
+            <button type="button" role="radio" aria-checked="false" aria-controls="cost-panel-fixed" tabindex="-1" data-cost-mode="fixed">Forfait</button>
+          </div>
+
+          <div class="calc-mode-panel is-active" id="cost-panel-percent" data-cost-panel="percent">
+            <div class="calc-percent-head">
+              <label for="percent-range">Pourcentage appliqué</label>
+              <div class="calc-percent-value">
+                <label class="calc-sr-only" for="percent-input">Pourcentage du coût de la vente</label>
+                <input id="percent-input" type="number" min="4" max="9" step="0.1" value="5" data-percent-input>
+                <span>%</span>
+              </div>
+            </div>
+            <input id="percent-range" type="range" min="4" max="9" step="0.1" value="5" data-percent-range aria-describedby="percent-range-help percent-cost-preview">
+            <p class="calc-sr-only" id="percent-range-help">Valeur comprise entre 4% et 9%.</p>
+            <p class="calc-cost-preview" id="percent-cost-preview" aria-live="polite" aria-atomic="true">Coût calculé : <strong data-cost-preview>17 500 €</strong></p>
+          </div>
+
+          <div class="calc-mode-panel is-disabled" id="cost-panel-fixed" data-cost-panel="fixed" aria-disabled="true">
+            <label class="calc-field" for="fixed-cost">
+              <span>Montant du forfait</span>
+              <span class="calc-input-shell">
+                <input id="fixed-cost" type="text" inputmode="numeric" autocomplete="off" value="18 000" data-fixed-cost disabled>
+                <span>€</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="blocages" class="issues-section">
+  <div class="wrap">
+    <div class="section-head no-meta" data-reveal="fade">
+      <div>
+        <p class="eyebrow">Freins à la vente</p>
+        <h2 class="h2 serif">Freins à la vente</h2>
+      </div>
+    </div>
+    <div class="issues-experience" data-reveal="fade">
+      <div class="issues-grid" aria-label="Freins à la vente">
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="0">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="badge-euro"></i>
+          </div>
+          <h3 class="issue-card__title serif">Prix à côté</h3>
+          <p class="issue-card__copy">Vous mettez votre bien en ligne en pensant être dans les prix.<br>Les jours passent, avec peu de contacts ou des visites sans suite.</p>
+        </article>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="80">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="monitor-play"></i>
+          </div>
+          <h3 class="issue-card__title serif">Annonce qui ne vend pas</h3>
+          <p class="issue-card__copy">Votre annonce est en ligne, mais elle ne génère pas les retours attendus.<br>Les demandes restent limitées ou peu qualifiées.</p>
+        </article>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="160">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="messages-square"></i>
+          </div>
+          <h3 class="issue-card__title serif">Contacts mal gérés</h3>
+          <p class="issue-card__copy">Les messages et appels s’enchaînent.<br>Certains insistent, d’autres disparaissent, et il devient difficile de faire le tri.</p>
+        </article>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="240">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="door-open"></i>
+          </div>
+          <h3 class="issue-card__title serif">Visites sans impact</h3>
+          <p class="issue-card__copy">Les visites se passent bien sur le moment.<br>Mais derrière, peu de retours concrets ou aucune offre.</p>
+        </article>
+        <article class="issue-card" data-reveal="slide-up" data-reveal-delay="320">
+          <div class="issue-card__icon" aria-hidden="true">
+            <i data-lucide="handshake"></i>
+          </div>
+          <h3 class="issue-card__title serif">Négociation subie</h3>
+          <p class="issue-card__copy">Une offre arrive, souvent en dessous du prix.<br>Le doute s’installe sur la décision à prendre et la marge de négociation.</p>
+        </article>
+      </div>
+      <div class="issues-summary">
+        <p>C’est généralement dans ces moments-là que les décisions deviennent plus difficiles à prendre seul.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benefices" class="assurance-merge">
+  <div class="wrap">
+    <div class="benefices-showcase" data-benefit-chooser data-reveal="fade">
+      <div class="benefices-title-block">
+        <p class="eyebrow">Reprenez le contrôle.</p>
+        <h2 class="h2 serif">Reprenez le contrôle.</h2>
+      </div>
+      <div class="benefices-split">
+        <div class="benefit-selectors" role="tablist" aria-label="Choisir un bénéfice" aria-orientation="vertical">
+          <button class="benefit-choice is-active" id="benefit-choice-1" type="button" role="tab" aria-selected="true" aria-controls="benefices-active" tabindex="0" data-benefit-choice data-benefit-title="1. Comprendre la vraie valeur de votre bien" data-benefit-copy="Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent." data-benefit-image="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&fm=jpg&q=72&w=1600" data-benefit-image-position="84% 58%">
+            <span class="benefit-choice__title">1. Comprendre la vraie valeur de votre bien</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-2" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" tabindex="-1" data-benefit-choice data-benefit-title="2. Créer l’envie dès le premier regard" data-benefit-copy="Annonce, photos, vidéo, présentation : tout est pensé pour déclencher de vraies visites, pas du hasard." data-benefit-image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&fm=jpg&q=72&w=1600" data-benefit-image-position="72% 52%">
+            <span class="benefit-choice__title">2. Créer l’envie dès le premier regard</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-3" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" tabindex="-1" data-benefit-choice data-benefit-title="3. Ne garder que les bonnes visites" data-benefit-copy="Ce qui n’est pas sérieux ne passe pas la porte. Ce qui l’est, reste et avance." data-benefit-image="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&fm=jpg&q=72&w=1600" data-benefit-image-position="74% 48%">
+            <span class="benefit-choice__title">3. Ne garder que les bonnes visites</span>
+          </button>
+          <button class="benefit-choice" id="benefit-choice-4" type="button" role="tab" aria-selected="false" aria-controls="benefices-active" tabindex="-1" data-benefit-choice data-benefit-title="4. Accompagner jusqu’à la concrétisation" data-benefit-copy="Une vente réussie, c’est bien souvent une suite de décisions simples, prises au bon moment." data-benefit-image="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&fm=jpg&q=72&w=1600" data-benefit-image-position="82% 58%">
+            <span class="benefit-choice__title">4. Accompagner jusqu’à la concrétisation</span>
+          </button>
+        </div>
+        <article class="benefit-active" id="benefices-active" role="tabpanel" aria-labelledby="benefit-choice-1" aria-live="polite">
+          <h3 class="serif" data-benefit-title>1. Comprendre la vraie valeur de votre bien</h3>
+          <p data-benefit-copy>Un bien, c’est souvent une histoire… mais sur le marché, ce sont les bons repères qui comptent.</p>
+        </article>
+      </div>
+      <div class="manifesto" aria-label="Garanties">
+        <article class="row">
+          <h4 class="serif">Un forfait clair, pas de surprise au résultat</h4>
+          <p class="muted">Vous payez pour un accompagnement défini dès le départ, sans commission ni pourcentage sur le prix de vente. Simple, transparent, lisible.</p>
+        </article>
+        <article class="row">
+          <h4 class="serif">Ensemble vers une vente fluide et réussie</h4>
+          <p class="muted">Parce que personne ne connaît votre bien comme vous, on construit une stratégie à deux : votre vision + mon expertise.</p>
+        </article>
+        <article class="row">
+          <h4 class="serif">Du temps gagné, de l’énergie économisée</h4>
+          <p class="muted">On évite les erreurs, les hésitations et les démarches inutiles : tout est simplifié pour avancer vite, bien et sans stress.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-band">
+  <div class="wrap">
+    <div class="section-head compact no-meta" data-reveal="fade">
+      <div>
+        <p class="eyebrow">Prendre contact</p>
+        <h2 class="h2 serif">Et si vendre votre bien était plus simple que prévu ?</h2>
+      </div>
+    </div>
+    <div class="contact-shell" data-reveal="fade">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Prendre contact</p>
+          <h3 class="serif contact-title">Un échange rapide pour faire le point sur votre projet et vos besoins.</h3>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:contact@smartimmocoaching.fr">ENVOYER UN EMAIL</a>
+            <a class="btn ghost contact-phone" href="tel:06XXXXXXXX">APPELER</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="row"><div class="k">Téléphone</div><div class="v"><a href="tel:06XXXXXXXX">06.XX.XX.XX.XX</a></div></div>
+          <div class="row"><div class="k">Mail</div><div class="v"><a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a></div></div>
+          <div class="row"><div class="k">Où je me déplace</div><div class="v">Marmande et alentours<br>Lot-et-Garonne</div></div>
+          <div class="row"><div class="k">Disponibilité</div><div class="v">Réponse sous 24h ouvrées<br>Du lundi au samedi</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="wrap">
+    <div class="site-footer__main">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="#top" aria-label="Smart’Immo Coaching - retour en haut de page">
+          <img class="site-footer__logo-image" src="<?= url('assets/images/logo.png') ?>" alt="Smart’Immo Coaching" width="320" height="120">
+        </a>
+        <p>Coaching immobilier indépendant pour vendre avec méthode, sans mandat ni frais d’intermédiaire.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Navigation de pied de page">
+        <a href="#apropos">À propos</a>
+        <a href="#methode">Méthode</a>
+        <a href="#marche">Déroulé</a>
+        <a href="#offres">Offres</a>
+        <a href="#blocages">Freins</a>
+        <a href="#benefices">Bénéfices</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="site-footer__contact">
+        <div class="site-footer__contact-lines">
+          <a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a>
+          <a href="tel:06XXXXXXXX">06.XX.XX.XX.XX</a>
+          <p>Marmande et alentours,<br>Lot-et-Garonne</p>
+        </div>
+        <a class="site-footer__cta" href="#contact">Échanger sur votre projet</a>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>© 2026 Smart’Immo Coaching</p>
+      <div class="site-footer__legal">
+        <a href="<?= url('mentions-legales.html') ?>">Mentions légales</a>
+        <a href="<?= url('politique-confidentialite.html') ?>">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
