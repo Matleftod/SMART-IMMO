@@ -39,7 +39,6 @@
     };
 
     const applyMobileSemantics = () => {
-    const applyMobileSemantics = () => {
       selectors.setAttribute("role", "group");
       selectors.setAttribute("aria-label", "Bénéfices");
       selectors.removeAttribute("aria-orientation");

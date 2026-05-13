@@ -21,6 +21,7 @@ if (($title ?? null) !== null) {
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200" imagesrcset="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1600 1600w, https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200 2200w" imagesizes="100vw" fetchpriority="high">
   <?php endif ?>
+  <link rel="icon" href="<?= url('assets/images/logo.png') ?>">
   <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
   <?php if ($isHome): ?>
     <?php snippet('scripts', ['isHome' => true]) ?>

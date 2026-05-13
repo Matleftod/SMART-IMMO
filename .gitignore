@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+
+# Playwright outputs
+playwright-report/
+test-results/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
