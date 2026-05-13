@@ -1,0 +1,15 @@
+/* Assurance */
+.manifesto{
+  border-top:1px solid rgba(124,98,78,.14);
+  border-bottom:1px solid rgba(124,98,78,.14);
+}
+.manifesto .row{
+  display:grid;grid-template-columns:1fr 80px;gap:24px;
+  padding:22px 0;border-top:1px solid rgba(124,98,78,.12)
+}
+.manifesto .row:first-child{border-top:0}
+.manifesto h4{font-size:28px;line-height:1.15;color:var(--brown-deep);margin-bottom:8px}
+.manifesto .sign{
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(45,36,30,.48);align-self:start;justify-self:end
+}
+
