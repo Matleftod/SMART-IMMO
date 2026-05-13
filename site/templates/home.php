@@ -1,50 +1,5 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= esc($page->seoTitle()->or($page->title())) ?></title>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200" imagesrcset="https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=1600 1600w, https://images.unsplash.com/photo-1757362141189-8d2f7af341b0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=2200 2200w" imagesizes="100vw" fetchpriority="high">
-  <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-  <script src="<?= url('assets/js/main.js') ?>" defer></script>
-</head>
-<body class="dark-hero site">
-  <div class="page" id="top">
-
-<header class="topbar">
-  <div class="nav-shell">
-    <a class="brand" href="#top">
-      <img class="brand__logo" src="<?= url('assets/images/logo.png') ?>" alt="Smart’Immo Coaching" width="320" height="120">
-    </a>
-    <nav class="nav-links" aria-label="Navigation">
-      <a href="#apropos">À propos</a>
-      <a href="#methode">Méthode</a>
-      <a href="#marche">Déroulé</a>
-      <a href="#offres">Offres</a>
-      <a href="#blocages">Freins</a>
-      <a href="#benefices">Bénéfices</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation">
-      <span>Menu</span>
-      <i aria-hidden="true"></i>
-    </button>
-    <a class="nav-cta" href="#contact">PRENDRE CONTACT</a>
-  </div>
-  <nav class="mobile-nav" id="mobile-navigation" aria-label="Navigation mobile" hidden>
-    <a href="#apropos">À propos</a>
-    <a href="#methode">Méthode</a>
-    <a href="#marche">Déroulé</a>
-    <a href="#offres">Offres</a>
-    <a href="#blocages">Freins</a>
-    <a href="#benefices">Bénéfices</a>
-    <a href="#contact">Contact</a>
-    <a class="mobile-nav__cta" href="#contact">Prendre contact</a>
-  </nav>
-</header>
-
+<?php snippet('head', ['isHome' => true, 'bodyClass' => 'dark-hero site']) ?>
+<?php snippet('header', ['isHome' => true]) ?>
 <main>
   <section id="accueil" class="hero-10">
     <div class="media" aria-hidden="true"></div>
@@ -431,47 +386,7 @@
 </section>
 
 </main>
-
-<footer class="site-footer" id="site-footer">
-  <div class="wrap">
-    <div class="site-footer__main">
-      <div class="site-footer__brand">
-        <a class="site-footer__logo" href="#top" aria-label="Smart’Immo Coaching - retour en haut de page">
-          <img class="site-footer__logo-image" src="<?= url('assets/images/logo.png') ?>" alt="Smart’Immo Coaching" width="320" height="120">
-        </a>
-        <p>Coaching immobilier indépendant pour vendre avec méthode, sans mandat ni frais d’intermédiaire.</p>
-      </div>
-
-      <nav class="site-footer__nav" aria-label="Navigation de pied de page">
-        <a href="#apropos">À propos</a>
-        <a href="#methode">Méthode</a>
-        <a href="#marche">Déroulé</a>
-        <a href="#offres">Offres</a>
-        <a href="#blocages">Freins</a>
-        <a href="#benefices">Bénéfices</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="site-footer__contact">
-        <div class="site-footer__contact-lines">
-          <a href="mailto:contact@smartimmocoaching.fr">contact@smartimmocoaching.fr</a>
-          <a href="tel:06XXXXXXXX">06.XX.XX.XX.XX</a>
-          <p>Marmande et alentours,<br>Lot-et-Garonne</p>
-        </div>
-        <a class="site-footer__cta" href="#contact">Échanger sur votre projet</a>
-      </div>
-    </div>
-
-    <div class="site-footer__bottom">
-      <p>© 2026 Smart’Immo Coaching</p>
-      <div class="site-footer__legal">
-        <a href="<?= url('mentions-legales.html') ?>">Mentions légales</a>
-        <a href="<?= url('politique-confidentialite.html') ?>">Politique de confidentialité</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+<?php snippet('footer', ['isHome' => true]) ?>
   </div>
 </body>
 </html>
