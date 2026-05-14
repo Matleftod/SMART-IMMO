@@ -23,12 +23,6 @@ sections:
       editorSiret:
         label: 1. Éditeur - SIREN / SIRET
         type: text
-      editorEmail:
-        label: 1. Éditeur - E-mail
-        type: text
-      editorPhone:
-        label: 1. Éditeur - Téléphone
-        type: text
       tvaLine1:
         label: 1. Éditeur - TVA (ligne 1)
         type: text

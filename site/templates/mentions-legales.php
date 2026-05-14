@@ -6,10 +6,6 @@ $contactPhoneDigits = preg_replace('/\D+/', '', $contactPhone);
 $contactPhoneHref = (strlen($contactPhoneDigits) >= 6) ? $contactPhoneDigits : '06XXXXXXXX';
 $text = static fn (string $field, string $fallback) => $page->{$field}()->or($fallback)->value();
 $toHtml = static fn (string $value) => nl2br(esc($value));
-$editorEmail = $text('editorEmail', '[E-mail à compléter]');
-$editorPhone = $text('editorPhone', '[Téléphone à compléter]');
-$editorPhoneDigits = preg_replace('/\D+/', '', $editorPhone);
-$editorPhoneHref = (strlen($editorPhoneDigits) >= 6) ? $editorPhoneDigits : $contactPhoneHref;
 $publicationRaw = trim($text('publicationLine', '[Nom et prénom à compléter]'));
 $publicationName = preg_replace('/^Responsable de la publication\s*:\s*/iu', '', $publicationRaw) ?: '[Nom et prénom à compléter]';
 ?>
@@ -52,11 +48,11 @@ $publicationName = preg_replace('/^Responsable de la publication\s*:\s*/iu', '',
           </div>
           <div>
             <dt>E-mail</dt>
-            <dd><a href="mailto:<?= esc($editorEmail, 'attr') ?>"><?= esc($editorEmail) ?></a></dd>
+            <dd><a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a></dd>
           </div>
           <div>
             <dt>Téléphone</dt>
-            <dd><a href="tel:<?= esc($editorPhoneHref, 'attr') ?>"><?= esc($editorPhone) ?></a></dd>
+            <dd><a href="tel:<?= esc($contactPhoneHref, 'attr') ?>"><?= esc($contactPhone) ?></a></dd>
           </div>
           <div>
             <dt>TVA</dt>
