@@ -11,11 +11,6 @@ sections:
     type: fields
     headline: Contenu de la page (modifiable)
     fields:
-      heroIntro:
-        label: Intro haut de page
-        type: textarea
-        buttons: false
-        size: medium
       section1Body:
         label: 1. Responsable du traitement (texte)
         type: textarea

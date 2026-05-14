@@ -20,7 +20,7 @@ $publicationName = preg_replace('/^Responsable de la publication\s*:\s*/iu', '',
     <div class="wrap">
       <p class="legal-eyebrow">Informations légales</p>
       <h1 class="serif">Mentions légales</h1>
-      <p><?= $toHtml($text('heroIntro', "Informations d'identification de l'éditeur du site et cadre d'utilisation.")) ?></p>
+      <p>Informations d'identification de l'éditeur du site et cadre d'utilisation.</p>
     </div>
   </section>
 
@@ -28,7 +28,7 @@ $publicationName = preg_replace('/^Responsable de la publication\s*:\s*/iu', '',
     <div class="wrap">
       <article class="legal-card">
         <h2 class="serif">1. Éditeur du site</h2>
-        <p><?= esc($text('editorIntro', $siteTitle . ' est édité par :')) ?></p>
+        <p><?= esc($siteTitle) ?> est édité par :</p>
         <dl class="legal-list">
           <div>
             <dt>Nom commercial</dt>

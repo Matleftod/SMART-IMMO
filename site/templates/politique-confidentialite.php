@@ -11,7 +11,7 @@ $toHtml = static fn (string $value) => nl2br(esc($value));
     <div class="wrap">
       <p class="legal-eyebrow">Données personnelles</p>
       <h1 class="serif">Politique de confidentialité</h1>
-      <p><?= $toHtml($text('heroIntro', 'Traitement des données personnelles adapté au site vitrine actuel.')) ?></p>
+      <p>Traitement des données personnelles adapté au site vitrine actuel.</p>
     </div>
   </section>
 

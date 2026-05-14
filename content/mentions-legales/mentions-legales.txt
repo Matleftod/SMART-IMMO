@@ -2,15 +2,7 @@ Title: Mentions légales
 
 ----
 
-Herointro: Informations d'identification de l'éditeur du site et cadre d'utilisation.
-
-----
-
-Editorintro: Smart'Immo Coaching est édité par :
-
-----
-
-Editoridentity: "[Nom et prénom à compléter] EI"
+Editoridentity: [Nom et prénom à compléter]
 
 ----
 
@@ -18,19 +10,19 @@ Editorstatus: Entrepreneur individuel / micro-entrepreneur
 
 ----
 
-Editoraddress: "[Adresse professionnelle à compléter]"
+Editoraddress: [Adresse professionnelle à compléter]
 
 ----
 
-Editorsiret: "[SIREN / SIRET à compléter]"
+Editorsiret: [SIREN / SIRET à compléter]
 
 ----
 
-Editoremail: "[E-mail à compléter]"
+Editoremail: [E-mail à compléter]
 
 ----
 
-Editorphone: "[Téléphone à compléter]"
+Editorphone: [Téléphone à compléter]
 
 ----
 
@@ -46,15 +38,15 @@ Publicationline: [Nom et prénom à compléter]
 
 ----
 
-Hostname: "[Nom de l’hébergeur à compléter]"
+Hostname: [Nom de l’hébergeur à compléter]
 
 ----
 
-Hostaddress: "[Adresse de l’hébergeur à compléter]"
+Hostaddress: [Adresse de l’hébergeur à compléter]
 
 ----
 
-Hostcontact: "[Téléphone ou contact de l’hébergeur à compléter]"
+Hostcontact: [Téléphone ou contact de l’hébergeur à compléter]
 
 ----
 
@@ -97,6 +89,14 @@ Seotitle: Mentions légales | Smart'Immo Coaching
 ----
 
 Metadescription: Consultez les mentions légales de Smart'Immo Coaching : informations éditoriales, hébergement et responsabilités.
+
+----
+
+Herointro: Informations d'identification de l'éditeur du site et cadre d'utilisation.
+
+----
+
+Editorintro: Smart'Immo Coaching est édité par :
 
 ----
 

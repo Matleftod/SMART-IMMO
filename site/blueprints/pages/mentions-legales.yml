@@ -11,14 +11,6 @@ sections:
     type: fields
     headline: Contenu de la page (modifiable)
     fields:
-      heroIntro:
-        label: Intro haut de page
-        type: textarea
-        buttons: false
-        size: medium
-      editorIntro:
-        label: 1. Éditeur - Intro
-        type: text
       editorIdentity:
         label: 1. Éditeur - Identité
         type: text
