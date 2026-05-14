@@ -89,8 +89,28 @@
   .site section{padding:44px 0 !important;}
   .site #apropos.about-redesign{padding:40px 0 !important;}
   .site #methode{padding:48px 0 52px !important;}
+  .site .wrap{
+    max-width:100% !important;
+    min-width:0 !important;
+  }
   .site #accueil .content{
     align-content:start !important;
     padding:22px 20px 18px !important;
+  }
+  .site #accueil .content > *{
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+  .site #accueil .intro,
+  .site #accueil .actions,
+  .site #accueil .blur-note{
+    min-width:0 !important;
+  }
+  .site #accueil .lead,
+  .site #accueil .blur-note p,
+  .legal-page .legal-hero p,
+  .legal-page .legal-card p,
+  .legal-page .legal-list dd{
+    overflow-wrap:anywhere;
   }
 }
