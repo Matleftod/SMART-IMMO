@@ -8,7 +8,7 @@ options:
 
 tabs:
   images:
-    label: 1) Images (important)
+    label: 1) Images
     sections:
       imageFiles:
         label: Images disponibles

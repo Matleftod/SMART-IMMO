@@ -12,12 +12,12 @@ tabs:
             label: E-mail de contact
             type: email
             width: 1/2
-            help: Adresse e-mail affichée dans le footer.
+            help: Adresse e-mail affichée dans le site.
           contactPhone:
             label: Téléphone de contact
             type: tel
             width: 1/2
-            help: Numéro affiché dans le footer.
+            help: Numéro affiché dans le site.
       mainPages:
         type: pages
         label: Pages du site

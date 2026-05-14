@@ -13,21 +13,20 @@ sections:
     type: info
     label: Guide rapide
     text: |
-      Ce back-office est volontairement simple.
       Commencez par **Pages du site** pour modifier le contenu utile (images, SEO, pages légales).
   siteFieldsHelp:
     type: info
     label: Coordonnées globales (dans "Site")
     text: |
-      - **E-mail de contact**: affiché dans le footer du site.
-      - **Téléphone de contact**: affiché dans le footer du site.
+      - **E-mail de contact**: affiché dans le site.
+      - **Téléphone de contact**: affiché dans le site.
       Ces deux champs sont globaux et s'appliquent à tout le site.
   homeHelp:
     type: info
     label: Accueil - modifier les images
     text: |
       1. Ouvrez la page **Accueil**.
-      2. Onglet **1) Images (important)**.
+      2. Onglet **1) Images**.
       3. Ajoutez vos images dans **Images disponibles**.
       4. Affectez chaque image au bon champ:
          - heroImage
@@ -44,5 +43,7 @@ sections:
     type: info
     label: Pages légales
     text: |
-      Les pages **Mentions légales** et **Politique de confidentialité** sont éditables en SEO.
-      Le contenu juridique détaillé n'est pas structuré en champs dans cette phase.
+      Les pages **Mentions légales** et **Politique de confidentialité** ont:
+      - un onglet **Référencement (SEO)** (titre SEO + méta-description),
+      - des champs de contenu juridique modifiables.
+      L'e-mail et le téléphone affichés proviennent des coordonnées globales dans **Site**.
