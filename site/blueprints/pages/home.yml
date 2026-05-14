@@ -10,13 +10,6 @@ tabs:
   images:
     label: 1) Images (important)
     sections:
-      imagesGuide:
-        type: info
-        label: Comment changer une image (étapes simples)
-        text: |
-          1. Ajoutez d'abord l'image dans **Images disponibles**.
-          2. Ensuite, dans les champs ci-dessous, choisissez l'image à utiliser.
-          3. Cliquez sur **Enregistrer**.
       imageFiles:
         label: Images disponibles
         type: files
@@ -105,12 +98,6 @@ tabs:
   seo:
     label: 2) Référencement (SEO)
     sections:
-      seoGuide:
-        type: info
-        label: À quoi servent ces champs ?
-        text: |
-          Ces champs n'affichent pas de texte dans la page.
-          Ils servent au titre d'onglet navigateur et à la description pour Google.
       seoFields:
         type: fields
         fields:
