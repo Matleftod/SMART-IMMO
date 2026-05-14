@@ -7,6 +7,60 @@ options:
   duplicate: false
 
 sections:
+  content:
+    type: fields
+    headline: Contenu de la page (modifiable)
+    fields:
+      heroIntro:
+        label: Intro haut de page
+        type: textarea
+        buttons: false
+        size: medium
+      section1Body:
+        label: 1. Responsable du traitement (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section2Body:
+        label: 2. Données collectées (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section3Body:
+        label: 3. Finalités (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section4Body:
+        label: 4. Base légale (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section5Body:
+        label: 5. Destinataires (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section6Body:
+        label: 6. Durée de conservation (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section7Body:
+        label: 7. Droits des personnes (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section8Body:
+        label: 8. Cookies et traceurs (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section9Body:
+        label: 9. Données techniques (texte)
+        type: textarea
+        buttons: false
+        size: medium
   seo:
     type: fields
     headline: Référencement (SEO)

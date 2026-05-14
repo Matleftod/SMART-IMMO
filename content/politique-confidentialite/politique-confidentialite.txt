@@ -2,6 +2,196 @@ Title: Politique de confidentialité
 
 ----
 
+heroIntro: Traitement des données personnelles adapté au site vitrine actuel.
+
+----
+
+section1Body: |
+  Le responsable du traitement est :
+  
+  [Nom et prénom à compléter] EI
+  Smart'Immo Coaching
+  Contact : [E-mail à compléter]
+
+----
+
+section2Body: |
+  Le site ne collecte pas de données via formulaire.
+  
+  Aucun compte utilisateur, paiement en ligne ou inscription newsletter n'est proposé.
+  
+  Des données peuvent être transmises volontairement si vous contactez Smart'Immo Coaching par :
+  - e-mail
+  - téléphone
+  - lien de prise de contact externe, si disponible
+  
+  Ces données peuvent inclure : nom et prénom, coordonnées de contact, informations communiquées dans votre message.
+
+----
+
+section3Body: |
+  Les données transmises sont utilisées uniquement pour :
+  - répondre à une demande
+  - préparer un échange ou un rendez-vous
+  - assurer le suivi d'une relation commerciale si elle est engagée
+
+----
+
+section4Body: |
+  Le traitement repose sur :
+  - l'exécution de mesures précontractuelles lorsque vous demandez un échange ou un devis
+  - l'intérêt légitime de Smart'Immo Coaching à répondre aux demandes reçues
+
+----
+
+section5Body: |
+  Les données sont destinées uniquement à Smart'Immo Coaching.
+  
+  Elles ne sont pas vendues.
+  Elles ne sont pas transmises à des tiers à des fins publicitaires.
+
+----
+
+section6Body: |
+  Les données issues d'un échange sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation commerciale.
+  
+  En l'absence de suite donnée, elles peuvent être supprimées à l'issue d'un délai raisonnable.
+
+----
+
+section7Body: |
+  Vous pouvez demander l'accès, la rectification ou la suppression de vos données.
+  
+  Vous pouvez également vous opposer à leur traitement lorsque cela est applicable.
+  
+  Pour exercer vos droits : [E-mail à compléter]
+  
+  Vous pouvez également introduire une réclamation auprès de la CNIL.
+
+----
+
+section8Body: |
+  Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.
+  
+  Aucune bannière cookies n'est donc affichée à ce stade.
+  
+  Si des outils de mesure d'audience ou traceurs sont ajoutés ultérieurement, la présente politique sera mise à jour.
+
+----
+
+section9Body: |
+  L'hébergeur du site peut traiter certaines données techniques nécessaires au fonctionnement et à la sécurité du site, notamment des journaux de connexion.
+
+----
+
+controllerIntro: "Le responsable du traitement est :"
+
+----
+
+controllerIdentity: "[Nom et prénom à compléter] EI"
+
+----
+
+controllerBusinessName: Smart'Immo Coaching
+
+----
+
+controllerContact: "[E-mail à compléter]"
+
+----
+
+collectedText1: Le site ne collecte pas de données via formulaire.
+
+----
+
+collectedText2: Aucun compte utilisateur, paiement en ligne ou inscription newsletter n'est proposé.
+
+----
+
+collectedText3: Des données peuvent être transmises volontairement si vous contactez Smart'Immo Coaching par e-mail, téléphone ou lien de prise de contact externe (si disponible).
+
+----
+
+collectedText4: "Ces données peuvent inclure : nom et prénom, coordonnées de contact, informations communiquées dans votre message."
+
+----
+
+purposesIntro: "Les données transmises sont utilisées uniquement pour :"
+
+----
+
+purposesItem1: "répondre à une demande,"
+
+----
+
+purposesItem2: "préparer un échange ou un rendez-vous,"
+
+----
+
+purposesItem3: "assurer le suivi d'une relation commerciale si elle est engagée."
+
+----
+
+legalBasisIntro: "Le traitement repose sur :"
+
+----
+
+legalBasisItem1: "l'exécution de mesures précontractuelles lorsque vous demandez un échange ou un devis,"
+
+----
+
+legalBasisItem2: "l'intérêt légitime de Smart'Immo Coaching à répondre aux demandes reçues."
+
+----
+
+recipientsText1: "Les données sont destinées uniquement à Smart'Immo Coaching."
+
+----
+
+recipientsText2: Elles ne sont pas vendues et ne sont pas transmises à des tiers à des fins publicitaires.
+
+----
+
+retentionText1: Les données issues d'un échange sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation commerciale.
+
+----
+
+retentionText2: En l'absence de suite donnée, elles peuvent être supprimées à l'issue d'un délai raisonnable.
+
+----
+
+rightsText1: Vous pouvez demander l'accès, la rectification ou la suppression de vos données.
+
+----
+
+rightsText2: Vous pouvez également vous opposer à leur traitement lorsque cela est applicable.
+
+----
+
+rightsText3: "Pour exercer vos droits : [E-mail à compléter]"
+
+----
+
+rightsText4: Vous pouvez également introduire une réclamation auprès de la CNIL.
+
+----
+
+cookiesText1: Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.
+
+----
+
+cookiesText2: Aucune bannière cookies n'est donc affichée à ce stade.
+
+----
+
+cookiesText3: Si des outils de mesure d'audience ou traceurs sont ajoutés ultérieurement, la présente politique sera mise à jour.
+
+----
+
+technicalText1: L'hébergeur du site peut traiter certaines données techniques nécessaires au fonctionnement et à la sécurité du site, notamment des journaux de connexion.
+
+----
+
 Seotitle: Politique de confidentialité | Smart'Immo Coaching
 
 ----

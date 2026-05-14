@@ -80,3 +80,8 @@ Champs disponibles:
 ## Gestion des images
 - Voir [docs/images-management.md](/Users/mat/Pro/SMART-IMMO/docs/images-management.md) pour la gestion des images locales et des champs image de la home.
 - Les textes alternatifs des images se gèrent au niveau de chaque fichier image (blueprint `image`).
+
+## Publication légale
+- Les pages **Mentions légales** et **Politique de confidentialité** contiennent des placeholders obligatoires à compléter avant publication (`[... à compléter]`).
+- Ne pas publier sans renseigner les informations d'identité, coordonnées professionnelles, immatriculation et hébergeur.
+- Si vous ajoutez un formulaire, une newsletter, un outil analytics ou des cookies/traceurs, mettez à jour la politique de confidentialité.

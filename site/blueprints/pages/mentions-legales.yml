@@ -7,6 +7,74 @@ options:
   duplicate: false
 
 sections:
+  content:
+    type: fields
+    headline: Contenu de la page (modifiable)
+    fields:
+      heroIntro:
+        label: Intro haut de page
+        type: textarea
+        buttons: false
+        size: medium
+      editorIntro:
+        label: 1. Éditeur - Intro
+        type: text
+      editorIdentity:
+        label: 1. Éditeur - Identité
+        type: text
+      editorStatus:
+        label: 1. Éditeur - Statut
+        type: text
+      editorAddress:
+        label: 1. Éditeur - Adresse
+        type: text
+      editorSiret:
+        label: 1. Éditeur - SIREN / SIRET
+        type: text
+      editorEmail:
+        label: 1. Éditeur - E-mail
+        type: text
+      editorPhone:
+        label: 1. Éditeur - Téléphone
+        type: text
+      tvaLine1:
+        label: 1. Éditeur - TVA (ligne 1)
+        type: text
+      tvaLine2:
+        label: 1. Éditeur - TVA (ligne 2)
+        type: text
+      publicationLine:
+        label: 2. Responsable de la publication
+        type: text
+      hostName:
+        label: 3. Hébergement - Nom
+        type: text
+      hostAddress:
+        label: 3. Hébergement - Adresse
+        type: text
+      hostContact:
+        label: 3. Hébergement - Contact
+        type: text
+      section4Body:
+        label: 4. Propriété intellectuelle (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section5Body:
+        label: 5. Responsabilité (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section6Body:
+        label: 6. Données personnelles (texte)
+        type: textarea
+        buttons: false
+        size: medium
+      section7Body:
+        label: 7. Cookies (texte)
+        type: textarea
+        buttons: false
+        size: medium
   seo:
     type: fields
     headline: Référencement (SEO)
