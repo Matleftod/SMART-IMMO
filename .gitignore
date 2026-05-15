@@ -23,3 +23,7 @@ yarn-error.log*
 
 # Kirby sessions
 site/sessions/*.sess
+site/sessions/
+
+# Kirby cache (runtime)
+site/cache/

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'debug' => true,
+    'debug' => false,
     'panel' => [
         'menu' => [
             'site',

@@ -1,0 +1,27 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Protect hidden files/folders like .git, .env, etc.
+  RewriteRule (^|/)\.(?!well-known\/) - [F,L]
+
+  # Block direct access to sensitive project directories
+  RewriteRule ^(site|kirby|vendor)/ - [F,L]
+
+  # Block direct access to content text/config files
+  RewriteRule ^content/(.*)\.(txt|md|markdown|yml|yaml|json)$ - [F,L,NC]
+
+  # Block direct access to sensitive root files
+  RewriteRule ^(composer\.(json|lock)|package\.json|pnpm-lock\.yaml|\.env|\.env\..*|phpunit\.xml|README\.md)$ - [F,L,NC]
+
+  # Route non-file, non-directory requests to Kirby
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  ErrorDocument 404 /index.php
+</IfModule>
+
