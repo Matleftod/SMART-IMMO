@@ -1,0 +1,13 @@
+{
+    "name": "client/smart-immo",
+    "description": "Site vitrine Smart’Immo Coaching basé sur Kirby CMS.",
+    "license": "proprietary",
+    "require": {
+        "getkirby/cms": "^5"
+    },
+    "config": {
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
+    }
+}

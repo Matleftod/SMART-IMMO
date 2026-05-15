@@ -1,0 +1,14 @@
+title: Fichier
+
+accept:
+  type: image
+
+fields:
+  alt:
+    label: Texte alternatif
+    type: text
+    help: Décrire brièvement l'image pour l'accessibilité.
+  caption:
+    label: Légende
+    type: text
+    help: Non affichée pour l'instant, conservée pour un usage futur.

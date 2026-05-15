@@ -1,0 +1,131 @@
+title: Accueil
+options:
+  changeStatus: false
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+tabs:
+  images:
+    label: 1) Images
+    sections:
+      imageFiles:
+        label: Images disponibles
+        type: files
+        template: image
+        layout: cards
+        image:
+          cover: true
+          ratio: 4/3
+        help: Bibliothèque des images de l'accueil. Ajouter ici avant de les sélectionner dans les champs.
+      heroImages:
+        label: Hero
+        type: fields
+        fields:
+          heroImage:
+            label: Image principale du hero
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Visuel d'en-tête tout en haut de la page d'accueil.
+      aboutImages:
+        label: À propos
+        type: fields
+        fields:
+          aboutImage:
+            label: Image section À propos
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Portrait affiché dans la section À propos (desktop et mobile).
+      methodImages:
+        label: Méthode
+        type: fields
+        fields:
+          methodImage1:
+            label: Image méthode 1
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Visuel de la carte Méthode n°1.
+          methodImage2:
+            label: Image méthode 2
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Visuel de la carte Méthode n°2.
+          methodImage3:
+            label: Image méthode 3
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Visuel de la carte Méthode n°3.
+      benefitImages:
+        label: Bénéfices
+        type: fields
+        fields:
+          benefitImage1:
+            label: Image bénéfice 1
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Image affichée quand le bénéfice 1 est sélectionné.
+          benefitImage2:
+            label: Image bénéfice 2
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Image affichée quand le bénéfice 2 est sélectionné.
+          benefitImage3:
+            label: Image bénéfice 3
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Image affichée quand le bénéfice 3 est sélectionné.
+          benefitImage4:
+            label: Image bénéfice 4
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Image affichée quand le bénéfice 4 est sélectionné.
+  seo:
+    label: 2) Référencement (SEO)
+    sections:
+      seoFields:
+        type: fields
+        fields:
+          title:
+            label: Titre interne (Panel)
+            type: text
+            width: 1/2
+            help: Titre de la page dans le Panel Kirby.
+          seoTitle:
+            label: Titre SEO
+            type: text
+            width: 1/2
+            help: Titre utilisé dans l'onglet du navigateur et les résultats de recherche.
+          metaDescription:
+            label: Méta-description
+            type: textarea
+            buttons: false
+            size: small
+            help: Description courte pour les moteurs de recherche. Non affichée dans la page.

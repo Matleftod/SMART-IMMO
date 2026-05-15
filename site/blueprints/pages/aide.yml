@@ -1,0 +1,49 @@
+title: Aide
+icon: question
+
+options:
+  changeStatus: false
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+sections:
+  intro:
+    type: info
+    label: Guide rapide
+    text: |
+      Commencez par **Pages du site** pour modifier le contenu utile (images, SEO, pages légales).
+  siteFieldsHelp:
+    type: info
+    label: Coordonnées globales (dans "Site")
+    text: |
+      - **E-mail de contact**: affiché dans le site.
+      - **Téléphone de contact**: affiché dans le site.
+      Ces deux champs sont globaux et s'appliquent à tout le site.
+  homeHelp:
+    type: info
+    label: Accueil - modifier les images
+    text: |
+      1. Ouvrez la page **Accueil**.
+      2. Onglet **1) Images**.
+      3. Ajoutez vos images dans **Images disponibles**.
+      4. Affectez chaque image au bon champ:
+         - heroImage
+         - methodImage1 / 2 / 3
+         - benefitImage1 / 2 / 3 / 4
+  seoHelp:
+    type: info
+    label: SEO (Accueil + pages légales)
+    text: |
+      Sur chaque page, l'onglet **2) Référencement (SEO)** permet de renseigner:
+      - **Titre SEO**: titre d'onglet navigateur + résultat Google.
+      - **Méta-description**: résumé affiché par les moteurs de recherche.
+  legalHelp:
+    type: info
+    label: Pages légales
+    text: |
+      Les pages **Mentions légales** et **Politique de confidentialité** ont:
+      - un onglet **Référencement (SEO)** (titre SEO + méta-description),
+      - des champs de contenu juridique modifiables.
+      L'e-mail et le téléphone affichés proviennent des coordonnées globales dans **Site**.

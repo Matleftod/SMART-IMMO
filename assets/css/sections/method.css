@@ -1,0 +1,35 @@
+/* Method */
+.method-full{
+  min-height:88vh;
+  display:flex;
+  align-items:center;
+}
+.triptych{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.phase{
+  display:grid;
+  grid-template-rows:340px auto;
+  background:#fbf7ef;
+  border:1px solid rgba(124,98,78,.12);
+  border-radius:30px;
+  overflow:hidden;
+}
+.phase img{
+  width:100%;height:100%;object-fit:cover;
+}
+.phase .body{
+  padding:24px 24px 26px;
+}
+.phase .tag{
+  display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+  background:rgba(192,177,149,.22);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--brown)
+}
+.phase .tag i{width:8px;height:8px;border-radius:50%;background:var(--brown);display:block}
+.phase h3{font-size:28px;line-height:1.12;margin:18px 0 12px;color:var(--brown-deep)}
+.phase ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.phase li{display:grid;grid-template-columns:14px 1fr;gap:12px;align-items:start}
+.phase li span{width:14px;height:14px;border-radius:50%;border:1px solid rgba(124,98,78,.28);margin-top:5px}
+

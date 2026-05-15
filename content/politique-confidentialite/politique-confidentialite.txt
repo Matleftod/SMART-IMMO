@@ -1,0 +1,96 @@
+Title: Politique de confidentialité
+
+----
+
+Section1body:
+
+[Nom et prénom à compléter]
+Smart'Immo Coaching
+[E-mail à compléter]
+
+----
+
+Section2body:
+
+Le site ne collecte pas de données via formulaire.
+
+Aucun compte utilisateur, paiement en ligne ou inscription newsletter n'est proposé.
+
+Des données peuvent être transmises volontairement si vous contactez Smart'Immo Coaching par :
+- e-mail
+- téléphone
+- lien de prise de contact externe, si disponible
+
+Ces données peuvent inclure : nom et prénom, coordonnées de contact, informations communiquées dans votre message.
+
+----
+
+Section3body:
+
+Les données transmises sont utilisées uniquement pour :
+- répondre à une demande
+- préparer un échange ou un rendez-vous
+- assurer le suivi d'une relation commerciale si elle est engagée
+
+----
+
+Section4body:
+
+Le traitement repose sur :
+- l'exécution de mesures précontractuelles lorsque vous demandez un échange ou un devis
+- l'intérêt légitime de Smart'Immo Coaching à répondre aux demandes reçues
+
+----
+
+Section5body:
+
+Les données sont destinées uniquement à Smart'Immo Coaching.
+
+Elles ne sont pas vendues.
+Elles ne sont pas transmises à des tiers à des fins publicitaires.
+
+----
+
+Section6body:
+
+Les données issues d'un échange sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation commerciale.
+
+En l'absence de suite donnée, elles peuvent être supprimées à l'issue d'un délai raisonnable.
+
+----
+
+Section7body:
+
+Vous pouvez demander l'accès, la rectification ou la suppression de vos données.
+
+Vous pouvez également vous opposer à leur traitement lorsque cela est applicable.
+
+Pour exercer vos droits : [E-mail à compléter]
+
+Vous pouvez également introduire une réclamation auprès de la CNIL.
+
+----
+
+Section8body:
+
+Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.
+
+Aucune bannière cookies n'est donc affichée à ce stade.
+
+Si des outils de mesure d'audience ou traceurs sont ajoutés ultérieurement, la présente politique sera mise à jour.
+
+----
+
+Section9body: L'hébergeur du site peut traiter certaines données techniques nécessaires au fonctionnement et à la sécurité du site, notamment des journaux de connexion.
+
+----
+
+Seotitle: Politique de confidentialité | Smart'Immo Coaching
+
+----
+
+Metadescription: Consultez la politique de confidentialité de Smart'Immo Coaching : collecte, traitement et protection des données personnelles.
+
+----
+
+Uuid: rtrgjumgork9uaaf

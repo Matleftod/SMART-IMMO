@@ -1,0 +1,116 @@
+/* Header/footer logo image overrides */
+.brand__logo{
+  display:block;
+  width:auto;
+  height:44px;
+  max-width:100%;
+  object-fit:contain;
+}
+
+.site .brand__logo{
+  height:48px;
+}
+
+.site-footer__logo-image{
+  display:block;
+  width:auto;
+  height:56px;
+  max-width:100%;
+  object-fit:contain;
+}
+
+@media (max-width: 640px){
+  .site .brand__logo{
+    height:40px;
+  }
+}
+
+/* Responsive spacing override (final) */
+@media (max-width: 1024px){
+  .site section{padding:64px 0 !important;}
+  .site #apropos.about-redesign{padding:56px 0 !important;}
+  .site #methode{padding:64px 0 70px !important;}
+}
+
+@media (max-width: 820px){
+  .site section{padding:52px 0 !important;}
+  .site #apropos.about-redesign{padding:46px 0 !important;}
+  .site #methode{padding:54px 0 60px !important;}
+  /* Hero top spacing override (final) */
+  .site #accueil .content{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    align-content:start !important;
+    padding:22px 20px 18px !important;
+    gap:18px !important;
+  }
+  .site #accueil .intro{
+    padding-bottom:0 !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    align-self: flex-start;
+  }
+  .site #accueil .h1{
+    max-width:100% !important;
+    font-size:clamp(34px, 10.2vw, 46px) !important;
+    line-height:.95 !important;
+    overflow-wrap:anywhere !important;
+  }
+  .site #accueil .lead{
+    font-size:15px !important;
+    line-height:1.52 !important;
+    max-width:29ch !important;
+  }
+  .site #accueil .actions{
+    gap:8px !important;
+    margin-top:16px !important;
+  }
+  .site #accueil .btn{
+    width:auto !important;
+  }
+  .site #accueil .meta{
+    gap:8px !important;
+    margin-top:16px !important;
+  }
+  .site #accueil .meta span{
+    min-width:0 !important;
+    flex:1 1 calc(50% - 8px) !important;
+  }
+  .site #accueil .blur-note{
+    width:min(100%, 320px) !important;
+    margin:0 0 0 auto !important;
+    padding:18px 16px 16px !important;
+    align-self:flex-end !important;
+  }
+}
+
+@media (max-width: 640px){
+  .site section{padding:44px 0 !important;}
+  .site #apropos.about-redesign{padding:40px 0 !important;}
+  .site #methode{padding:48px 0 52px !important;}
+  .site .wrap{
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+  .site #accueil .content{
+    align-content:start !important;
+    padding:22px 20px 18px !important;
+  }
+  .site #accueil .content > *{
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+  .site #accueil .intro,
+  .site #accueil .actions,
+  .site #accueil .blur-note{
+    min-width:0 !important;
+  }
+  .site #accueil .lead,
+  .site #accueil .blur-note p,
+  .legal-page .legal-hero p,
+  .legal-page .legal-card p,
+  .legal-page .legal-list dd{
+    overflow-wrap:anywhere;
+  }
+}

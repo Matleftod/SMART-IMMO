@@ -1,0 +1,30 @@
+/* Contact */
+.contact-band{
+  background:#fffaf1;
+}
+.contact-shell{
+  border:1px solid rgba(124,98,78,.14);
+  border-radius:32px;
+  overflow:hidden;
+  background:linear-gradient(135deg, rgba(192,177,149,.12), rgba(255,251,241,.8));
+}
+.contact-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;
+}
+.contact-copy{
+  padding:38px 38px 42px;
+  border-right:1px solid rgba(124,98,78,.12);
+}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.contact-info{
+  padding:38px;
+  display:grid;gap:18px;
+}
+.contact-info .row{
+  display:grid;grid-template-columns:110px 1fr;gap:18px;
+  padding-top:16px;border-top:1px solid rgba(124,98,78,.1)
+}
+.contact-info .row:first-child{padding-top:0;border-top:0}
+.contact-info .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(45,36,30,.48)}
+.contact-info .v{font-size:18px;color:var(--brown-deep)}
+

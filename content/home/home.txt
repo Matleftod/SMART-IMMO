@@ -1,0 +1,49 @@
+Title: Accueil
+
+----
+
+Heroimage: - file://wbvjrdvciienpy4w
+
+----
+
+Methodimage1: - file://hib8bjrrtto59d6j
+
+----
+
+Methodimage2: - file://kta2pliavviqe0fq
+
+----
+
+Methodimage3: - file://zeesx7zoxunkczis
+
+----
+
+Aboutimage: - file://vfym6z37kysooqfj
+
+----
+
+Benefitimage1: - file://twyeuyd1befkkzvc
+
+----
+
+Benefitimage2: - file://0cxrfekl59aot2go
+
+----
+
+Benefitimage3: - file://byk2pvy34b5vhqau
+
+----
+
+Benefitimage4: - file://wlhbntnnrkwrfbor
+
+----
+
+Seotitle: Smart'Immo Coaching | Coaching immobilier indépendant à Marmande
+
+----
+
+Metadescription: Vendez votre bien entre particuliers avec un accompagnement immobilier indépendant à Marmande. Méthode claire, sans mandat et sans commission.
+
+----
+
+Uuid: orafpv6v5kxff2z5

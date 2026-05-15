@@ -1,0 +1,172 @@
+Title: Mentions légales
+
+----
+
+Editoridentity: [Nom et prénom à compléter]
+
+----
+
+Editorstatus: Entrepreneur individuel / micro-entrepreneur
+
+----
+
+Editoraddress: [Adresse professionnelle à compléter]
+
+----
+
+Editorsiret: [SIREN / SIRET à compléter]
+
+----
+
+Editoremail: [E-mail à compléter]
+
+----
+
+Editorphone: [Téléphone à compléter]
+
+----
+
+Tvaline1: TVA intracommunautaire : [à compléter]
+
+----
+
+Tvaline2: Ou, si applicable : TVA non applicable, article 293 B du Code général des impôts.
+
+----
+
+Publicationline: [Nom et prénom à compléter]
+
+----
+
+Hostname: [Nom de l’hébergeur à compléter]
+
+----
+
+Hostaddress: [Adresse de l’hébergeur à compléter]
+
+----
+
+Hostcontact: [Téléphone ou contact de l’hébergeur à compléter]
+
+----
+
+Section4body:
+
+Les textes, visuels, éléments graphiques, logo et contenus présents sur le site sont protégés.
+
+Toute reproduction ou utilisation non autorisée est interdite, sauf accord écrit préalable.
+
+----
+
+Section5body:
+
+Smart'Immo Coaching s'efforce de fournir des informations exactes et à jour.
+
+Toutefois, le site peut contenir des erreurs ou omissions.
+
+Les informations présentées ne remplacent pas un accompagnement personnalisé.
+
+----
+
+Section6body:
+
+Le site ne propose actuellement ni formulaire, ni espace client, ni paiement en ligne.
+
+Les données éventuellement transmises volontairement par e-mail, téléphone ou lien de contact sont utilisées uniquement pour répondre à la demande.
+
+----
+
+Section7body:
+
+Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.
+
+Si cette situation évolue, cette page sera mise à jour.
+
+----
+
+Seotitle: Mentions légales | Smart'Immo Coaching
+
+----
+
+Metadescription: Consultez les mentions légales de Smart'Immo Coaching : informations éditoriales, hébergement et responsabilités.
+
+----
+
+Herointro: Informations d'identification de l'éditeur du site et cadre d'utilisation.
+
+----
+
+Editorintro: Smart'Immo Coaching est édité par :
+
+----
+
+Section1body:
+
+|
+  Smart'Immo Coaching est édité par :
+  
+  [Nom et prénom à compléter] EI
+  Entrepreneur individuel / micro-entrepreneur
+  Adresse : [Adresse professionnelle à compléter]
+  SIREN / SIRET : [SIREN / SIRET à compléter]
+  E-mail : [E-mail à compléter]
+  Téléphone : [Téléphone à compléter]
+  
+  TVA intracommunautaire : [à compléter]
+  Ou, si applicable : TVA non applicable, article 293 B du Code général des impôts.
+
+----
+
+Section2body:
+
+|
+  Responsable de la publication : [Nom et prénom à compléter]
+
+----
+
+Section3body:
+
+|
+  [Nom de l’hébergeur à compléter]
+  [Adresse de l’hébergeur à compléter]
+  [Téléphone ou contact de l’hébergeur à compléter]
+
+----
+
+Iptext1: Les textes, visuels, éléments graphiques, logo et contenus présents sur le site sont protégés.
+
+----
+
+Iptext2: Toute reproduction ou utilisation non autorisée est interdite, sauf accord écrit préalable.
+
+----
+
+Liabilitytext1: Smart'Immo Coaching s'efforce de fournir des informations exactes et à jour.
+
+----
+
+Liabilitytext2: Toutefois, le site peut contenir des erreurs ou omissions.
+
+----
+
+Liabilitytext3: Les informations présentées ne remplacent pas un accompagnement personnalisé.
+
+----
+
+Personaldatatext1: Le site ne propose actuellement ni formulaire, ni espace client, ni paiement en ligne.
+
+----
+
+Personaldatatext2: Les données éventuellement transmises volontairement par e-mail, téléphone ou lien de contact sont utilisées uniquement pour répondre à la demande.
+
+----
+
+Cookiestext1: Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.
+
+----
+
+Cookiestext2: Si cette situation évolue, cette page sera mise à jour.
+
+----
+
+Uuid: qrttqpjg5wq9woal
