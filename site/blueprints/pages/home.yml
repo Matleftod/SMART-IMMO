@@ -31,6 +31,18 @@ tabs:
               template: image
             max: 1
             help: Visuel d'en-tête tout en haut de la page d'accueil.
+      aboutImages:
+        label: À propos
+        type: fields
+        fields:
+          aboutImage:
+            label: Image section À propos
+            type: files
+            query: page.images
+            uploads:
+              template: image
+            max: 1
+            help: Portrait affiché dans la section À propos (desktop et mobile).
       methodImages:
         label: Méthode
         type: fields
