@@ -92,7 +92,7 @@ sudo systemctl reload apache2
 
 Ne pas appliquer une CSP stricte sans tests complets.
 
-Le site charge actuellement Lucide depuis un CDN (`unpkg.com`) ; une CSP stricte devra autoriser ce domaine, ou bien auto-heberger ce script avant durcissement.
+Lucide est auto-heberge en local: `assets/vendor/lucide/lucide.min.js` (v0.468.0), ce qui simplifie la future CSP.
 
 ## 5) .htaccess Kirby
 
@@ -134,4 +134,3 @@ Resultats attendus:
 - Certificats Let's Encrypt (chemins `SSLCertificate*`).
 - Politique HSTS (si sous-domaines reels et HTTPS stable).
 - Eventuelle CSP en mode `Report-Only` avant enforcement.
-

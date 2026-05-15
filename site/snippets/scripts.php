@@ -1,5 +1,5 @@
 <?php if (($isHome ?? false) === true): ?>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="<?= url('assets/vendor/lucide/lucide.min.js') ?>" defer></script>
   <script src="<?= url('assets/js/00-lucide.js') ?>" defer></script>
   <script src="<?= url('assets/js/01-reveals.js') ?>" defer></script>
   <script src="<?= url('assets/js/02-mobile-menu.js') ?>" defer></script>

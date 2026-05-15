@@ -87,7 +87,7 @@ Remarque:
 
 ## Organisation JS
 Scripts chargés via `site/snippets/scripts.php` (home uniquement), en `defer`, dans cet ordre:
-1. CDN Lucide: `https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js`
+1. `assets/vendor/lucide/lucide.min.js` (Lucide UMD auto-hébergé, v0.468.0)
 2. `assets/js/00-lucide.js`
 3. `assets/js/01-reveals.js`
 4. `assets/js/02-mobile-menu.js`

@@ -25,6 +25,9 @@ Configuration Apache VPS detaillee:
 - `X-Frame-Options: SAMEORIGIN` (ou `frame-ancestors` via CSP)
 - `Content-Security-Policy` progressive (tester avant durcissement)
 
+Note dépendance front:
+- Lucide est auto-hébergé en local dans `assets/vendor/lucide/lucide.min.js` (plus de CDN unpkg pour les icônes).
+
 ## 4) Dossiers/fichiers à protéger
 Ne pas exposer publiquement :
 - `site/`
