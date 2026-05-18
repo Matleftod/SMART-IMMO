@@ -142,6 +142,7 @@
       "manifesto";
     row-gap:22px;
     padding:0 0 24px;
+    border-bottom:0;
   }
   .site #benefices .benefices-title-block{
     padding-top:0;
@@ -365,4 +366,3 @@
   .site .contact-copy,
   .site .contact-info{padding:22px 20px;}
 }
-
