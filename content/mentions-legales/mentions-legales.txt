@@ -18,14 +18,6 @@ Editorsiret: [SIREN / SIRET à compléter]
 
 ----
 
-Editoremail: [E-mail à compléter]
-
-----
-
-Editorphone: [Téléphone à compléter]
-
-----
-
 Tvaline1: TVA intracommunautaire : [à compléter]
 
 ----
@@ -84,11 +76,26 @@ Si cette situation évolue, cette page sera mise à jour.
 
 ----
 
+Section8body:
+
+Conformément à l'article L.616-1 du Code de la consommation, Smart'Immo Coaching adhère au dispositif de médiation de la consommation de La Médiation Professionnelle. 
+La Médiation Professionnelle — 24 rue Albert de Mun, 33000 Bordeaux, France — www.mediateur-consommation-smp.fr
+
+----
+
 Seotitle: Mentions légales | Smart'Immo Coaching
 
 ----
 
 Metadescription: Consultez les mentions légales de Smart'Immo Coaching : informations éditoriales, hébergement et responsabilités.
+
+----
+
+Editoremail: [E-mail à compléter]
+
+----
+
+Editorphone: [Téléphone à compléter]
 
 ----
 

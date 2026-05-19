@@ -103,6 +103,11 @@ $publicationName = preg_replace('/^Responsable de la publication\s*:\s*/iu', '',
         <h2 class="serif">7. Cookies</h2>
         <p><?= $toHtml($text('section7Body', "Le site ne dépose actuellement pas de cookies de mesure d'audience, publicitaires ou de suivi.\n\nSi cette situation évolue, cette page sera mise à jour.")) ?></p>
       </article>
+
+      <article class="legal-card">
+        <h2 class="serif">8. Médiation de la consommation</h2>
+        <p><?= $toHtml($text('section8Body', "Conformément à l'article L.616-1 du Code de la consommation, Smart'Immo Coaching adhère au dispositif de médiation de la consommation de La Médiation Professionnelle. La Médiation Professionnelle — 24 rue Albert de Mun, 33000 Bordeaux, France — www.mediateur-consommation-smp.fr")) ?></p>
+      </article>
     </div>
   </section>
 </main>

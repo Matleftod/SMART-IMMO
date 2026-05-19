@@ -63,6 +63,7 @@
       <div class="offer-addon__label">
         <span>Accompagnement disponible à la demande</span>
         <strong>Prestation disponible à la demande du client</strong>
+        <small class="offer-addon__tva">TVA non applicable, art. 293 B du CGI.</small>
       </div>
       <div class="offer-addon__service">
         <span>Avis de valeur</span>

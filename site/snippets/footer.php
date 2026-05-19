@@ -36,6 +36,23 @@ $contactPhoneHref = (strlen($contactPhoneDigits) >= 6) ? $contactPhoneDigits : '
           <a href="tel:<?= esc($contactPhoneHref) ?>"><?= esc($contactPhone) ?></a>
           <p>Marmande et alentours,<br>Lot-et-Garonne</p>
         </div>
+        <div class="site-footer__social">
+          <div class="site-footer__social-icons">
+            <a class="site-footer__social-icon" href="https://www.instagram.com/smartimmocoaching/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Smart'Immo Coaching">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37a4 4 0 1 1-1.37-1.37 4 4 0 0 1 1.37 1.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="site-footer__social-icon" href="https://www.facebook.com/profile.php?id=61573347720485" target="_blank" rel="noopener noreferrer" aria-label="Facebook Smart'Immo Coaching">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <a class="site-footer__federation-link" href="https://federation-des-coachs-immobiliers.fr" target="_blank" rel="noopener noreferrer">Fédération des coachs immobiliers</a>
+        </div>
       </div>
     </div>
 

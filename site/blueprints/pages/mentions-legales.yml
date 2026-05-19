@@ -61,6 +61,12 @@ sections:
         type: textarea
         buttons: false
         size: medium
+      section8Body:
+        label: 8. Médiation de la consommation (texte)
+        type: textarea
+        buttons: false
+        size: medium
+        required: true
   seo:
     type: fields
     headline: Référencement (SEO)

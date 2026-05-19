@@ -84,6 +84,49 @@
 .site-footer__contact-lines p{
   margin:0;
 }
+.site-footer__social{
+  display:grid;
+  gap:12px;
+  min-width:0;
+}
+.site-footer__social-icons{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.site-footer__social-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(45,36,30,.74);
+  width:34px;
+  height:34px;
+  border:1px solid rgba(124,98,78,.22);
+  border-radius:999px;
+  background:rgba(255,250,241,.38);
+}
+.site-footer__social-icon svg{
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.site-footer__social-icon:hover{
+  border-color:rgba(124,98,78,.34);
+  background:rgba(255,250,241,.62);
+}
+.site-footer a.site-footer__federation-link{
+  color:rgba(45,36,30,.72);
+  font-size:14px;
+  line-height:1.45;
+  letter-spacing:.01em;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
 .site-footer__cta{
   display:inline-flex;
   align-items:center;
@@ -122,4 +165,3 @@
   gap:10px 22px;
   color:rgba(45,36,30,.52);
 }
-
