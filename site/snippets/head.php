@@ -96,7 +96,9 @@ $jsonLdString = json_encode($jsonLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLA
       <link rel="preload" as="image" href="<?= esc($heroImageUrl, 'attr') ?>" fetchpriority="high">
     <?php endif ?>
   <?php endif ?>
-  <link rel="icon" href="<?= url('assets/images/logo.png') ?>">
+  <link rel="icon" type="image/png" sizes="48x48" href="<?= url('favicon-48x48.png') ?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= url('apple-touch-icon.png') ?>">
+  <link rel="icon" href="<?= url('favicon.ico') ?>">
   <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
   <?php if ($isHome): ?>
     <?php snippet('scripts', ['isHome' => true]) ?>
