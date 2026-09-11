@@ -31,7 +31,7 @@ $toHtml = static fn (string $value) => nl2br(esc($value));
 
       <article class="legal-card">
         <h2 class="serif">2. Données collectées</h2>
-        <p><?= $toHtml($resolveText($text('section2Body', "Le site ne collecte pas de données via formulaire.\n\nAucun compte utilisateur, paiement en ligne ou inscription newsletter n'est proposé.\n\nDes données peuvent être transmises volontairement si vous contactez " . $siteTitle . " par :\n- e-mail\n- téléphone\n- lien de prise de contact externe, si disponible\n\nCes données peuvent inclure : nom et prénom, coordonnées de contact, informations communiquées dans votre message."), $contactEmail)) ?></p>
+        <p><?= $toHtml($resolveText($text('section2Body', "Le site ne collecte pas de données via formulaire.\n\nAucun compte utilisateur, paiement en ligne ou inscription à une newsletter n'est proposé.\n\nDes données peuvent être transmises volontairement si vous contactez " . $siteTitle . " par :\n- e-mail\n- téléphone\n- lien de prise de contact externe, si disponible\n\nCes données peuvent inclure : nom et prénom, coordonnées de contact, informations communiquées dans votre message."), $contactEmail)) ?></p>
       </article>
 
       <article class="legal-card">

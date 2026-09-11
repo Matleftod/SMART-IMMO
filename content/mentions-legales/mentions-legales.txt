@@ -2,7 +2,7 @@ Title: Mentions légales
 
 ----
 
-Editoridentity: [Nom et prénom à compléter]
+Editoridentity: Anthony MARTINS BRANCO
 
 ----
 
@@ -10,61 +10,59 @@ Editorstatus: Entrepreneur individuel / micro-entrepreneur
 
 ----
 
-Editoraddress: [Adresse professionnelle à compléter]
+Editoraddress: 6 rue du Château, 47180 Sainte-Bazeille, France
 
 ----
 
-Editorsiret: [SIREN / SIRET à compléter]
+Editorsiret: 999 936 933 00012
 
 ----
 
-Tvaline1: TVA intracommunautaire : [à compléter]
+Tvaline1: Non assujetti à la TVA
 
 ----
 
-Tvaline2: Ou, si applicable : TVA non applicable, article 293 B du Code général des impôts.
+Tvaline2: article 293 B du Code général des impôts.
 
 ----
 
-Publicationline: [Nom et prénom à compléter]
+Publicationline: Anthony MARTINS BRANCO
 
 ----
 
-Hostname: [Nom de l’hébergeur à compléter]
+Hostname: IONOS SARL
 
 ----
 
-Hostaddress: [Adresse de l’hébergeur à compléter]
+Hostaddress: 7 place de la Gare, BP 70109, 57201 Sarreguemines Cedex, France
 
 ----
 
-Hostcontact: [Téléphone ou contact de l’hébergeur à compléter]
+Hostcontact: 0970 808 911 — https://www.ionos.fr/contact
 
 ----
 
 Section4body:
 
-Les textes, visuels, éléments graphiques, logo et contenus présents sur le site sont protégés.
+L'ensemble des contenus textuels et du logo de ce site est la propriété exclusive d'Anthony MARTINS BRANCO. 
 
-Toute reproduction ou utilisation non autorisée est interdite, sauf accord écrit préalable.
+Toute reproduction sans autorisation écrite préalable est interdite. 
+
+Certains visuels peuvent être issus de banques d'images libres de droits ou avoir fait l'objet d'un traitement par intelligence artificielle.
 
 ----
 
-Section5body:
-
-Smart'Immo Coaching s'efforce de fournir des informations exactes et à jour.
-
-Toutefois, le site peut contenir des erreurs ou omissions.
-
-Les informations présentées ne remplacent pas un accompagnement personnalisé.
+Section5body: L'éditeur s'efforce d'assurer l'exactitude des informations publiées sur ce site mais ne saurait être tenu responsable des erreurs, omissions ou des résultats qui pourraient être obtenus par un mauvais usage de ces informations.
 
 ----
 
 Section6body:
 
-Le site ne propose actuellement ni formulaire, ni espace client, ni paiement en ligne.
+Le site ne propose actuellement ni formulaire, ni espace client, ni paiement en ligne. 
 
-Les données éventuellement transmises volontairement par e-mail, téléphone ou lien de contact sont utilisées uniquement pour répondre à la demande.
+Les données éventuellement transmises volontairement par e-mail, téléphone ou lien de contact sont utilisées uniquement pour répondre à la demande. 
+
+Pour en savoir plus, consultez notre politique de confidentialité.  —  https://smartimmocoaching.com/politique-confidentialite
 
 ----
 

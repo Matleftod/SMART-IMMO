@@ -4,9 +4,9 @@ Title: Politique de confidentialité
 
 Section1body:
 
-[Nom et prénom à compléter]
+Anthony MARTINS BRANCO
 Smart'Immo Coaching
-[E-mail à compléter]
+contact@smartimmocoaching.fr
 
 ----
 
@@ -53,19 +53,19 @@ Elles ne sont pas transmises à des tiers à des fins publicitaires.
 
 Section6body:
 
-Les données issues d'un échange sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation commerciale.
+Les données issues d'un échange sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation commerciale. 
 
-En l'absence de suite donnée, elles peuvent être supprimées à l'issue d'un délai raisonnable.
+En l'absence de suite donnée, les données sont supprimées sous 3 ans à compter du dernier contact, conformément aux recommandations de la CNIL.
 
 ----
 
 Section7body:
 
-Vous pouvez demander l'accès, la rectification ou la suppression de vos données.
+Vous pouvez demander l'accès, la rectification, la suppression ou la portabilité de vos données. 
 
-Vous pouvez également vous opposer à leur traitement lorsque cela est applicable.
+Vous pouvez également vous opposer à leur traitement lorsque cela est applicable. 
 
-Pour exercer vos droits : [E-mail à compléter]
+Pour exercer vos droits : contact@smartimmocoaching.fr
 
 Vous pouvez également introduire une réclamation auprès de la CNIL.
 

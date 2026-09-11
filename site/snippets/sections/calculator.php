@@ -3,7 +3,7 @@
     <div class="sale-calculator" data-sale-calculator data-reveal="fade">
       <div class="sale-calculator__intro">
         <p class="eyebrow">Simulation</p>
-        <h2 class="sale-calculator__title serif">Chaque vente à un coût</h2>
+        <h2 class="sale-calculator__title serif">Chaque vente a un coût</h2>
         <p class="sale-calculator__copy">Simulation indicative basée sur les paramètres renseignés</p>
         <div class="sale-calculator__result" role="status" aria-live="polite" aria-atomic="true">
           <span id="net-result-label">Ce qu’il vous reste après la vente</span>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <input id="percent-range" type="range" min="4" max="9" step="0.1" value="5" data-percent-range aria-describedby="percent-range-help percent-cost-preview">
-            <p class="calc-sr-only" id="percent-range-help">Valeur comprise entre 4% et 9%.</p>
+            <p class="calc-sr-only" id="percent-range-help">Valeur comprise entre 4 % et 9 %.</p>
             <p class="calc-cost-preview" id="percent-cost-preview" aria-live="polite" aria-atomic="true">Coût calculé : <strong data-cost-preview>17 500 €</strong></p>
           </div>
 

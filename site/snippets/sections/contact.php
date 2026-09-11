@@ -26,7 +26,7 @@ $contactPhoneHref = (strlen($contactPhoneDigits) >= 6) ? $contactPhoneDigits : '
           <div class="row"><div class="k">Téléphone</div><div class="v"><a href="tel:<?= esc($contactPhoneHref, 'attr') ?>"><?= esc($contactPhone) ?></a></div></div>
           <div class="row"><div class="k">Mail</div><div class="v"><a href="mailto:<?= esc($contactEmail, 'attr') ?>"><?= esc($contactEmail) ?></a></div></div>
           <div class="row"><div class="k">Où je me déplace</div><div class="v">Marmande et alentours<br>Lot-et-Garonne</div></div>
-          <div class="row"><div class="k">Disponibilité</div><div class="v">Réponse sous 24h ouvrées<br>Du lundi au samedi</div></div>
+          <div class="row"><div class="k">Disponibilité</div><div class="v">Réponse sous 24 h ouvrées<br>Du lundi au samedi</div></div>
         </div>
       </div>
     </div>
